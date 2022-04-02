@@ -101,7 +101,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				}
 
 				if si := strings.Index(reference, ";"); si >= 1 {
-					author = reference[:si]
+					author = strings.Trim(reference[:si], " ,'")
 					ai := Year_rx.FindStringIndex(author)
 					if len(ai) > 0 {
 						author = strings.Trim(author[:ai[0]], " ,")
@@ -113,9 +113,9 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 						reference = ""
 					}
 
-					reference = strings.Trim(reference, " ;,*▓¢.&")
+					reference = strings.Trim(reference, " ;,*▓¢.&'")
 				} else {
-					reference = strings.Trim(reference, " *▓¢.&")
+					reference = strings.Trim(reference, " *▓¢.&'")
 				}
 
 				yrst := Year_rx.FindString(reference)
