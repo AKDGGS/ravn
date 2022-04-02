@@ -52,8 +52,18 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				)
 			}
 
+			curcol := 0
 			if len(row[2]) > 0 {
-				n, err := excelize.CoordinatesToCellName(3, y+1)
+				curcol = 2
+			} else if len(row[3]) > 0 {
+				curcol = 3
+			}
+
+			switch curcol {
+			// Column C - species details
+			// Column D - species alt names
+			case 2,3:
+				n, err := excelize.CoordinatesToCellName(curcol+1, y+1)
 				if err != nil {
 					return fmt.Errorf(
 						"CoordinatesToCellName %s %s row %d: %s",
@@ -122,17 +132,28 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				if yrst != "" {
 					year, _ = strconv.Atoi(yrst)
 				}
+
+			default:
+				continue
 			}
 
 			// Row is a continuation of the previous row's ID
 			if sp != nil && sp.ID == id {
 				// If this row contains a species name and there's already
 				// one specified.
-				if name != "" && sp.Name != "" {
+				if curcol == 2 && name != "" && sp.Name != "" {
 					fmt.Fprintf(os.Stderr,
 						"%s %s row %d more than one published species name\n",
 						fn, sheet, y+1,
 					)
+				}
+
+				if curcol == 3 {
+					alt := AltName{
+						Name: name, Author: author, Reference: reference,
+						DefinesGenus: definesgenus, Year: year,
+					}
+					sp.AltNames = append(sp.AltNames, alt)
 				}
 			}
 
@@ -141,7 +162,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				// If it's a new ID, and there's no species name, try
 				// calculating Levenshtein distance. If it's "close enough"
 				// just assume it's the same ID
-				if name == "" {
+				if curcol != 2 {
 					distance := Levenshtein(strconv.Itoa(id), strconv.Itoa(sp.ID))
 					if distance <= 2 {
 						fmt.Fprintf(os.Stderr,
@@ -153,7 +174,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				}
 			}
 
-			// Save this row as the last species
+			// Row is the first, or it's a new ID
 			if sp == nil || sp.ID != id {
 				if name == "" {
 					fmt.Fprintf(os.Stderr,
@@ -162,13 +183,15 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					)
 				}
 
-				sp = &SpeciesDetail{
-					ID: id, Name: name, Origin: fn, Author: author,
-					Reference: reference, DefinesGenus: definesgenus,
-					Year: year,
-				}
+				if curcol == 2 {
+					sp = &SpeciesDetail{
+						ID: id, Name: name, Origin: fn, Author: author,
+						Reference: reference, DefinesGenus: definesgenus,
+						Year: year,
+					}
 
-				*species = append(*species, sp)
+					*species = append(*species, sp)
+				}
 			}
 		}
 	}

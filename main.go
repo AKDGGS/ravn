@@ -18,11 +18,15 @@ type SpeciesDetail struct {
 	Year         int       `yaml:",omitempty"`
 	AltNames     []AltName `yaml:",omitempty"`
 	Occurances   []string  `yaml:",omitempty"`
+	Comments     []string  `yaml:",omitempty"`
 }
 
 type AltName struct {
-	Name      string
-	Reference string
+	Name         string `yaml:",omitempty"`
+	Year         int    `yaml:",omitempty"`
+	Author       string `yaml:",omitempty"`
+	Reference    string `yaml:",omitempty"`
+	DefinesGenus bool   `yaml:",omitempty"`
 }
 
 type Occurance struct {
