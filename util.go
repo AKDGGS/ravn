@@ -41,7 +41,6 @@ func Levenshtein(str1, str2 string) int {
 	return column[runeStr1len]
 }
 
-
 func min(a int, b int) int {
 	if b < a {
 		return b

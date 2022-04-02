@@ -4,15 +4,20 @@ import (
 	"fmt"
 	"os"
 	"strings"
+
+	"gopkg.in/yaml.v2"
 )
 
 type SpeciesDetail struct {
 	ID           int
 	Name         string
-	DefinesGenus bool
-	Year         int
-	AltNames     []AltName
-	Occurances   []string
+	Origin       string    `yaml:",omitempty"`
+	Author       string    `yaml:",omitempty"`
+	Reference    string    `yaml:",omitempty"`
+	DefinesGenus bool      `yaml:",omitempty"`
+	Year         int       `yaml:",omitempty"`
+	AltNames     []AltName `yaml:",omitempty"`
+	Occurances   []string  `yaml:",omitempty"`
 }
 
 type AltName struct {
@@ -43,7 +48,14 @@ func main() {
 				os.Exit(1)
 			}
 		}
-		fmt.Printf("Parsed %d species\n", len(species))
+
+		b, err := yaml.Marshal(species)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "yaml.Marshal(): %s\n", err.Error())
+			os.Exit(1)
+		}
+		fmt.Printf("%s", string(b))
+
 	default:
 		fmt.Fprintf(os.Stderr, "invalid action: %s\n", os.Args[1])
 		PrintHelp()

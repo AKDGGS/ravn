@@ -3,11 +3,15 @@ package main
 import (
 	"fmt"
 	"os"
+	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/xuri/excelize/v2"
 )
+
+var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
+var Dfgen_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}T\)`)
 
 func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 	var sp *SpeciesDetail
@@ -26,6 +30,10 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 		for y, row := range rows {
 			var id int
 			var name string
+			var author string
+			var reference string
+			var definesgenus bool
+			var year int
 
 			if y == 0 || y == 1 || len(row) < 3 || len(row[1]) < 1 {
 				continue
@@ -44,41 +52,76 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				)
 			}
 
-			n, err := excelize.CoordinatesToCellName(3, y+1)
-			if err != nil {
-				return fmt.Errorf(
-					"CoordinatesToCellName %s %s row %d: %s",
-					fn, sheet, y+1, err.Error(),
-				)
-			}
-
-			sid, err := f.GetCellStyle(sheet, n)
-			if err != nil {
-				return fmt.Errorf(
-					"CoordinatesToCellName %s %s row %d: %s",
-					fn, sheet, y+1, err.Error(),
-				)
-			}
-
-			fid := *f.Styles.CellXfs.Xf[sid].FontID
-			cellItalic := f.Styles.Fonts.Font[fid].I != nil
-
 			if len(row[2]) > 0 {
-				rt, err := f.GetCellRichText(sheet, n)
+				n, err := excelize.CoordinatesToCellName(3, y+1)
 				if err != nil {
 					return fmt.Errorf(
-						"GetCellRichText %s/%d: %s", sheet, y, err.Error(),
+						"CoordinatesToCellName %s %s row %d: %s",
+						fn, sheet, y+1, err.Error(),
 					)
 				}
 
-				b := strings.Builder{}
+				sid, err := f.GetCellStyle(sheet, n)
+				if err != nil {
+					return fmt.Errorf(
+						"CoordinatesToCellName %s %s row %d: %s",
+						fn, sheet, y+1, err.Error(),
+					)
+				}
+
+				fid := *f.Styles.CellXfs.Xf[sid].FontID
+				cellItalic := f.Styles.Fonts.Font[fid].I != nil
+
+				rt, err := f.GetCellRichText(sheet, n)
+				if err != nil {
+					return fmt.Errorf(
+						"GetCellRichText %s %s row %d: %s",
+						fn, sheet, y+1, err.Error(),
+					)
+				}
+
+				nb := strings.Builder{}
+				rb := strings.Builder{}
+				pn := true
 				for _, r := range rt {
-					if (r.Font != nil && r.Font.Italic) || (r.Font == nil && cellItalic) {
-						b.WriteString(r.Text)
+					if pn == true && ((r.Font != nil && r.Font.Italic) || (r.Font == nil && cellItalic)) {
+						nb.WriteString(r.Text)
+					} else {
+						pn = false
+						rb.WriteString(r.Text)
 					}
 				}
 
-				name = b.String()
+				name = strings.Trim(nb.String(), " ")
+				reference = strings.Trim(rb.String(), " ")
+
+				if nr := Dfgen_rx.ReplaceAllString(reference, ""); len(nr) != len(reference) {
+					definesgenus = true
+					reference = nr
+				}
+
+				if si := strings.Index(reference, ";"); si >= 1 {
+					author = reference[:si]
+					ai := Year_rx.FindStringIndex(author)
+					if len(ai) > 0 {
+						author = strings.Trim(author[:ai[0]], " ,")
+					}
+
+					if len(reference) > si+1 {
+						reference = reference[si+1:]
+					} else {
+						reference = ""
+					}
+
+					reference = strings.Trim(reference, " ;,*▓¢.&")
+				} else {
+					reference = strings.Trim(reference, " *▓¢.&")
+				}
+
+				yrst := Year_rx.FindString(reference)
+				if yrst != "" {
+					year, _ = strconv.Atoi(yrst)
+				}
 			}
 
 			// Row is a continuation of the previous row's ID
@@ -119,7 +162,12 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					)
 				}
 
-				sp = &SpeciesDetail{ID: id, Name: name}
+				sp = &SpeciesDetail{
+					ID: id, Name: name, Origin: fn, Author: author,
+					Reference: reference, DefinesGenus: definesgenus,
+					Year: year,
+				}
+
 				*species = append(*species, sp)
 			}
 		}

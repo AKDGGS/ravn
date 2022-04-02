@@ -16,3 +16,6 @@ Purple is comment
 References -
 References are separate data from species/genera
 They are indexed as text line by line, parse out authors and year. First four digit number is the publication year. Everything before publication year is the author's. Everything after is "journal references"
+
+
+What's the meaning of the asterisk at the end of each species name line?
