@@ -185,6 +185,23 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				continue
 			}
 
+			// Row is a new ID, and there's a previous row to compare against
+			if sp != nil && sp.ID != id {
+				// If it's a new ID, and there's no species name, try
+				// calculating Levenshtein distance. If it's "close enough"
+				// just assume it's the same ID
+				if curcol != 2 {
+					distance := Levenshtein(strconv.Itoa(id), strconv.Itoa(sp.ID))
+					if distance <= 2 {
+						fmt.Fprintf(os.Stderr,
+							"%s %s row %d assuming id %d == %d\n",
+							fn, sheet, y+1, id, sp.ID,
+						)
+						id = sp.ID
+					}
+				}
+			}
+
 			// Row is a continuation of the previous row's ID
 			if sp != nil && sp.ID == id {
 				// If this row contains a species name and there's already
@@ -208,23 +225,6 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 						Author: author, Years: years, Reference: reference,
 					}
 					sp.Occurances = append(sp.Occurances, occ)
-				}
-			}
-
-			// Row is a new ID, and there's a previous row to compare against
-			if sp != nil && sp.ID != id {
-				// If it's a new ID, and there's no species name, try
-				// calculating Levenshtein distance. If it's "close enough"
-				// just assume it's the same ID
-				if curcol != 2 {
-					distance := Levenshtein(strconv.Itoa(id), strconv.Itoa(sp.ID))
-					if distance <= 2 {
-						fmt.Fprintf(os.Stderr,
-							"%s %s row %d assuming id %d == %d\n",
-							fn, sheet, y+1, id, sp.ID,
-						)
-						id = sp.ID
-					}
 				}
 			}
 
