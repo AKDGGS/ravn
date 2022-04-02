@@ -34,6 +34,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 			var reference string
 			var definesgenus bool
 			var year int
+			var years []int
 
 			if y == 0 || y == 1 || len(row) < 3 || len(row[1]) < 1 {
 				continue
@@ -57,12 +58,14 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				curcol = 2
 			} else if len(row[3]) > 0 {
 				curcol = 3
+			} else if len(row[4]) > 0 {
+				curcol = 4
 			}
 
 			switch curcol {
 			// Column C - species details
 			// Column D - species alt names
-			case 2,3:
+			case 2, 3:
 				n, err := excelize.CoordinatesToCellName(curcol+1, y+1)
 				if err != nil {
 					return fmt.Errorf(
@@ -103,7 +106,15 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				}
 
 				name = strings.Trim(nb.String(), " ")
-				reference = strings.Trim(rb.String(), " ")
+				if len(name) < 1 {
+					fmt.Fprintf(os.Stderr,
+						"%s %s row %d missing italicized name at start\n",
+						fn, sheet, y+1,
+					)
+					reference = row[curcol]
+				} else {
+					reference = strings.Trim(rb.String(), " ")
+				}
 
 				if nr := Dfgen_rx.ReplaceAllString(reference, ""); len(nr) != len(reference) {
 					definesgenus = true
@@ -133,6 +144,43 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					year, _ = strconv.Atoi(yrst)
 				}
 
+			// Column E - species occurances
+			case 4:
+				firstyr := -1
+				lastyr := -1
+
+				vals := strings.Split(row[4], ",")
+				for i, val := range vals {
+					yrst := Year_rx.FindString(val)
+					if yrst != "" {
+						year, _ = strconv.Atoi(yrst)
+						if year > 0 {
+							years = append(years, year)
+
+							if firstyr < 0 {
+								firstyr = i
+							}
+							lastyr = i
+						}
+					}
+				}
+
+				if firstyr >= 0 {
+					author = strings.Trim(strings.Join(vals[:firstyr], ","), " ")
+				}
+
+				if lastyr >= 0 && len(vals) > lastyr+1{
+					reference = strings.Trim(strings.Join(vals[lastyr+1:], ","), " ")
+				}
+
+				if lastyr < 0 && firstyr < 0 {
+					fmt.Fprintf(os.Stderr,
+						"%s %s row %d no year in occurance\n",
+						fn, sheet, y+1,
+					)
+					reference = row[4]
+				}
+
 			default:
 				continue
 			}
@@ -148,12 +196,18 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					)
 				}
 
-				if curcol == 3 {
+				switch curcol {
+				case 3:
 					alt := AltName{
 						Name: name, Author: author, Reference: reference,
 						DefinesGenus: definesgenus, Year: year,
 					}
 					sp.AltNames = append(sp.AltNames, alt)
+				case 4:
+					occ := Occurance{
+						Author: author, Years: years, Reference: reference,
+					}
+					sp.Occurances = append(sp.Occurances, occ)
 				}
 			}
 

@@ -11,14 +11,14 @@ import (
 type SpeciesDetail struct {
 	ID           int
 	Name         string
-	Origin       string    `yaml:",omitempty"`
-	Author       string    `yaml:",omitempty"`
-	Reference    string    `yaml:",omitempty"`
-	DefinesGenus bool      `yaml:",omitempty"`
-	Year         int       `yaml:",omitempty"`
-	AltNames     []AltName `yaml:",omitempty"`
-	Occurances   []string  `yaml:",omitempty"`
-	Comments     []string  `yaml:",omitempty"`
+	Origin       string      `yaml:",omitempty"`
+	Author       string      `yaml:",omitempty"`
+	Reference    string      `yaml:",omitempty"`
+	DefinesGenus bool        `yaml:",omitempty"`
+	Year         int         `yaml:",omitempty"`
+	AltNames     []AltName   `yaml:",omitempty"`
+	Occurances   []Occurance `yaml:",omitempty"`
+	Comments     []string    `yaml:",omitempty"`
 }
 
 type AltName struct {
@@ -30,9 +30,9 @@ type AltName struct {
 }
 
 type Occurance struct {
-	Authors   string
-	Year      int
-	Reference string
+	Author    string `yaml:",omitempty"`
+	Years     []int  `yaml:",flow,omitempty"`
+	Reference string `yaml:",omitempty"`
 }
 
 func main() {
