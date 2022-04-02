@@ -35,7 +35,7 @@ func main() {
 
 	switch strings.ToLower(os.Args[1]) {
 	case "species":
-		var species []SpeciesDetail
+		var species []*SpeciesDetail
 		for _, fn := range os.Args[2:] {
 			err := ParseSpecies(fn, &species)
 			if err != nil {
