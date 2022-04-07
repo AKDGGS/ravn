@@ -35,6 +35,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 			var definesgenus bool
 			var year int
 			var years []int
+			var comment string
 
 			if y == 0 || y == 1 || len(row) < 3 || len(row[1]) < 1 {
 				continue
@@ -60,6 +61,8 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				curcol = 3
 			} else if len(row[4]) > 0 {
 				curcol = 4
+			} else if len(row[5]) > 0 {
+				curcol = 5
 			}
 
 			switch curcol {
@@ -169,7 +172,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					author = strings.Trim(strings.Join(vals[:firstyr], ","), " ")
 				}
 
-				if lastyr >= 0 && len(vals) > lastyr+1{
+				if lastyr >= 0 && len(vals) > lastyr+1 {
 					reference = strings.Trim(strings.Join(vals[lastyr+1:], ","), " ")
 				}
 
@@ -180,6 +183,10 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					)
 					reference = row[4]
 				}
+
+			// Column F - comments
+			case 5:
+				comment = strings.Trim(row[5], "<> ")
 
 			default:
 				continue
@@ -225,6 +232,8 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 						Author: author, Years: years, Reference: reference,
 					}
 					sp.Occurances = append(sp.Occurances, occ)
+				case 5:
+					sp.Comments = append(sp.Comments, comment)
 				}
 			}
 
