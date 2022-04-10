@@ -3,15 +3,11 @@ package main
 import (
 	"fmt"
 	"os"
-	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/xuri/excelize/v2"
 )
-
-var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
-var Dfgen_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}T\)`)
 
 type SpeciesDetail struct {
 	ID           int

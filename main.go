@@ -3,10 +3,15 @@ package main
 import (
 	"fmt"
 	"os"
+	"regexp"
 	"strings"
 
 	"gopkg.in/yaml.v2"
 )
+
+var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
+var Dfgen_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}T\)`)
+var Nupper_rx *regexp.Regexp = regexp.MustCompile(`([A-Z]+)`)
 
 func main() {
 	if len(os.Args) < 3 {
@@ -33,6 +38,23 @@ func main() {
 		}
 		fmt.Printf("%s", string(b))
 
+	case "genera":
+		var genera []*GenusDetail
+		for _, fn := range os.Args[2:] {
+			err := ParseGenera(fn, &genera)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "ParseGenera(): %s\n", err.Error())
+				os.Exit(1)
+			}
+		}
+
+		b, err := yaml.Marshal(genera)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "yaml.Marshal(): %s\n", err.Error())
+			os.Exit(1)
+		}
+		fmt.Printf("%s", string(b))
+
 	default:
 		fmt.Fprintf(os.Stderr, "invalid action: %s\n", os.Args[1])
 		PrintHelp()
@@ -44,4 +66,5 @@ func PrintHelp() {
 	fmt.Printf("usage: %s [action] [file ...]\n", os.Args[0])
 	fmt.Printf("available actions:\n")
 	fmt.Printf("       species (parse species files)\n")
+	fmt.Printf("       genera (parse genera files)\n")
 }
