@@ -8,33 +8,6 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-type SpeciesDetail struct {
-	ID           int
-	Name         string
-	Origin       string      `yaml:",omitempty"`
-	Author       string      `yaml:",omitempty"`
-	Reference    string      `yaml:",omitempty"`
-	DefinesGenus bool        `yaml:",omitempty"`
-	Year         int         `yaml:",omitempty"`
-	AltNames     []AltName   `yaml:",omitempty"`
-	Occurances   []Occurance `yaml:",omitempty"`
-	Comments     []string    `yaml:",omitempty"`
-}
-
-type AltName struct {
-	Name         string `yaml:",omitempty"`
-	Year         int    `yaml:",omitempty"`
-	Author       string `yaml:",omitempty"`
-	Reference    string `yaml:",omitempty"`
-	DefinesGenus bool   `yaml:",omitempty"`
-}
-
-type Occurance struct {
-	Author    string `yaml:",omitempty"`
-	Years     []int  `yaml:",flow,omitempty"`
-	Reference string `yaml:",omitempty"`
-}
-
 func main() {
 	if len(os.Args) < 3 {
 		fmt.Fprintf(os.Stderr, "action and/or filename(s) missing\n")

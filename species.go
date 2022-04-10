@@ -13,6 +13,33 @@ import (
 var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
 var Dfgen_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}T\)`)
 
+type SpeciesDetail struct {
+	ID           int
+	Name         string
+	Origin       string             `yaml:",omitempty"`
+	Author       string             `yaml:",omitempty"`
+	Reference    string             `yaml:",omitempty"`
+	DefinesGenus bool               `yaml:",omitempty"`
+	Year         int                `yaml:",omitempty"`
+	AltNames     []SpeciesAltName   `yaml:",omitempty"`
+	Occurances   []SpeciesOccurance `yaml:",omitempty"`
+	Comments     []string           `yaml:",omitempty"`
+}
+
+type SpeciesAltName struct {
+	Name         string `yaml:",omitempty"`
+	Year         int    `yaml:",omitempty"`
+	Author       string `yaml:",omitempty"`
+	Reference    string `yaml:",omitempty"`
+	DefinesGenus bool   `yaml:",omitempty"`
+}
+
+type SpeciesOccurance struct {
+	Author    string `yaml:",omitempty"`
+	Years     []int  `yaml:",flow,omitempty"`
+	Reference string `yaml:",omitempty"`
+}
+
 func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 	var sp *SpeciesDetail
 
@@ -222,13 +249,13 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 
 				switch curcol {
 				case 3:
-					alt := AltName{
+					alt := SpeciesAltName{
 						Name: name, Author: author, Reference: reference,
 						DefinesGenus: definesgenus, Year: year,
 					}
 					sp.AltNames = append(sp.AltNames, alt)
 				case 4:
-					occ := Occurance{
+					occ := SpeciesOccurance{
 						Author: author, Years: years, Reference: reference,
 					}
 					sp.Occurances = append(sp.Occurances, occ)
