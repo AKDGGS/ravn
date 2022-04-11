@@ -10,6 +10,7 @@ import (
 )
 
 var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
+var YearAB_rx *regexp.Regexp = regexp.MustCompile(`(\d{4})([a-z]{0,1})`)
 var Dfgen_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}T\)`)
 var Nupper_rx *regexp.Regexp = regexp.MustCompile(`([A-Z]+)`)
 
@@ -43,8 +44,7 @@ func main() {
 		for _, fn := range os.Args[2:] {
 			err := ParseGenera(fn, &genera)
 			if err != nil {
-				fmt.Fprintf(os.Stderr, "ParseGenera(): %s\n", err.Error())
-				os.Exit(1)
+				fmt.Fprintf(os.Stderr, "ParseGenera(%s): %s\n", fn, err.Error())
 			}
 		}
 
