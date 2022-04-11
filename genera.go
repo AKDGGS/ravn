@@ -157,7 +157,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 						nb.WriteString(r.Text)
 						continue
 					}
-					break;
+					break
 				}
 
 				name = strings.Trim(nb.String(), " ")
@@ -269,7 +269,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 						nb.WriteString(r.Text)
 						continue
 					}
-					break;
+					break
 				}
 				name = strings.Trim(nb.String(), " ")
 
