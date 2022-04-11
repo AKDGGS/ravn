@@ -52,10 +52,6 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 			switch {
 			case len(row[1]) > 0:
 				var name string
-				/*
-				var year int
-				var author string
-				*/
 
 				name = Nupper_rx.FindString(row[1])
 				fmt.Printf("%d [%s]\n", y+1, name)
