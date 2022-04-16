@@ -3,6 +3,8 @@ Blue - reported stratigraphic occurances
 Black - published species name
 Green - alternative name
 Purple is comment
+(N) - no illustrations available
+(R) - reworked
 
 "See corallinum" always at the end - links back around to genera
 "See also"
@@ -18,4 +20,4 @@ References are separate data from species/genera
 They are indexed as text line by line, parse out authors and year. First four digit number is the publication year. Everything before publication year is the author's. Everything after is "journal references"
 
 
-What's the meaning of the asterisk at the end of each species name line?
+What's the meaning of the asterisk at the end of each species name line? remove, means selected species name (Assumed)
