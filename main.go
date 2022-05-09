@@ -22,6 +22,23 @@ func main() {
 	}
 
 	switch strings.ToLower(os.Args[1]) {
+	case "taxon":
+		var taxons []*TaxonReference
+		for _, fn := range os.Args[2:] {
+			err := ParseTaxonReference(fn, &taxons)
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "ParseTaxonReference(): %s\n", err.Error())
+				os.Exit(1)
+			}
+		}
+
+		b, err := yaml.Marshal(taxons)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "yaml.Marshal(): %s\n", err.Error())
+			os.Exit(1)
+		}
+		fmt.Printf("%s", string(b))
+
 	case "species":
 		var species []*SpeciesDetail
 		for _, fn := range os.Args[2:] {
@@ -67,4 +84,5 @@ func PrintHelp() {
 	fmt.Printf("available actions:\n")
 	fmt.Printf("       species (parse species files)\n")
 	fmt.Printf("       genera (parse genera files)\n")
+	fmt.Printf("       taxon (parse taxon reference files)\n")
 }
