@@ -10,7 +10,7 @@ import (
 )
 
 var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
-var YearAB_rx *regexp.Regexp = regexp.MustCompile(`(\d{4})([a-z]{0,1})`)
+var YearAB_rx *regexp.Regexp = regexp.MustCompile(`(?:(\d{4})([a-z]{0,1})[;, ]*)+`)
 var Dfgen_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}T\)`)
 var Nupper_rx *regexp.Regexp = regexp.MustCompile(`([A-Z]+)`)
 
