@@ -26,9 +26,9 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 	scan.Split(bufio.ScanLines)
 
 	for ln := 1; scan.Scan(); ln++ {
-		var years []Year
-
 		line := scan.Text()
+
+		var years []Year
 		yidx := YearAB_rx.FindStringSubmatchIndex(line)
 		if len(yidx) < 1 {
 			fmt.Fprintf(os.Stderr,
@@ -47,8 +47,19 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 				)
 				continue
 			}
-			year := Year{ Year: yr, Ref: line[yidx[i+2]:yidx[i+3]] }
+			year := Year{Year: yr, Ref: line[yidx[i+2]:yidx[i+3]]}
 			years = append(years, year)
+		}
+
+		var reworked bool
+		for _, v := range Flags_rx.FindAllStringSubmatchIndex(line, -1) {
+			c := strings.ToLower(line[v[2]:v[3]])
+			switch c {
+			case "r":
+				reworked = true
+			default:
+				fmt.Printf("%s line %d unknown flag (%s)", fn, ln, c)
+			}
 		}
 
 		tx := &TaxonReference{
@@ -57,7 +68,8 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 			Reference: strings.TrimRight(
 				strings.TrimLeft(line[yidx[1]:], " ,.:"), " ",
 			),
-			Years: years,
+			Years:    years,
+			Reworked: reworked,
 		}
 
 		*refs = append(*refs, tx)
