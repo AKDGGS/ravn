@@ -27,10 +27,12 @@ type GenusAltName struct {
 }
 
 type GenusSpecies struct {
-	Name         string `yaml:",omitempty"`
-	Years        []Year `yaml:",flow,omitempty"`
-	Author       string `yaml:",omitempty"`
-	DefinesGenus bool   `yaml:",omitempty"`
+	Name            string `yaml:",omitempty"`
+	Years           []Year `yaml:",flow,omitempty"`
+	Author          string `yaml:",omitempty"`
+	DefinesGenus    bool   `yaml:",omitempty"`
+	NoIllustrations bool   `yaml:",omitempty"`
+	Reworked        bool   `yaml:",omitempty"`
 }
 
 type Year struct {
@@ -217,7 +219,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 			case len(row[4]) > 0:
 				var name string
 				var author string
-				var definesgenus bool
+				var definesgenus, noillustrations, reworked bool
 				var years []Year
 
 				if gd == nil || gd.Name == "" {
@@ -283,11 +285,22 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 
 				colv := row[4][nb.Len():]
 
-				// Detect if this species defines the genus
-				if nr := Dfgen_rx.ReplaceAllString(colv, ""); len(nr) != len(colv) {
-					definesgenus = true
-					colv = nr
-				}
+				colv = Flags_rx.ReplaceAllStringFunc(colv, func(m string) string {
+					for _, c := range m {
+						switch c {
+						case 'r', 'R':
+							reworked = true
+							return ""
+						case 't', 'T':
+							definesgenus = true
+							return ""
+						case 'n', 'N':
+							noillustrations = true
+							return ""
+						}
+					}
+					return ""
+				})
 
 				yidx := YearAB_rx.FindAllStringSubmatchIndex(colv, -1)
 				if len(yidx) > 0 {
@@ -309,7 +322,8 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 
 				gd.Species = append(gd.Species, GenusSpecies{
 					Name: name, Author: author, Years: years,
-					DefinesGenus: definesgenus,
+					DefinesGenus: definesgenus, NoIllustrations: noillustrations,
+					Reworked: reworked,
 				})
 			}
 		}

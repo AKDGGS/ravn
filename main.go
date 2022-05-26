@@ -11,8 +11,7 @@ import (
 
 var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
 var YearAB_rx *regexp.Regexp = regexp.MustCompile(`(?:(\d{4})([a-z]{0,1})[;, ]*)+`)
-var Flags_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}([TtRrNn])\)`)
-var Dfgen_rx *regexp.Regexp = regexp.MustCompile(`\(\*{0,1}T\)`)
+var Flags_rx *regexp.Regexp = regexp.MustCompile(` {0,1}\(\*{0,1}[TtRrNn]\)`)
 var Nupper_rx *regexp.Regexp = regexp.MustCompile(`([A-Z]+)`)
 
 func main() {

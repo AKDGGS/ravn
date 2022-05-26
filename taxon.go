@@ -13,7 +13,7 @@ type TaxonReference struct {
 	Years     []Year `yaml:",flow,omitempty"`
 	Reference string `yaml:",omitempty"`
 	Origin    string `yaml:",omitempty"`
-	Reworked  bool
+	Reworked  bool   `yaml:",omitempty"`
 }
 
 func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
@@ -52,15 +52,17 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 		}
 
 		var reworked bool
-		for _, v := range Flags_rx.FindAllStringSubmatchIndex(line, -1) {
-			c := strings.ToLower(line[v[2]:v[3]])
-			switch c {
-			case "r":
-				reworked = true
-			default:
-				fmt.Printf("%s line %d unknown flag (%s)", fn, ln, c)
+		line = Flags_rx.ReplaceAllStringFunc(line, func(m string) string {
+			for _, c := range m {
+				switch c {
+				case 'r', 'R':
+					reworked = true
+					return ""
+				}
 			}
-		}
+			fmt.Fprintf(os.Stderr, "%s line %d unknown flag\n", fn, ln)
+			return ""
+		})
 
 		tx := &TaxonReference{
 			Origin:  fmt.Sprintf("%s line %d", fn, ln),

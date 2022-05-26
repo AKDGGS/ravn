@@ -10,30 +10,37 @@ import (
 )
 
 type SpeciesDetail struct {
-	ID           int
-	Name         string
-	Origin       string             `yaml:",omitempty"`
-	Author       string             `yaml:",omitempty"`
-	Reference    string             `yaml:",omitempty"`
-	DefinesGenus bool               `yaml:",omitempty"`
-	Year         int                `yaml:",omitempty"`
-	AltNames     []SpeciesAltName   `yaml:",omitempty"`
-	Occurances   []SpeciesOccurance `yaml:",omitempty"`
-	Comments     []string           `yaml:",omitempty"`
+	ID              int
+	Name            string
+	Origin          string             `yaml:",omitempty"`
+	Author          string             `yaml:",omitempty"`
+	Reference       string             `yaml:",omitempty"`
+	DefinesGenus    bool               `yaml:",omitempty"`
+	NoIllustrations bool               `yaml:",omitempty"`
+	Reworked        bool               `yaml:",omitempty"`
+	Year            int                `yaml:",omitempty"`
+	AltNames        []SpeciesAltName   `yaml:",omitempty"`
+	Occurances      []SpeciesOccurance `yaml:",omitempty"`
+	Comments        []string           `yaml:",omitempty"`
 }
 
 type SpeciesAltName struct {
-	Name         string `yaml:",omitempty"`
-	Year         int    `yaml:",omitempty"`
-	Author       string `yaml:",omitempty"`
-	Reference    string `yaml:",omitempty"`
-	DefinesGenus bool   `yaml:",omitempty"`
+	Name            string `yaml:",omitempty"`
+	Year            int    `yaml:",omitempty"`
+	Author          string `yaml:",omitempty"`
+	Reference       string `yaml:",omitempty"`
+	DefinesGenus    bool   `yaml:",omitempty"`
+	NoIllustrations bool   `yaml:",omitempty"`
+	Reworked        bool   `yaml:",omitempty"`
 }
 
 type SpeciesOccurance struct {
-	Author    string `yaml:",omitempty"`
-	Years     []int  `yaml:",flow,omitempty"`
-	Reference string `yaml:",omitempty"`
+	Author          string `yaml:",omitempty"`
+	Years           []int  `yaml:",flow,omitempty"`
+	Reference       string `yaml:",omitempty"`
+	DefinesGenus    bool   `yaml:",omitempty"`
+	NoIllustrations bool   `yaml:",omitempty"`
+	Reworked        bool   `yaml:",omitempty"`
 }
 
 func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
@@ -55,7 +62,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 			var name string
 			var author string
 			var reference string
-			var definesgenus bool
+			var definesgenus, noillustrations, reworked bool
 			var year int
 			var years []int
 			var comment string
@@ -78,13 +85,14 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 			}
 
 			curcol := 0
-			if len(row[2]) > 0 {
+			switch {
+			case len(row[2]) > 0:
 				curcol = 2
-			} else if len(row[3]) > 0 {
+			case len(row[3]) > 0:
 				curcol = 3
-			} else if len(row[4]) > 0 {
+			case len(row[4]) > 0:
 				curcol = 4
-			} else if len(row[5]) > 0 {
+			case len(row[5]) > 0:
 				curcol = 5
 			}
 
@@ -142,10 +150,22 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					reference = strings.Trim(rb.String(), " ")
 				}
 
-				if nr := Dfgen_rx.ReplaceAllString(reference, ""); len(nr) != len(reference) {
-					definesgenus = true
-					reference = nr
-				}
+				reference = Flags_rx.ReplaceAllStringFunc(reference, func(m string) string {
+					for _, c := range m {
+						switch c {
+						case 'r', 'R':
+							reworked = true
+							return ""
+						case 't', 'T':
+							definesgenus = true
+							return ""
+						case 'n', 'N':
+							noillustrations = true
+							return ""
+						}
+					}
+					return ""
+				})
 
 				if si := strings.Index(reference, ";"); si >= 1 {
 					author = strings.Trim(reference[:si], " ,'")
@@ -174,8 +194,26 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 			case 4:
 				firstyr := -1
 				lastyr := -1
+				col := row[4]
 
-				vals := strings.Split(row[4], ",")
+				col = Flags_rx.ReplaceAllStringFunc(col, func(m string) string {
+					for _, c := range m {
+						switch c {
+						case 'r', 'R':
+							reworked = true
+							return ""
+						case 't', 'T':
+							definesgenus = true
+							return ""
+						case 'n', 'N':
+							noillustrations = true
+							return ""
+						}
+					}
+					return ""
+				})
+
+				vals := strings.Split(col, ",")
 				for i, val := range vals {
 					yrst := Year_rx.FindString(val)
 					if yrst != "" {
@@ -247,12 +285,15 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 				case 3:
 					alt := SpeciesAltName{
 						Name: name, Author: author, Reference: reference,
-						DefinesGenus: definesgenus, Year: year,
+						DefinesGenus: definesgenus, NoIllustrations: noillustrations,
+						Reworked: reworked, Year: year,
 					}
 					sp.AltNames = append(sp.AltNames, alt)
 				case 4:
 					occ := SpeciesOccurance{
 						Author: author, Years: years, Reference: reference,
+						DefinesGenus: definesgenus, NoIllustrations: noillustrations,
+						Reworked: reworked,
 					}
 					sp.Occurances = append(sp.Occurances, occ)
 				case 5:
@@ -273,6 +314,7 @@ func ParseSpecies(fn string, species *[]*SpeciesDetail) error {
 					sp = &SpeciesDetail{
 						ID: id, Name: name, Origin: fn, Author: author,
 						Reference: reference, DefinesGenus: definesgenus,
+						NoIllustrations: noillustrations, Reworked: reworked,
 						Year: year,
 					}
 
