@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"gopkg.in/yaml.v2"
+	"github.com/blevesearch/bleve/v2"
 )
 
 var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
@@ -95,6 +96,41 @@ func main() {
 				os.Exit(1)
 			}
 			fmt.Printf("%s", string(b))
+		} else {
+			index, err := bleve.Open("species.bleve")
+			if err == bleve.ErrorIndexPathDoesNotExist {
+				imap := bleve.NewIndexMapping()
+				id_f := bleve.NewNumericFieldMapping()
+				id_f.Store = false
+				id_f.Index = false
+				imap.DefaultMapping.AddFieldMappingsAt("ID", id_f)
+				index, err = bleve.New("species.bleve", imap)
+			}
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "bleve.New(): %s\n", err.Error())
+				os.Exit(1)
+			}
+			defer index.Close()
+
+			batch := index.NewBatch()
+			for _, sp := range species {
+				batch.Index(fmt.Sprintf("%d", sp.ID), sp)
+				if batch.Size() > 1000 {
+					err := index.Batch(batch)
+					if err != nil {
+						fmt.Fprintf(os.Stderr, "bleve.Batch(): %s\n", err.Error())
+						os.Exit(1)
+					}
+					batch = index.NewBatch()
+				}
+			}
+			if batch.Size() > 0 {
+				err := index.Batch(batch)
+				if err != nil {
+					fmt.Fprintf(os.Stderr, "bleve.Batch(): %s\n", err.Error())
+					os.Exit(1)
+				}
+			}
 		}
 
 	case "genera":
