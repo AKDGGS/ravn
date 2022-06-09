@@ -6,14 +6,16 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"path"
 )
 
 type TaxonReference struct {
 	Authors   string `yaml:",omitempty"`
 	Years     []Year `yaml:",flow,omitempty"`
 	Reference string `yaml:",omitempty"`
-	Origin    string `yaml:",omitempty"`
 	Reworked  bool   `yaml:",omitempty"`
+	File			string `yaml:",omitempty"`
+	Line      int
 }
 
 func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
@@ -65,13 +67,13 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 		})
 
 		tx := &TaxonReference{
-			Origin:  fmt.Sprintf("%s line %d", fn, ln),
 			Authors: strings.TrimRight(line[:yidx[0]], " "),
 			Reference: strings.TrimRight(
 				strings.TrimLeft(line[yidx[1]:], " ,.:"), " ",
 			),
 			Years:    years,
 			Reworked: reworked,
+			Line: ln, File: path.Base(fn),
 		}
 
 		*refs = append(*refs, tx)

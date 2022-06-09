@@ -59,7 +59,47 @@ func main() {
 				os.Exit(1)
 			}
 			fmt.Printf("%s", string(b))
+		} else {
+			index, err := bleve.Open("taxon.bleve")
+			if err == bleve.ErrorIndexPathDoesNotExist {
+				imap := bleve.NewIndexMapping()
+				line_f := bleve.NewNumericFieldMapping()
+				line_f.Store = false
+				line_f.Index = false
+				file_f := bleve.NewTextFieldMapping()
+				file_f.Store = false
+				file_f.Index = false
+				imap.DefaultMapping.AddFieldMappingsAt("Line", line_f)
+				imap.DefaultMapping.AddFieldMappingsAt("File", file_f)
+				index, err = bleve.New("taxon.bleve", imap)
+			}
+			if err != nil {
+				fmt.Fprintf(os.Stderr, "bleve.New(): %s\n", err.Error())
+				os.Exit(1)
+			}
+			defer index.Close()
+
+			batch := index.NewBatch()
+			for _, tx := range taxons {
+				batch.Index(fmt.Sprintf("%s-%d", tx.File, tx.Line), tx)
+				if batch.Size() > 1000 {
+					err := index.Batch(batch)
+					if err != nil {
+						fmt.Fprintf(os.Stderr, "bleve.Batch(): %s\n", err.Error())
+						os.Exit(1)
+					}
+					batch = index.NewBatch()
+				}
+			}
+			if batch.Size() > 0 {
+				err := index.Batch(batch)
+				if err != nil {
+					fmt.Fprintf(os.Stderr, "bleve.Batch(): %s\n", err.Error())
+					os.Exit(1)
+				}
+			}
 		}
+
 
 	case "species":
 		cmd := flag.NewFlagSet("species", flag.ExitOnError)
