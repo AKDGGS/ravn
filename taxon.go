@@ -4,9 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"path"
 	"strconv"
 	"strings"
-	"path"
 )
 
 type TaxonReference struct {
@@ -14,7 +14,7 @@ type TaxonReference struct {
 	Years     []Year `yaml:",flow,omitempty"`
 	Reference string `yaml:",omitempty"`
 	Reworked  bool   `yaml:",omitempty"`
-	File			string `yaml:",omitempty"`
+	File      string `yaml:",omitempty"`
 	Line      int
 }
 
@@ -73,7 +73,7 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 			),
 			Years:    years,
 			Reworked: reworked,
-			Line: ln, File: path.Base(fn),
+			Line:     ln, File: path.Base(fn),
 		}
 
 		*refs = append(*refs, tx)

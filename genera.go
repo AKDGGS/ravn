@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"path"
 	"strconv"
 	"strings"
 
@@ -12,23 +13,26 @@ import (
 type GenusDetail struct {
 	Name      string
 	Author    string         `yaml:",omitempty"`
-	Years     []Year         `yaml:",omitempty"`
+	Year      []int          `yaml:",omitempty"`
 	Reference string         `yaml:",omitempty"`
 	AltNames  []GenusAltName `yaml:",omitempty"`
 	Comments  []string       `yaml:",omitempty"`
 	Species   []GenusSpecies `yaml:",omitempty"`
+	File      string         `yaml:",omitempty"`
+	Sheet     string         `yaml:",omitempty"`
+	Line      int            `yaml:",omitempty"`
 }
 
 type GenusAltName struct {
 	Name      string `yaml:",omitempty"`
 	Author    string `yaml:",omitempty"`
-	Years     []Year `yaml:",omitempty"`
+	Year      []int  `yaml:",omitempty"`
 	Reference string `yaml:",omitempty"`
 }
 
 type GenusSpecies struct {
 	Name            string `yaml:",omitempty"`
-	Years           []Year `yaml:",flow,omitempty"`
+	Year            []int  `yaml:",flow,omitempty"`
 	Author          string `yaml:",omitempty"`
 	DefinesGenus    bool   `yaml:",omitempty"`
 	NoIllustrations bool   `yaml:",omitempty"`
@@ -66,7 +70,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 				var name string
 				var author string
 				var reference string
-				var years []Year
+				var years []int
 
 				colv := row[1]
 
@@ -97,7 +101,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 									fn, sheet, y+1, year,
 								)
 							} else {
-								years = append(years, Year{Year: year, Ref: colv[v[4]:v[5]]})
+								years = append(years, year)
 							}
 						}
 						colv = colv[:yidx[0][0]]
@@ -107,7 +111,8 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 				}
 
 				gd = &GenusDetail{
-					Name: name, Reference: reference, Years: years, Author: author,
+					Name: name, Reference: reference, Year: years, Author: author,
+					File: path.Base(fn), Sheet: sheet, Line: y + 1,
 				}
 				*genera = append(*genera, gd)
 
@@ -116,7 +121,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 				var name string
 				var author string
 				var reference string
-				var years []Year
+				var years []int
 
 				if gd == nil || gd.Name == "" {
 					fmt.Fprintf(os.Stderr,
@@ -189,7 +194,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 									fn, sheet, y+1, year,
 								)
 							} else {
-								years = append(years, Year{Year: year, Ref: colv[v[4]:v[5]]})
+								years = append(years, year)
 							}
 						}
 						colv = colv[:yidx[0][0]]
@@ -199,8 +204,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 				}
 
 				gd.AltNames = append(gd.AltNames, GenusAltName{
-					Name: name, Author: author, Reference: reference,
-					Years: years,
+					Name: name, Author: author, Reference: reference, Year: years,
 				})
 
 			// Column D - Comments
@@ -220,7 +224,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 				var name string
 				var author string
 				var definesgenus, noillustrations, reworked bool
-				var years []Year
+				var years []int
 
 				if gd == nil || gd.Name == "" {
 					fmt.Fprintf(os.Stderr,
@@ -312,7 +316,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 								fn, sheet, y+1, year,
 							)
 						} else {
-							years = append(years, Year{Year: year, Ref: colv[v[4]:v[5]]})
+							years = append(years, year)
 						}
 					}
 					colv = colv[:yidx[0][0]]
@@ -321,7 +325,7 @@ func ParseGenera(fn string, genera *[]*GenusDetail) error {
 				author = strings.Trim(colv, " ")
 
 				gd.Species = append(gd.Species, GenusSpecies{
-					Name: name, Author: author, Years: years,
+					Name: name, Author: author, Year: years,
 					DefinesGenus: definesgenus, NoIllustrations: noillustrations,
 					Reworked: reworked,
 				})
