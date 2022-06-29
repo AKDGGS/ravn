@@ -1,4 +1,5 @@
 Species files - reference details and reported stratigraphic occurances
+=======================================================================
 Blue - reported stratigraphic occurances
 Black - published species name
 Green - alternative name
@@ -9,15 +10,32 @@ Purple is comment
 "See corallinum" always at the end - links back around to genera
 "See also"
 
-Species genera -
+Species genera
+==============
 Blue - generic name (genus)
 Black - species under genus
 (T) means "Type Species" - species that defined that genus
 Purple is comment
 
-References -
+References
+==========
 References are separate data from species/genera
 They are indexed as text line by line, parse out authors and year. First four digit number is the publication year. Everything before publication year is the author's. Everything after is "journal references"
 
 
 What's the meaning of the asterisk at the end of each species name line? remove, means selected species name (Assumed)
+
+Searching
+=========
+Species name/alias
+Genus (from genera)
+Author
+Year
+
+Searching Display
+=================
+Preserve original presentation
+(Store style as markdown?)
+
+https://advance.science.sfu.ca/fungi/fossils/ .. Robert likes this database
+
