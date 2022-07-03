@@ -11,11 +11,11 @@ import (
 )
 
 type WebServer struct {
-	TaxonIndex    bleve.Index
-	SpeciesIndex  bleve.Index
-	GeneraIndex   bleve.Index
-	ListenAddress string
-	http          http.Server
+	ReferencesIndex bleve.Index
+	SpeciesIndex    bleve.Index
+	GeneraIndex     bleve.Index
+	ListenAddress   string
+	http            http.Server
 }
 
 func (srv *WebServer) Start() error {
@@ -61,12 +61,12 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(jb)
 
-	case "taxon.json":
+	case "references.json":
 		uq := r.URL.Query()
 		qv := uq.Get("q")
 		sreq := bleve.NewSearchRequest(bleve.NewQueryStringQuery(qv))
 		sreq.Fields = []string{"*"}
-		sres, err := srv.TaxonIndex.Search(sreq)
+		sres, err := srv.ReferencesIndex.Search(sreq)
 		if err != nil {
 			http.Error(
 				w, fmt.Sprintf("search error: %s", err.Error()),

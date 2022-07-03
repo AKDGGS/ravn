@@ -41,7 +41,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "bleve.Open(): %s\n", err.Error())
 			os.Exit(1)
 		}
-		tidx, err := bleve.Open("taxon.bleve")
+		tidx, err := bleve.Open("references.bleve")
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "bleve.Open(): %s\n", err.Error())
 			os.Exit(1)
@@ -54,15 +54,15 @@ func main() {
 
 		srv := WebServer{
 			ListenAddress: *laddr, SpeciesIndex: sidx,
-			TaxonIndex: tidx, GeneraIndex: gidx,
+			ReferencesIndex: tidx, GeneraIndex: gidx,
 		}
 		if err = srv.Start(); err != nil {
 			fmt.Fprintf(os.Stderr, "server.Start(): %s\n", err.Error())
 			os.Exit(1)
 		}
 
-	case "taxon":
-		cmd := flag.NewFlagSet("taxon", flag.ExitOnError)
+	case "references":
+		cmd := flag.NewFlagSet("references", flag.ExitOnError)
 		cmd.SetOutput(os.Stdout)
 		cmd.Usage = func() {
 			fmt.Fprintf(cmd.Output(),
@@ -80,24 +80,24 @@ func main() {
 			os.Exit(1)
 		}
 
-		var taxons []map[string][]interface{}
+		var refs []map[string][]interface{}
 		for _, fn := range cmd.Args() {
-			err := ParseTaxonReference(fn, &taxons)
+			err := ParseReferences(fn, &refs)
 			if err != nil {
-				fmt.Fprintf(os.Stderr, "ParseTaxonReference(): %s\n", err.Error())
+				fmt.Fprintf(os.Stderr, "ParseReference(): %s\n", err.Error())
 				os.Exit(1)
 			}
 		}
 
 		if *output_yaml {
-			b, err := yaml.Marshal(taxons)
+			b, err := yaml.Marshal(refs)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "yaml.Marshal(): %s\n", err.Error())
 				os.Exit(1)
 			}
 			fmt.Printf("%s", string(b))
 		} else {
-			index, err := bleve.Open("taxon.bleve")
+			index, err := bleve.Open("references.bleve")
 			if err == bleve.ErrorIndexPathDoesNotExist {
 				imap := bleve.NewIndexMapping()
 
@@ -113,7 +113,7 @@ func main() {
 				ath_f.IncludeInAll = false
 				imap.DefaultMapping.AddFieldMappingsAt("author", ath_f)
 
-				index, err = bleve.New("taxon.bleve", imap)
+				index, err = bleve.New("references.bleve", imap)
 			}
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "bleve.New(): %s\n", err.Error())
@@ -122,10 +122,10 @@ func main() {
 			defer index.Close()
 
 			batch := index.NewBatch()
-			for _, tx := range taxons {
-				id := tx["ID"][0].(string)
-				delete(tx, "ID")
-				batch.Index(id, tx)
+			for _, ref := range refs {
+				id := ref["ID"][0].(string)
+				delete(ref, "ID")
+				batch.Index(id, ref)
 				if batch.Size() > 1000 {
 					err := index.Batch(batch)
 					if err != nil {
@@ -334,6 +334,6 @@ func PrintHelp() {
 	fmt.Printf("available actions:\n")
 	fmt.Printf("       species (parse species files)\n")
 	fmt.Printf("       genera (parse genera files)\n")
-	fmt.Printf("       taxon (parse taxon reference files)\n")
+	fmt.Printf("       references (parse taxon reference files)\n")
 	fmt.Printf("       start (start web server for app)\n")
 }
