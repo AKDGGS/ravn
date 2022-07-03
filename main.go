@@ -33,7 +33,7 @@ func main() {
 			fmt.Fprintf(cmd.Output(), "options:\n")
 			cmd.PrintDefaults()
 		}
-		laddr := cmd.String("listen", "127.0.0.1:0", "start listening on address")
+		laddr := cmd.String("listen", "127.0.0.1:8080", "start listening on address")
 		cmd.Parse(os.Args[2:])
 
 		sidx, err := bleve.Open("species.bleve")
@@ -228,7 +228,7 @@ func main() {
 			os.Exit(1)
 		}
 
-		var genera []*GenusDetail
+		var genera []map[string][]interface{}
 		for _, fn := range cmd.Args() {
 			err := ParseGenera(fn, &genera)
 			if err != nil {
@@ -247,18 +247,43 @@ func main() {
 			index, err := bleve.Open("genera.bleve")
 			if err == bleve.ErrorIndexPathDoesNotExist {
 				imap := bleve.NewIndexMapping()
-				line_f := bleve.NewNumericFieldMapping()
-				line_f.Store = false
-				line_f.Index = false
-				file_f := bleve.NewTextFieldMapping()
-				file_f.Store = false
-				file_f.Index = false
-				sheet_f := bleve.NewTextFieldMapping()
-				sheet_f.Store = false
-				sheet_f.Index = false
-				imap.DefaultMapping.AddFieldMappingsAt("Line", line_f)
-				imap.DefaultMapping.AddFieldMappingsAt("File", file_f)
-				imap.DefaultMapping.AddFieldMappingsAt("Sheet", sheet_f)
+
+				yr_f := bleve.NewNumericFieldMapping()
+				yr_f.Store = false
+				yr_f.Index = true
+				yr_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("year", yr_f)
+
+				spc_f := bleve.NewTextFieldMapping()
+				spc_f.Store = false
+				spc_f.Index = true
+				spc_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("species", spc_f)
+
+				ath_f := bleve.NewTextFieldMapping()
+				ath_f.Store = false
+				ath_f.Index = true
+				ath_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("author", ath_f)
+
+				genus_f := bleve.NewTextFieldMapping()
+				genus_f.Store = false
+				genus_f.Index = true
+				genus_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("genus", genus_f)
+
+				spcyr_f := bleve.NewNumericFieldMapping()
+				spcyr_f.Store = false
+				spcyr_f.Index = true
+				spcyr_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("speciesyear", spc_f)
+
+				spcath_f := bleve.NewTextFieldMapping()
+				spcath_f.Store = false
+				spcath_f.Index = true
+				spcath_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("speciesauthor", spc_f)
+
 				index, err = bleve.New("genera.bleve", imap)
 			}
 			if err != nil {
@@ -269,7 +294,9 @@ func main() {
 
 			batch := index.NewBatch()
 			for _, gr := range genera {
-				batch.Index(fmt.Sprintf("%s-%s-%d", gr.File, gr.Sheet, gr.Line), gr)
+				id := gr["ID"][0].(string)
+				delete(gr, "ID")
+				batch.Index(id, gr)
 				if batch.Size() > 1000 {
 					err := index.Batch(batch)
 					if err != nil {
