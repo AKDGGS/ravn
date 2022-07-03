@@ -41,7 +41,9 @@ func ParseGenera(fn string, genera *[]map[string][]interface{}) error {
 				colv := strings.TrimSpace(row[1])
 
 				gd = make(map[string][]interface{})
-				gd["ID"] = append(gd["ID"], fmt.Sprintf("%s/%s/%d", path.Base(fn), sheet, y+1))
+				gd["ID"] = append(gd["ID"], fmt.Sprintf("%s/%d",
+					strings.TrimSuffix(path.Base(fn), path.Ext(fn)), y+1),
+				)
 				gd["genus_source"] = append(gd["genus_source"], colv)
 
 				nidx := Nupper_rx.FindStringIndex(colv)

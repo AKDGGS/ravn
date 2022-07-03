@@ -6,6 +6,7 @@ import (
 	"net"
 	"net/http"
 	"path"
+	"strconv"
 
 	"github.com/blevesearch/bleve/v2"
 )
@@ -37,11 +38,11 @@ func (srv *WebServer) Start() error {
 func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	switch path.Base(r.URL.Path) {
 	case "genera.json":
-		uq := r.URL.Query()
-		qv := uq.Get("q")
-		sreq := bleve.NewSearchRequest(bleve.NewQueryStringQuery(qv))
-		sreq.Fields = []string{"*"}
-		sres, err := srv.GeneraIndex.Search(sreq)
+		q := r.URL.Query()
+		sres, err := searchIndex(
+			srv.GeneraIndex, []string{"genus_source", "alt_source"},
+			q.Get("q"), q.Get("s"), q.Get("f"),
+		)
 		if err != nil {
 			http.Error(
 				w, fmt.Sprintf("search error: %s", err.Error()),
@@ -62,11 +63,11 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.Write(jb)
 
 	case "references.json":
-		uq := r.URL.Query()
-		qv := uq.Get("q")
-		sreq := bleve.NewSearchRequest(bleve.NewQueryStringQuery(qv))
-		sreq.Fields = []string{"*"}
-		sres, err := srv.ReferencesIndex.Search(sreq)
+		q := r.URL.Query()
+		sres, err := searchIndex(
+			srv.ReferencesIndex, []string{"*"},
+			q.Get("q"), q.Get("s"), q.Get("f"),
+		)
 		if err != nil {
 			http.Error(
 				w, fmt.Sprintf("search error: %s", err.Error()),
@@ -89,4 +90,41 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	default:
 		http.Error(w, "File not found", http.StatusNotFound)
 	}
+}
+
+func searchIndex(idx bleve.Index, fields []string, q, sz, fr string) (map[string]interface{}, error) {
+	size, _ := strconv.Atoi(sz)
+	if size < 1 {
+		size = 25
+	}
+	from, _ := strconv.Atoi(fr)
+	if from < 0 {
+		from = 0
+	}
+
+	sreq := bleve.NewSearchRequest(bleve.NewQueryStringQuery(q))
+	sreq.Fields = fields
+	sreq.Size = size
+	sreq.From = from
+	sres, err := idx.Search(sreq)
+	if err != nil {
+		return nil, err
+	}
+
+	hits := make([]map[string]interface{}, 0)
+	for _, hit := range sres.Hits {
+		r := make(map[string]interface{})
+		for k, v := range hit.Fields {
+			r[k] = v
+		}
+		r["id"] = hit.ID
+		hits = append(hits, r)
+	}
+
+	wrap := make(map[string]interface{}, 0)
+	wrap["hits"] = hits
+	wrap["total"] = sres.Total
+	wrap["time"] = sres.Took.String()
+
+	return wrap, nil
 }

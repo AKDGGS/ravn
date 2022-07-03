@@ -46,7 +46,9 @@ func ParseReferences(fn string, refs *[]map[string][]interface{}) error {
 		}
 
 		ref["author"] = append(ref["author"], strings.TrimSpace(line[:yidx[0]]))
-		ref["ID"] = append(ref["ID"], fmt.Sprintf("%s/%d", path.Base(fn), ln))
+		ref["ID"] = append(ref["ID"], fmt.Sprintf("%s/%d",
+			strings.TrimSuffix(path.Base(fn), path.Ext(fn)), ln,
+		))
 		*refs = append(*refs, ref)
 	}
 	return nil
