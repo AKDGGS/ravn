@@ -9,16 +9,7 @@ import (
 	"strings"
 )
 
-type TaxonReference struct {
-	Authors   string `yaml:",omitempty"`
-	Years     []Year `yaml:",flow,omitempty"`
-	Reference string `yaml:",omitempty"`
-	Reworked  bool   `yaml:",omitempty"`
-	File      string `yaml:",omitempty"`
-	Line      int
-}
-
-func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
+func ParseTaxonReference(fn string, taxons *[]map[string][]interface{}) error {
 	f, err := os.Open(fn)
 	if err != nil {
 		return err
@@ -28,9 +19,9 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 	scan.Split(bufio.ScanLines)
 
 	for ln := 1; scan.Scan(); ln++ {
-		line := scan.Text()
+		tx := make(map[string][]interface{}, 0)
 
-		var years []Year
+		line := scan.Text()
 		yidx := YearAB_rx.FindStringSubmatchIndex(line)
 		if len(yidx) < 1 {
 			fmt.Fprintf(os.Stderr,
@@ -39,6 +30,8 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 			)
 			continue
 		}
+
+		tx["source"] = append(tx["source"], line)
 
 		for i := 2; i < len(yidx); i += 4 {
 			yr, _ := strconv.Atoi(line[yidx[i]:yidx[i+1]])
@@ -49,34 +42,12 @@ func ParseTaxonReference(fn string, refs *[]*TaxonReference) error {
 				)
 				continue
 			}
-			year := Year{Year: yr, Ref: line[yidx[i+2]:yidx[i+3]]}
-			years = append(years, year)
+			tx["year"] = append(tx["year"], yr)
 		}
 
-		var reworked bool
-		line = Flags_rx.ReplaceAllStringFunc(line, func(m string) string {
-			for _, c := range m {
-				switch c {
-				case 'r', 'R':
-					reworked = true
-					return ""
-				}
-			}
-			fmt.Fprintf(os.Stderr, "%s line %d unknown flag\n", fn, ln)
-			return ""
-		})
-
-		tx := &TaxonReference{
-			Authors: strings.TrimRight(line[:yidx[0]], " "),
-			Reference: strings.TrimRight(
-				strings.TrimLeft(line[yidx[1]:], " ,.:"), " ",
-			),
-			Years:    years,
-			Reworked: reworked,
-			Line:     ln, File: path.Base(fn),
-		}
-
-		*refs = append(*refs, tx)
+		tx["author"] = append(tx["author"], strings.TrimSpace(line[:yidx[0]]))
+		tx["ID"] = append(tx["ID"], fmt.Sprintf("%s/%d", path.Base(fn), ln))
+		*taxons = append(*taxons, tx)
 	}
 	return nil
 }

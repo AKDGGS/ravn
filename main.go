@@ -80,7 +80,7 @@ func main() {
 			os.Exit(1)
 		}
 
-		var taxons []*TaxonReference
+		var taxons []map[string][]interface{}
 		for _, fn := range cmd.Args() {
 			err := ParseTaxonReference(fn, &taxons)
 			if err != nil {
@@ -100,14 +100,19 @@ func main() {
 			index, err := bleve.Open("taxon.bleve")
 			if err == bleve.ErrorIndexPathDoesNotExist {
 				imap := bleve.NewIndexMapping()
-				line_f := bleve.NewNumericFieldMapping()
-				line_f.Store = false
-				line_f.Index = false
-				file_f := bleve.NewTextFieldMapping()
-				file_f.Store = false
-				file_f.Index = false
-				imap.DefaultMapping.AddFieldMappingsAt("Line", line_f)
-				imap.DefaultMapping.AddFieldMappingsAt("File", file_f)
+
+				yr_f := bleve.NewNumericFieldMapping()
+				yr_f.Store = false
+				yr_f.Index = true
+				yr_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("year", yr_f)
+
+				ath_f := bleve.NewTextFieldMapping()
+				ath_f.Store = false
+				ath_f.Index = true
+				ath_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("author", ath_f)
+
 				index, err = bleve.New("taxon.bleve", imap)
 			}
 			if err != nil {
@@ -118,7 +123,9 @@ func main() {
 
 			batch := index.NewBatch()
 			for _, tx := range taxons {
-				batch.Index(fmt.Sprintf("%s-%d", tx.File, tx.Line), tx)
+				id := tx["ID"][0].(string)
+				delete(tx, "ID")
+				batch.Index(id, tx)
 				if batch.Size() > 1000 {
 					err := index.Batch(batch)
 					if err != nil {
@@ -328,4 +335,5 @@ func PrintHelp() {
 	fmt.Printf("       species (parse species files)\n")
 	fmt.Printf("       genera (parse genera files)\n")
 	fmt.Printf("       taxon (parse taxon reference files)\n")
+	fmt.Printf("       start (start web server for app)\n")
 }

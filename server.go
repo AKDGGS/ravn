@@ -61,6 +61,31 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(jb)
 
+	case "taxon.json":
+		uq := r.URL.Query()
+		qv := uq.Get("q")
+		sreq := bleve.NewSearchRequest(bleve.NewQueryStringQuery(qv))
+		sreq.Fields = []string{"*"}
+		sres, err := srv.TaxonIndex.Search(sreq)
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("search error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+
+		jb, err := json.Marshal(sres)
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("json error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+		w.Header().Set("Content-Type", "application/json")
+		w.Write(jb)
+
 	default:
 		http.Error(w, "File not found", http.StatusNotFound)
 	}
