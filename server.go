@@ -90,7 +90,7 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case "species.json":
 		q := r.URL.Query()
 		sres, err := searchIndex(
-			srv.SpeciesIndex, []string{"source","alt_source"},
+			srv.SpeciesIndex, []string{"source", "alt_source"},
 			q.Get("q"), q.Get("s"), q.Get("f"),
 		)
 		if err != nil {

@@ -4,9 +4,7 @@ import (
 	"regexp"
 )
 
-var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
 var YearAB_rx *regexp.Regexp = regexp.MustCompile(`(?:(\d{4})([a-z]{0,1})[;, ]*)+`)
-var Flags_rx *regexp.Regexp = regexp.MustCompile(` {0,1}\(\*{0,1}[TtRrNn]\)`)
 var Nupper_rx *regexp.Regexp = regexp.MustCompile(`([A-Z]+)`)
 
 func Levenshtein(str1, str2 string) int {
@@ -71,21 +69,21 @@ func eq(a, b []rune) bool {
 
 func appendMap(m map[string]interface{}, k string, v interface{}) {
 	switch t := v.(type) {
-		case string:
-			if a, ok := m[k].([]string); ok {
-				m[k] = append(a, t)
-			} else if s, ok := m[k].(string); ok {
-				m[k] = []string{s, t}
-			} else {
-				m[k] = t
-			}
-		case int:
-			if a, ok := m[k].([]int); ok {
-				m[k] = append(a, t)
-			} else if i, ok := m[k].(int); ok {
-				m[k] = []int{i, t}
-			} else {
-				m[k] = t
-			}
+	case string:
+		if a, ok := m[k].([]string); ok {
+			m[k] = append(a, t)
+		} else if s, ok := m[k].(string); ok {
+			m[k] = []string{s, t}
+		} else {
+			m[k] = t
+		}
+	case int:
+		if a, ok := m[k].([]int); ok {
+			m[k] = append(a, t)
+		} else if i, ok := m[k].(int); ok {
+			m[k] = []int{i, t}
+		} else {
+			m[k] = t
+		}
 	}
 }
