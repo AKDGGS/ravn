@@ -4,17 +4,11 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"regexp"
 	"strings"
 
 	"github.com/blevesearch/bleve/v2"
 	"gopkg.in/yaml.v2"
 )
-
-var Year_rx *regexp.Regexp = regexp.MustCompile(`\d{4}`)
-var YearAB_rx *regexp.Regexp = regexp.MustCompile(`(?:(\d{4})([a-z]{0,1})[;, ]*)+`)
-var Flags_rx *regexp.Regexp = regexp.MustCompile(` {0,1}\(\*{0,1}[TtRrNn]\)`)
-var Nupper_rx *regexp.Regexp = regexp.MustCompile(`([A-Z]+)`)
 
 func main() {
 	if len(os.Args) < 2 {
@@ -163,7 +157,7 @@ func main() {
 			os.Exit(1)
 		}
 
-		var species []*SpeciesDetail
+		var species []map[string]interface{}
 		for _, fn := range cmd.Args() {
 			err := ParseSpecies(fn, &species)
 			if err != nil {
@@ -183,10 +177,25 @@ func main() {
 			index, err := bleve.Open("species.bleve")
 			if err == bleve.ErrorIndexPathDoesNotExist {
 				imap := bleve.NewIndexMapping()
-				id_f := bleve.NewNumericFieldMapping()
-				id_f.Store = false
-				id_f.Index = false
-				imap.DefaultMapping.AddFieldMappingsAt("ID", id_f)
+
+				yr_f := bleve.NewNumericFieldMapping()
+				yr_f.Store = false
+				yr_f.Index = true
+				yr_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("year", yr_f)
+
+				ath_f := bleve.NewTextFieldMapping()
+				ath_f.Store = false
+				ath_f.Index = true
+				ath_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("author", ath_f)
+
+				sp_f := bleve.NewTextFieldMapping()
+				sp_f.Store = false
+				sp_f.Index = true
+				sp_f.IncludeInAll = false
+				imap.DefaultMapping.AddFieldMappingsAt("species", sp_f)
+
 				index, err = bleve.New("species.bleve", imap)
 			}
 			if err != nil {
@@ -197,7 +206,9 @@ func main() {
 
 			batch := index.NewBatch()
 			for _, sp := range species {
-				batch.Index(fmt.Sprintf("%d", sp.ID), sp)
+				id := sp["ID"].(string)
+				delete(sp, "ID")
+				batch.Index(id, sp)
 				if batch.Size() > 1000 {
 					err := index.Batch(batch)
 					if err != nil {

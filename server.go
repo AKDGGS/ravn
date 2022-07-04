@@ -87,6 +87,31 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(jb)
 
+	case "species.json":
+		q := r.URL.Query()
+		sres, err := searchIndex(
+			srv.SpeciesIndex, []string{"source","alt_source"},
+			q.Get("q"), q.Get("s"), q.Get("f"),
+		)
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("search error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+
+		jb, err := json.Marshal(sres)
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("json error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+		w.Header().Set("Content-Type", "application/json")
+		w.Write(jb)
+
 	default:
 		http.Error(w, "File not found", http.StatusNotFound)
 	}
