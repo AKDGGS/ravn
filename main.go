@@ -74,7 +74,7 @@ func main() {
 			os.Exit(1)
 		}
 
-		var refs []map[string][]interface{}
+		var refs []map[string]interface{}
 		for _, fn := range cmd.Args() {
 			err := ParseReferences(fn, &refs)
 			if err != nil {
@@ -117,7 +117,7 @@ func main() {
 
 			batch := index.NewBatch()
 			for _, ref := range refs {
-				id := ref["ID"][0].(string)
+				id := ref["ID"].(string)
 				delete(ref, "ID")
 				batch.Index(id, ref)
 				if batch.Size() > 1000 {
