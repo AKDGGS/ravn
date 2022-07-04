@@ -228,7 +228,7 @@ func main() {
 		}
 
 	case "genera":
-		cmd := flag.NewFlagSet("species", flag.ExitOnError)
+		cmd := flag.NewFlagSet("genera", flag.ExitOnError)
 		cmd.SetOutput(os.Stdout)
 		cmd.Usage = func() {
 			fmt.Fprintf(cmd.Output(),
@@ -246,7 +246,7 @@ func main() {
 			os.Exit(1)
 		}
 
-		var genera []map[string][]interface{}
+		var genera []map[string]interface{}
 		for _, fn := range cmd.Args() {
 			err := ParseGenera(fn, &genera)
 			if err != nil {
@@ -312,7 +312,7 @@ func main() {
 
 			batch := index.NewBatch()
 			for _, gr := range genera {
-				id := gr["ID"][0].(string)
+				id := gr["ID"].(string)
 				delete(gr, "ID")
 				batch.Index(id, gr)
 				if batch.Size() > 1000 {

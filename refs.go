@@ -39,7 +39,7 @@ func ParseReferences(fn string, refs *[]map[string]interface{}) error {
 		}
 
 		*refs = append(*refs, map[string]interface{}{
-			"ID": fmt.Sprintf("%s/%d",
+			"ID": fmt.Sprintf("%s.%d",
 				strings.TrimSuffix(path.Base(fn), path.Ext(fn)), ln,
 			),
 			"year": yr, "source": line,

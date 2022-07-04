@@ -52,7 +52,6 @@ func ParseSpecies(fn string, species *[]map[string]interface{}) error {
 						)
 						continue
 					}
-					*species = append(*species, sp)
 				}
 
 				sp = make(map[string]interface{})
@@ -61,6 +60,7 @@ func ParseSpecies(fn string, species *[]map[string]interface{}) error {
 				if err := parse_species(f, fn, sheet, 3, y+1, &sp); err != nil {
 					return err
 				}
+				*species = append(*species, sp)
 
 			// Column D - species alt names
 			case len(row) > 3 && len(row[3]) > 0:
@@ -101,11 +101,6 @@ func ParseSpecies(fn string, species *[]map[string]interface{}) error {
 			}
 		}
 	}
-	// Keep the last species found
-	if _, ok := sp["ID"]; ok {
-		*species = append(*species, sp)
-	}
-
 	return nil
 }
 

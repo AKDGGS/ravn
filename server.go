@@ -40,7 +40,7 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case "genera.json":
 		q := r.URL.Query()
 		sres, err := searchIndex(
-			srv.GeneraIndex, []string{"genus_source", "alt_source"},
+			srv.GeneraIndex, []string{"source", "alt_source"},
 			q.Get("q"), q.Get("s"), q.Get("f"),
 		)
 		if err != nil {

@@ -10,13 +10,8 @@ import (
 	"github.com/xuri/excelize/v2"
 )
 
-type Year struct {
-	Year int    `yaml:",omitempty"`
-	Ref  string `yaml:",omitempty"`
-}
-
-func ParseGenera(fn string, genera *[]map[string][]interface{}) error {
-	var gd map[string][]interface{}
+func ParseGenera(fn string, genera *[]map[string]interface{}) error {
+	var gd map[string]interface{}
 
 	f, err := excelize.OpenFile(fn)
 	if err != nil {
@@ -37,14 +32,9 @@ func ParseGenera(fn string, genera *[]map[string][]interface{}) error {
 
 			switch {
 			// Column B - Genus definition
-			case len(row[1]) > 0:
+			case len(row) > 1 && len(row[1]) > 0:
+				gd = make(map[string]interface{})
 				colv := strings.TrimSpace(row[1])
-
-				gd = make(map[string][]interface{})
-				gd["ID"] = append(gd["ID"], fmt.Sprintf("%s/%d",
-					strings.TrimSuffix(path.Base(fn), path.Ext(fn)), y+1),
-				)
-				gd["genus_source"] = append(gd["genus_source"], colv)
 
 				nidx := Nupper_rx.FindStringIndex(colv)
 				if len(nidx) < 1 {
@@ -52,47 +42,54 @@ func ParseGenera(fn string, genera *[]map[string][]interface{}) error {
 						"%s %s row %d no uppercase genus name\n",
 						fn, sheet, y+1,
 					)
+					continue
 				}
-				gd["genus"] = append(gd["genus"], colv[nidx[0]:nidx[1]])
+
+				gd["ID"] = fmt.Sprintf("%s.%d", path.Base(fn)[0:1], y+1)
+				gd["source"] = colv
+				gd["genus"] = colv[nidx[0]:nidx[1]]
+
 				if len(colv) > (nidx[1] + 1) {
 					colv = colv[nidx[1]+1:]
 
-					spidx := strings.Index(colv, ";")
-					if spidx >= 0 && len(colv) > (spidx+1) {
-						colv = colv[:spidx]
-					}
-
-					yidx := YearAB_rx.FindAllStringSubmatchIndex(colv, -1)
-					if len(yidx) > 0 {
-						for _, v := range yidx {
-							year, _ := strconv.Atoi(colv[v[2]:v[3]])
-							if year > 2022 || year < 1800 {
-								fmt.Fprintf(os.Stderr,
-									"%s %s row %d invalid year (%d), missing semicolon?\n",
-									fn, sheet, y+1, year,
-								)
-							} else {
-								gd["year"] = append(gd["year"], year)
-							}
+					yidx := YearAB_rx.FindStringSubmatchIndex(colv)
+					if len(yidx) < 1 {
+						sidx := strings.Index(colv, ";")
+						if sidx == -1 {
+							fmt.Fprintf(os.Stderr,
+								"%s line %d missing both year and semicolon\n",
+								fn, y+1,
+							)
+							return nil
 						}
-						colv = colv[:yidx[0][0]]
+						appendMap(gd, "author", strings.Trim(colv[0:sidx], ", "))
+					} else {
+						appendMap(gd, "author", strings.Trim(colv[0:yidx[0]], ", "))
+
+						yr, _ := strconv.Atoi(colv[yidx[2]:yidx[3]])
+						if yr > 2022 || yr < 1800 {
+							fmt.Fprintf(os.Stderr,
+								"%s line %d invalid year (%d)\n",
+								fn, y+1, yr,
+							)
+						} else {
+							appendMap(gd, "year", yr)
+						}
 					}
-
-					gd["author"] = append(gd["author"], strings.Trim(colv, " ,"))
 				}
-
 				*genera = append(*genera, gd)
 
 			// Column C - Alt Names
-			case len(row[2]) > 0:
-				if _, ok := gd["genus"]; !ok {
+			case len(row) > 2 && len(row[2]) > 0:
+				if _, ok := gd["ID"]; !ok {
 					fmt.Fprintf(os.Stderr,
 						"%s %s row %d alt name before genus definition\n",
 						fn, sheet, y+1,
 					)
 					continue
 				}
-				gd["alt_source"] = append(gd["alt_source"], strings.TrimSpace(row[2]))
+
+				appendMap(gd, "alt_source", strings.TrimSpace(row[2]))
 
 				n, err := excelize.CoordinatesToCellName(3, y+1)
 				if err != nil {
@@ -138,54 +135,58 @@ func ParseGenera(fn string, genera *[]map[string][]interface{}) error {
 					)
 					continue
 				}
-				gd["genus"] = append(gd["genus"], name)
+				appendMap(gd, "genus", name)
 
 				if len(row[2]) > nb.Len() {
 					colv := row[2][nb.Len():]
-					spidx := strings.Index(colv, ";")
-					if spidx >= 0 && len(colv) > (spidx+1) {
-						colv = colv[:spidx]
-					}
 
-					yidx := YearAB_rx.FindAllStringSubmatchIndex(colv, -1)
-					if len(yidx) > 0 {
-						for _, v := range yidx {
-							year, _ := strconv.Atoi(colv[v[2]:v[3]])
-							if year > 2022 || year < 1800 {
-								fmt.Fprintf(os.Stderr,
-									"%s %s row %d invalid year (%d), missing semicolon?\n",
-									fn, sheet, y+1, year,
-								)
-							} else {
-								gd["year"] = append(gd["year"], year)
-							}
+					yidx := YearAB_rx.FindStringSubmatchIndex(colv)
+					if len(yidx) < 1 {
+						sidx := strings.Index(colv, ";")
+						if sidx == -1 {
+							fmt.Fprintf(os.Stderr,
+								"%s line %d missing both year and semicolon\n",
+								fn, y+1,
+							)
+							return nil
 						}
-						colv = colv[:yidx[0][0]]
+						appendMap(gd, "author", strings.Trim(colv[0:sidx], ", "))
+					} else {
+						appendMap(gd, "author", strings.Trim(colv[0:yidx[0]], ", "))
+
+						yr, _ := strconv.Atoi(colv[yidx[2]:yidx[3]])
+						if yr > 2022 || yr < 1800 {
+							fmt.Fprintf(os.Stderr,
+								"%s line %d invalid year (%d)\n",
+								fn, y+1, yr,
+							)
+						} else {
+							appendMap(gd, "year", yr)
+						}
 					}
-					gd["author"] = append(gd["author"], strings.Trim(colv, " ,"))
 				}
 
 			// Column D - Comments
-			case len(row[3]) > 0:
-				if _, ok := gd["genus"]; !ok {
+			case len(row) > 3 && len(row[3]) > 0:
+				if _, ok := gd["ID"]; !ok {
 					fmt.Fprintf(os.Stderr,
 						"%s %s row %d comment before genus definition\n",
 						fn, sheet, y+1,
 					)
 					continue
 				}
-				gd["comment"] = append(gd["comment"], strings.Trim(row[3], "<> "))
+				appendMap(gd, "comment", strings.Trim(row[3], "<> "))
 
 			// Column E - Species
-			case len(row[4]) > 0:
-				if _, ok := gd["genus"]; !ok {
+			case len(row) > 4 && len(row[4]) > 0:
+				if _, ok := gd["ID"]; !ok {
 					fmt.Fprintf(os.Stderr,
 						"%s %s row %d species before genus definition\n",
 						fn, sheet, y+1,
 					)
 					continue
 				}
-				gd["species_source"] = append(gd["species_source"], strings.TrimSpace(row[4]))
+				appendMap(gd, "species_source", strings.TrimSpace(row[4]))
 
 				n, err := excelize.CoordinatesToCellName(5, y+1)
 				if err != nil {
@@ -238,7 +239,7 @@ func ParseGenera(fn string, genera *[]map[string][]interface{}) error {
 					)
 					continue
 				}
-				gd["species"] = append(gd["species"], name)
+				appendMap(gd, "species", name)
 
 				colv := row[4][nb.Len():]
 
@@ -252,12 +253,12 @@ func ParseGenera(fn string, genera *[]map[string][]interface{}) error {
 								fn, sheet, y+1, year,
 							)
 						} else {
-							gd["speciesyear"] = append(gd["speciesyear"], year)
+							appendMap(gd, "speciesyear", year)
 						}
 					}
 					colv = colv[:yidx[0][0]]
 				}
-				gd["speciesauthor"] = append(gd["speciesauthor"], strings.Trim(colv, " "))
+				appendMap(gd, "speciesauthor", strings.Trim(colv, ", "))
 			}
 		}
 	}
