@@ -8,6 +8,8 @@ import (
 	"path"
 	"strconv"
 
+	"ravn/assets"
+
 	"github.com/blevesearch/bleve/v2"
 )
 
@@ -37,6 +39,9 @@ func (srv *WebServer) Start() error {
 
 func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	switch path.Base(r.URL.Path) {
+	case "/", "index.html":
+		assets.ServeStatic("html/index.html", w, r)
+
 	case "genera.json":
 		q := r.URL.Query()
 		sres, err := searchIndex(
