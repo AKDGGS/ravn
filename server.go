@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"path"
 	"strconv"
+	"strings"
 
 	"ravn/assets"
 
@@ -42,11 +43,14 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case "/", "index.html":
 		assets.ServeStatic("html/index.html", w, r)
 
+	case "search.js":
+		assets.ServeStatic("js/search.js", w, r)
+
 	case "genera.json":
 		q := r.URL.Query()
 		sres, err := searchIndex(
 			srv.GeneraIndex, []string{"source", "alt_source"},
-			q.Get("q"), q.Get("s"), q.Get("f"),
+			q.Get("q"), q.Get("z"), q.Get("f"),
 		)
 		if err != nil {
 			http.Error(
@@ -71,7 +75,7 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		q := r.URL.Query()
 		sres, err := searchIndex(
 			srv.ReferencesIndex, []string{"*"},
-			q.Get("q"), q.Get("s"), q.Get("f"),
+			q.Get("q"), q.Get("z"), q.Get("f"),
 		)
 		if err != nil {
 			http.Error(
@@ -96,7 +100,7 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		q := r.URL.Query()
 		sres, err := searchIndex(
 			srv.SpeciesIndex, []string{"source", "alt_source"},
-			q.Get("q"), q.Get("s"), q.Get("f"),
+			q.Get("q"), q.Get("z"), q.Get("f"),
 		)
 		if err != nil {
 			http.Error(
@@ -132,7 +136,9 @@ func searchIndex(idx bleve.Index, fields []string, q, sz, fr string) (map[string
 		from = 0
 	}
 
-	sreq := bleve.NewSearchRequest(bleve.NewQueryStringQuery(q))
+	sreq := bleve.NewSearchRequest(
+		bleve.NewQueryStringQuery(strings.ToLower(q)),
+	)
 	sreq.Fields = fields
 	sreq.Size = size
 	sreq.From = from

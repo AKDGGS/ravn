@@ -30,7 +30,7 @@ func main() {
 			cmd.PrintDefaults()
 		}
 		laddr := cmd.String("listen", "127.0.0.1:8080", "start listening on address")
-		assetpath := flag.String("assets", "", "override embedded assets with assets from path")
+		assetpath := cmd.String("assets", "", "override embedded assets with assets from path")
 		cmd.Parse(os.Args[2:])
 
 		if assetpath != nil {

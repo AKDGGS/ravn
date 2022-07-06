@@ -9,7 +9,7 @@ import (
 
 var external_fs fs.FS
 
-//go:embed html/*
+//go:embed html/* js/*
 var embedded_fs embed.FS
 
 func ReadBytes(name string) ([]byte, error) {

@@ -1,5 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Ravn Palynology Database</title>
+		<style>
+			.search-panel { margin-bottom: 16px; }
+			.hit { margin-bottom: 8px; }
+			.alt { color: #171; margin-left: 16px; }
+			#status { display: inline-block; min-width: 250px; text-align: center; }
+			#search-controls { margin-top: 8px; }
+		</style>
+	</head>
 	<body>
-		...
+		<div class="search-panel">
+			<select name="qtype" id="qtype">
+				<option value="1" selected>Genera</option>
+				<option value="2">Species</option>
+				<option value="3">References</option>
+			</select>
+			<input type="text" name="q" id="q" size="35" data-last="" placeholder="Search for .. ">
+			<input type="hidden" name="from" id="from" value="0">
+			<button name="qbtn" id="qbtn">Search</button>
+			<div id="search-controls">
+				<button name="prevbtn" id="prevbtn">Previous</button>
+				<span id="status"></span>
+				<button name="nextbtn" id="nextbtn">Next</button>
+
+				|
+				Show
+				<select name="size" id="size">
+					<option value="10">10</option>
+					<option value="25" selected>25</option>
+					<option value="100">100</option>
+					<option value="250">250</option>
+					<option value="1000">1000</option>
+				</select>
+			</div>
+		</div>
+
+		<div id="output"></div>
+		<script src="search.js"></script>
 	</body>
 </html>

@@ -1,3 +1,4 @@
 ravn
 data/**/.*
 *.bleve
+*.swp
