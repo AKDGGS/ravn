@@ -101,7 +101,11 @@ function doSearch(dir) {
 					let a = document.createElement('a');
 					a.className = "src";
 					a.href = `#${r.id}`
-					a.addEventListener('click', e => { doDetail(stype, r.id); });
+					a.addEventListener('click', e => {
+						doDetail(stype, r.id);
+						e.preventDefault();
+						return false;
+					});
 					a.appendChild(document.createTextNode(s));
 					pdiv.appendChild(a);
 				}
