@@ -154,7 +154,7 @@ func main() {
 			fmt.Fprintf(cmd.Output(), "options:\n")
 			cmd.PrintDefaults()
 		}
-
+		image_dir := cmd.String("images", "", "directory to scan for images")
 		output_yaml := cmd.Bool("yaml", false, "output yaml")
 		cmd.Parse(os.Args[2:])
 
@@ -166,7 +166,7 @@ func main() {
 
 		var species []map[string]interface{}
 		for _, fn := range cmd.Args() {
-			err := ParseSpecies(fn, &species)
+			err := ParseSpecies(fn, *image_dir, &species)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "ParseSpecies(): %s\n", err.Error())
 				os.Exit(1)

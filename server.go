@@ -180,7 +180,7 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func indexDocID(idx bleve.Index, fields []string, id string) (map[string]interface{}, error) {
 	sreq := bleve.NewSearchRequest(
-		bleve.NewDocIDQuery([]string{ id }),
+		bleve.NewDocIDQuery([]string{id}),
 	)
 	sreq.Fields = fields
 

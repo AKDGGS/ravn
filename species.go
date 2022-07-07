@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"path"
 	"strconv"
 	"strings"
 
@@ -15,7 +16,25 @@ const (
 	PASSED
 )
 
-func ParseSpecies(fn string, species *[]map[string]interface{}) error {
+func ParseSpecies(fn, idir string, species *[]map[string]interface{}) error {
+	filelist := make(map[string][]string, 0)
+	if idir != "" {
+		ents, err := os.ReadDir(idir)
+		if err != nil {
+			return err
+		}
+		for _, ent := range ents {
+			name := ent.Name()
+			ext := strings.ToLower(path.Ext(name))
+			if !ent.IsDir() && (ext == ".jpg" || ext == ".png" || ext == ".jpeg") {
+				i := strings.Index(name, " ")
+				if i >= 0 {
+					filelist[name[:i]] = append(filelist[name[:i]], name)
+				}
+			}
+		}
+	}
+
 	var sp map[string]interface{}
 
 	f, err := excelize.OpenFile(fn)
@@ -57,6 +76,9 @@ func ParseSpecies(fn string, species *[]map[string]interface{}) error {
 				sp = make(map[string]interface{})
 				sp["ID"] = id
 				sp["source"] = strings.TrimSpace(row[2])
+				if imgs, ok := filelist[id]; ok {
+					sp["images"] = imgs
+				}
 				if err := parse_species(f, fn, sheet, 3, y+1, &sp); err != nil {
 					return err
 				}
