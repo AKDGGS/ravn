@@ -46,9 +46,35 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case "search.js":
 		assets.ServeStatic("js/search.js", w, r)
 
+	case "genera_full.json":
+		q := r.URL.Query()
+		doc, err := indexDocID(srv.GeneraIndex, []string{"*"}, q.Get("id"))
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("document error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+
+		if doc == nil {
+			http.Error(w, "Document not found", http.StatusNotFound)
+		}
+
+		jb, err := json.Marshal(doc)
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("json error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+		w.Header().Set("Content-Type", "application/json")
+		w.Write(jb)
+
 	case "genera.json":
 		q := r.URL.Query()
-		sres, err := searchIndex(
+		sres, err := indexQuery(
 			srv.GeneraIndex, []string{"source", "alt_source"},
 			q.Get("q"), q.Get("z"), q.Get("f"),
 		)
@@ -73,7 +99,7 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	case "references.json":
 		q := r.URL.Query()
-		sres, err := searchIndex(
+		sres, err := indexQuery(
 			srv.ReferencesIndex, []string{"*"},
 			q.Get("q"), q.Get("z"), q.Get("f"),
 		)
@@ -96,9 +122,35 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Write(jb)
 
+	case "species_full.json":
+		q := r.URL.Query()
+		doc, err := indexDocID(srv.SpeciesIndex, []string{"*"}, q.Get("id"))
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("document error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+
+		if doc == nil {
+			http.Error(w, "Document not found", http.StatusNotFound)
+		}
+
+		jb, err := json.Marshal(doc)
+		if err != nil {
+			http.Error(
+				w, fmt.Sprintf("json error: %s", err.Error()),
+				http.StatusInternalServerError,
+			)
+			return
+		}
+		w.Header().Set("Content-Type", "application/json")
+		w.Write(jb)
+
 	case "species.json":
 		q := r.URL.Query()
-		sres, err := searchIndex(
+		sres, err := indexQuery(
 			srv.SpeciesIndex, []string{"source", "alt_source"},
 			q.Get("q"), q.Get("z"), q.Get("f"),
 		)
@@ -126,7 +178,27 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func searchIndex(idx bleve.Index, fields []string, q, sz, fr string) (map[string]interface{}, error) {
+func indexDocID(idx bleve.Index, fields []string, id string) (map[string]interface{}, error) {
+	sreq := bleve.NewSearchRequest(
+		bleve.NewDocIDQuery([]string{ id }),
+	)
+	sreq.Fields = fields
+
+	sres, err := idx.Search(sreq)
+	if err != nil {
+		return nil, err
+	}
+
+	if len(sres.Hits) < 1 {
+		return make(map[string]interface{}, 0), nil
+	}
+	ret := sres.Hits[0].Fields
+	ret["time"] = sres.Took.String()
+	ret["id"] = sres.Hits[0].ID
+	return ret, nil
+}
+
+func indexQuery(idx bleve.Index, fields []string, q, sz, fr string) (map[string]interface{}, error) {
 	size, _ := strconv.Atoi(sz)
 	if size < 1 {
 		size = 25
