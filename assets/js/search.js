@@ -218,6 +218,17 @@ function doDetail(stype, id){
 			}
 		}
 
+		if('images' in r){
+			let div = document.createElement('div');
+			div.className = 'img';
+			for(const s of [].concat(r.images)){
+				let img = document.createElement('img')
+				img.src = `images/${s}`;
+				div.appendChild(img);
+			}
+			modal_body.appendChild(div)
+		}
+
 		modal.style.display = 'block';
 		active = false;
 	}).catch(err => {
