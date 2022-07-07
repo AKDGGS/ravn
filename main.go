@@ -31,7 +31,7 @@ func main() {
 		}
 		laddr := cmd.String("listen", "127.0.0.1:8080", "start listening on address")
 		assetpath := cmd.String("assets", "", "override embedded assets with assets from path")
-		imagepath := cmd.String("images", "", "load images from directory")
+		imagespath := cmd.String("images", "", "load images from directory")
 		cmd.Parse(os.Args[2:])
 
 		if assetpath != nil {
@@ -57,10 +57,7 @@ func main() {
 		srv := WebServer{
 			ListenAddress: *laddr, SpeciesIndex: sidx,
 			ReferencesIndex: tidx, GeneraIndex: gidx,
-		}
-
-		if *imagepath != "" {
-			srv.ImageFS = os.DirFS(*imagepath)
+			ImagesPath: *imagespath,
 		}
 
 		if err = srv.Start(); err != nil {
@@ -160,7 +157,7 @@ func main() {
 			fmt.Fprintf(cmd.Output(), "options:\n")
 			cmd.PrintDefaults()
 		}
-		imagepath := cmd.String("images", "", "directory to scan for images")
+		imagespath := cmd.String("images", "", "directory to scan for images")
 		output_yaml := cmd.Bool("yaml", false, "output yaml")
 		cmd.Parse(os.Args[2:])
 
@@ -172,7 +169,7 @@ func main() {
 
 		var species []map[string]interface{}
 		for _, fn := range cmd.Args() {
-			err := ParseSpecies(fn, *imagepath, &species)
+			err := ParseSpecies(fn, *imagespath, &species)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "ParseSpecies(): %s\n", err.Error())
 				os.Exit(1)

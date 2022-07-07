@@ -3,12 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io"
-	"io/fs"
-	"mime"
 	"net"
 	"net/http"
-	"os"
 	"path"
 	"strconv"
 	"strings"
@@ -23,7 +19,7 @@ type WebServer struct {
 	SpeciesIndex    bleve.Index
 	GeneraIndex     bleve.Index
 	ListenAddress   string
-	ImageFS         fs.FS
+	ImagesPath      string
 	http            http.Server
 }
 
@@ -186,33 +182,9 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if srv.ImageFS != nil && path.Base(path.Dir(r.URL.Path)) == "images" {
+	if srv.ImagesPath != "" && path.Base(path.Dir(r.URL.Path)) == "images" {
 		filename := path.Base(r.URL.Path)
-		f, err := srv.ImageFS.Open(filename)
-		if err != nil {
-			if os.IsNotExist(err) {
-				http.Error(w, "File not found", http.StatusNotFound)
-				return
-			}
-			http.Error(
-				w, fmt.Sprintf("file error: %s", err.Error()),
-				http.StatusInternalServerError,
-			)
-			return
-		}
-
-		stat, err := f.Stat()
-		if err != nil {
-			http.Error(
-				w, fmt.Sprintf("stat error: %s", err.Error()),
-				http.StatusInternalServerError,
-			)
-			return
-		}
-
-		w.Header().Set("Content-Length", fmt.Sprintf("%d", stat.Size()))
-		w.Header().Set("Content-Type", mime.TypeByExtension(path.Ext(filename)))
-		io.Copy(w, f)
+		http.ServeFile(w, r, path.Join(srv.ImagesPath, filename))
 		return
 	}
 
