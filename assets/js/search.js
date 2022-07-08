@@ -183,6 +183,10 @@ function doDetail(stype, id){
 		}
 
 		if('alt_source' in r){
+			let h3 = document.createElement('h3');
+			h3.appendChild(document.createTextNode('Synonymies'));
+			modal_body.appendChild(h3);
+
 			for(const s of [].concat(r.alt_source)){
 				let div = document.createElement('div');
 				div.className = "alt";
@@ -192,6 +196,10 @@ function doDetail(stype, id){
 		}
 
 		if('comment' in r){
+			let h3 = document.createElement('h3');
+			h3.appendChild(document.createTextNode('Comments'));
+			modal_body.appendChild(h3);
+
 			for(const s of [].concat(r.comment)){
 				let div = document.createElement('div');
 				div.className = "cmt";
@@ -201,6 +209,10 @@ function doDetail(stype, id){
 		}
 
 		if('species_source' in r){
+			let h3 = document.createElement('h3');
+			h3.appendChild(document.createTextNode('Species'));
+			modal_body.appendChild(h3);
+
 			for(const s of [].concat(r.species_source)){
 				let div = document.createElement('div');
 				div.className = "spc";
@@ -210,6 +222,10 @@ function doDetail(stype, id){
 		}
 
 		if('occurance' in r){
+			let h3 = document.createElement('h3');
+			h3.appendChild(document.createTextNode('Occurances'));
+			modal_body.appendChild(h3);
+
 			for(const s of [].concat(r.occurance)){
 				let div = document.createElement('div');
 				div.className = "occ";
@@ -219,6 +235,10 @@ function doDetail(stype, id){
 		}
 
 		if('images' in r){
+			let h3 = document.createElement('h3');
+			h3.appendChild(document.createTextNode('Images'));
+			modal_body.appendChild(h3);
+
 			let div = document.createElement('div');
 			div.className = 'img';
 			for(const s of [].concat(r.images)){
