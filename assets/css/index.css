@@ -1,0 +1,36 @@
+.search-panel { margin: 1rem 1rem 1.5rem 1rem; }
+.hit { margin-bottom: 0.5rem; }
+.src, .alt, .occ, .spc, .cmt { margin-left: 2rem; }
+.src { color: #00f; }
+.alt { color: #171; }
+.occ, .spc { color: #000; }
+.cmt { color: #91e; }
+.ndt { margin-left: 0; }
+
+#modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0; top: 0;
+	width: 100%; height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+}
+#modal-close { color: #fff; float: right; font-size: 28px; font-weight: bold; }
+#modal-close:hover { color: #f00; cursor: pointer; }
+#modal-header { padding: 0.25rem 1rem; background-color: #333; color: #fff; }
+#modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: 5.5rem 3rem;
+	border: none;
+	box-shadow: 0.25rem 0.25rem 1rem 0 rgba(0,0,0,0.75);
+}
+#modal-title { margin: 0; }
+#modal-body { padding: 0.5rem; }
+#modal-body h3 { margin: 0; }
+#modal-body h3:not(:first-child) { margin-top: 1.75rem; }
+
+#search-controls { margin-top: 0.5rem; }
+#status { display: inline-block; min-width: 16rem; text-align: center; }
+#output { margin: 1rem; }

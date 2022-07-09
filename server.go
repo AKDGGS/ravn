@@ -49,6 +49,14 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		assets.ServeStatic("js/search.js", w, r)
 		return
 
+	case "template.css":
+		assets.ServeStatic("css/template.css", w, r)
+		return
+
+	case "index.css":
+		assets.ServeStatic("css/index.css", w, r)
+		return
+
 	case "genera_full.json":
 		q := r.URL.Query()
 		doc, err := indexDocID(srv.GeneraIndex, []string{"*"}, q.Get("id"))

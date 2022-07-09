@@ -99,7 +99,7 @@ function doSearch(dir) {
 					pdiv.appendChild(div);
 				} else {
 					let a = document.createElement('a');
-					a.className = "src";
+					a.className = "src ndt";
 					a.href = `#${r.id}`
 					a.addEventListener('click', e => {
 						doDetail(stype, r.id);
@@ -175,6 +175,10 @@ function doDetail(stype, id){
 		}
 
 		emptyChildren(modal_body);
+
+		let h3 = document.createElement('h3');
+		h3.appendChild(document.createTextNode('Preferred Name'));
+		modal_body.appendChild(h3);
 		for(const s of [].concat(r.source)){
 			let div = document.createElement('div');
 			div.className = "src";
@@ -249,7 +253,9 @@ function doDetail(stype, id){
 			modal_body.appendChild(div)
 		}
 
+		modal.style.setProperty('display', 'block');
 		modal.style.display = 'block';
+		document.body.style.overflow = 'hidden';
 		active = false;
 	}).catch(err => {
 		if(window.console){ console.log(err); }
@@ -262,6 +268,7 @@ function emptyChildren(el){ while(el.lastChild) el.removeChild(el.lastChild); }
 function modalClose(){
 	if (modal.style.display === 'block'){
 		modal.scrollTop = 0;
+		document.body.style.overflow = '';
 		modal.style.display = 'none';
 	}
 }
