@@ -6,7 +6,7 @@ let modal_body = document.getElementById('modal-body');
 let modal_title = document.getElementById('modal-title');
 let modal_close = document.getElementById('modal-close');
 
-modal_close.addEventListener('click', e => { modalClose(); });
+modal_close.addEventListener('click', modalClose);
 
 window.addEventListener('click', e => {
 	if (e.target === modal){ modalClose(); }
@@ -16,16 +16,8 @@ window.addEventListener('keydown', e => {
 });
 
 let qtype = document.getElementById('qtype');
-qtype.addEventListener('change', e => {
-	from_el.value = '0';
-	doSearch(0);
-});
 
 let size_el = document.getElementById('size');
-size_el.addEventListener('change', e => {
-	from_el.value = '0';
-	doSearch(0);
-});
 
 let q = document.getElementById('q');
 q.addEventListener('keypress', e => {
@@ -46,9 +38,9 @@ next.addEventListener('click', e => { doSearch(1); });
 let prev = document.getElementById('prevbtn');
 prev.addEventListener('click', e => { doSearch(-1); });
 
-let active = false
-function doSearch(dir) {
-	if (active) { return; }
+let sactive = false;
+function doSearch(dir,noupdate) {
+	if (sactive) { return; }
 
 	let query = q.value;
 	if(query.length < 1){
@@ -58,13 +50,13 @@ function doSearch(dir) {
 		emptyChildren(out);
 		return;
 	}
-	active = true;
+	sactive = true;
 
 	let stype = Number(qtype.value);
 	let from = Number(from_el.value);
 	let size = Number(size_el.value);
 
-	if(query !== q.dataset.last){
+	if(q.dataset.last && query !== q.dataset.last){
 		from = 0
 	} else if(dir === 1) {
 		from += size;
@@ -77,7 +69,7 @@ function doSearch(dir) {
 		case 1: url = 'genera.json'; break;
 		case 2: url = 'species.json'; break;
 		case 3: url = 'references.json'; break;
-		default: active = false; return;
+		default: sactive = false; return;
 	}
 	url += `?f=${from}&z=${size}&q=${encodeURIComponent(q.value)}`;
 
@@ -133,6 +125,10 @@ function doSearch(dir) {
 			));
 		}
 
+		if(!noupdate){
+			location.hash = `#${stype},${JSON.stringify(query)},${size},${from}`;
+		}
+
 		if((from+result.hits.length) >= result.total){
 			next.setAttribute('disabled', 'disabled');
 		} else { next.removeAttribute('disabled'); }
@@ -140,16 +136,17 @@ function doSearch(dir) {
 		if(from === 0){ prev.setAttribute('disabled', 'disabled'); }
 		else { prev.removeAttribute('disabled'); }
 
-		active = false;
+		sactive = false;
 	}).catch(err => {
 		if(window.console){ console.log(err); }
-		active = false;
+		sactive = false;
 	});
 }
 
+let dactive = false;
 function doDetail(stype, id){
-	if (active) { return; }
-	active = true;
+	if (dactive) { return; }
+	dactive = true;
 
 	document.activeElement.blur();
 
@@ -157,7 +154,7 @@ function doDetail(stype, id){
 	switch(stype){
 		case 1: url = 'genera_full.json'; break;
 		case 2: url = 'species_full.json'; break;
-		default: active = false; return;
+		default: dactive = false; return;
 	}
 
 	fetch(`${url}?id=${id}`).then(response => {
@@ -256,19 +253,60 @@ function doDetail(stype, id){
 		modal.style.setProperty('display', 'block');
 		modal.style.display = 'block';
 		document.body.style.overflow = 'hidden';
-		active = false;
+		saveHash(id);
+		dactive = false;
 	}).catch(err => {
 		if(window.console){ console.log(err); }
-		active = false;
+		dactive = false;
 	});
 }
 
-function emptyChildren(el){ while(el.lastChild) el.removeChild(el.lastChild); }
+function emptyChildren(el){
+	while(el.lastChild) el.removeChild(el.lastChild);
+}
 
 function modalClose(){
 	if (modal.style.display === 'block'){
 		modal.scrollTop = 0;
 		document.body.style.overflow = '';
 		modal.style.display = 'none';
+		saveHash();
 	}
 }
+
+function saveHash(id) {
+	let newhash = `${qtype.value},${JSON.stringify(q.value)},${size_el.value},${from_el.value}`;
+	if(id) newhash += `,${JSON.stringify(id)}`;
+	location.hash = newhash;
+}
+
+// On page load, check if there's a hash, if there is
+// load it as a search, and if there's a detail modal id,
+// load the modal, too.
+if(location.hash){
+	try {
+		let jsn = decodeURIComponent(location.hash.substring(1));
+		let arr = JSON.parse(`[${jsn}]`);
+		qtype.value = arr[0];
+		q.value = arr[1];
+		size_el.value = arr[2];
+		from_el.value = arr[3];
+
+		doSearch(0, true);
+		if (arr.length > 4){ doDetail(arr[0], arr[4]); }
+	} catch(e) {
+		if(window.console){ console.log(err); }
+	}
+}
+
+// These need to be initialized last so they don't interfere
+// with the hash loading
+qtype.addEventListener('change', e => {
+	from_el.value = '0';
+	doSearch(0);
+});
+
+size_el.addEventListener('change', e => {
+	from_el.value = '0';
+	doSearch(0);
+});
