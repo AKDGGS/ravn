@@ -20,6 +20,8 @@ type WebServer struct {
 	GeneraIndex     bleve.Index
 	ListenAddress   string
 	ImagesPath      string
+	KeyFile         string
+	CertFile        string
 	http            http.Server
 }
 
@@ -32,7 +34,11 @@ func (srv *WebServer) Start() error {
 	fmt.Printf("listening on %s .. \n", listen.Addr().String())
 
 	srv.http = http.Server{Handler: srv}
-	err = srv.http.Serve(listen)
+	if srv.CertFile != "" && srv.KeyFile != "" {
+		err = srv.http.ServeTLS(listen, srv.CertFile, srv.KeyFile)
+	} else {
+		err = srv.http.Serve(listen)
+	}
 	if err == http.ErrServerClosed {
 		return nil
 	}
