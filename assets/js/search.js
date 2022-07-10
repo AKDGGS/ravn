@@ -6,13 +6,11 @@ let modal_body = document.getElementById('modal-body');
 let modal_title = document.getElementById('modal-title');
 let modal_close = document.getElementById('modal-close');
 
-modal_close.addEventListener('click', modalClose);
-
 window.addEventListener('click', e => {
-	if (e.target === modal){ modalClose(); }
+	if (e.target === modal) closeModal();
 });
 window.addEventListener('keydown', e => {
-	if (e.key === 'Escape'){ modalClose(); }
+	if (e.key === 'Escape') closeModal();
 });
 
 let qtype = document.getElementById('qtype');
@@ -30,13 +28,24 @@ q.addEventListener('keypress', e => {
 q.focus();
 
 let qbtn = document.getElementById('qbtn');
-qbtn.addEventListener('click', e => { doSearch(0); });
+qbtn.addEventListener('click', e => { doSearch(); });
 
 let next = document.getElementById('nextbtn');
 next.addEventListener('click', e => { doSearch(1); });
 
 let prev = document.getElementById('prevbtn');
 prev.addEventListener('click', e => { doSearch(-1); });
+
+function closeModal(){
+	if (modal.style.display === 'block'){
+		modal.scrollTop = 0;
+		document.body.style.overflow = '';
+		modal.style.display = 'none';
+		saveHash();
+	}
+}
+
+modal_close.addEventListener('click', closeModal);
 
 let sactive = false;
 function doSearch(dir,noupdate) {
@@ -119,15 +128,11 @@ function doSearch(dir,noupdate) {
 			out.appendChild(document.createTextNode("No results"));
 		} else {
 			from_el.value = String(from);
-			q.dataset.last = query;
 			stat.appendChild(document.createTextNode(
 				`Displaying ${from+1} - ${from+result.hits.length} of ${result.total}`
 			));
 		}
-
-		if(!noupdate){
-			location.hash = `#${stype},${JSON.stringify(query)},${size},${from}`;
-		}
+		q.dataset.last = query;
 
 		if((from+result.hits.length) >= result.total){
 			next.setAttribute('disabled', 'disabled');
@@ -136,9 +141,10 @@ function doSearch(dir,noupdate) {
 		if(from === 0){ prev.setAttribute('disabled', 'disabled'); }
 		else { prev.removeAttribute('disabled'); }
 
+		if (!noupdate) saveHash();
 		sactive = false;
 	}).catch(err => {
-		if(window.console){ console.log(err); }
+		if(window.console) console.log(err);
 		sactive = false;
 	});
 }
@@ -256,7 +262,7 @@ function doDetail(stype, id){
 		saveHash(id);
 		dactive = false;
 	}).catch(err => {
-		if(window.console){ console.log(err); }
+		if(window.console) console.log(err);
 		dactive = false;
 	});
 }
@@ -265,48 +271,49 @@ function emptyChildren(el){
 	while(el.lastChild) el.removeChild(el.lastChild);
 }
 
-function modalClose(){
-	if (modal.style.display === 'block'){
-		modal.scrollTop = 0;
-		document.body.style.overflow = '';
-		modal.style.display = 'none';
-		saveHash();
-	}
-}
-
 function saveHash(id) {
+	let oldhash = decodeURIComponent(location.hash.substring(1));
 	let newhash = `${qtype.value},${JSON.stringify(q.value)},${size_el.value},${from_el.value}`;
 	if(id) newhash += `,${JSON.stringify(id)}`;
-	location.hash = newhash;
-}
-
-// On page load, check if there's a hash, if there is
-// load it as a search, and if there's a detail modal id,
-// load the modal, too.
-if(location.hash){
-	try {
-		let jsn = decodeURIComponent(location.hash.substring(1));
-		let arr = JSON.parse(`[${jsn}]`);
-		qtype.value = arr[0];
-		q.value = arr[1];
-		size_el.value = arr[2];
-		from_el.value = arr[3];
-
-		doSearch(0, true);
-		if (arr.length > 4){ doDetail(arr[0], arr[4]); }
-	} catch(e) {
-		if(window.console){ console.log(err); }
+	if (newhash != oldhash) {
+		history.pushState({}, '', `${location.pathname}#${newhash}`);
 	}
 }
+
+// On demand, check if there's a hash, if there is
+// load it as a search, and if there's a detail modal id,
+// load the modal, too.
+function loadHash(){
+	if(location.hash){
+		try {
+			let jsn = decodeURIComponent(location.hash.substring(1));
+			let arr = JSON.parse(`[${jsn}]`);
+			qtype.value = arr[0];
+			q.value = arr[1];
+			size_el.value = arr[2];
+			from_el.value = arr[3];
+
+			doSearch(0, true);
+			if (arr.length > 4){ doDetail(arr[0], arr[4], true); }
+			else { closeModal(); }
+		} catch(e) {
+			if(window.console) console.log(err);
+		}
+	}
+}
+
+loadHash();
+
+window.addEventListener('hashchange', loadHash);
 
 // These need to be initialized last so they don't interfere
 // with the hash loading
 qtype.addEventListener('change', e => {
 	from_el.value = '0';
-	doSearch(0);
+	doSearch();
 });
 
 size_el.addEventListener('change', e => {
 	from_el.value = '0';
-	doSearch(0);
+	doSearch();
 });
