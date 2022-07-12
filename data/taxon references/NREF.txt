@@ -104,7 +104,7 @@ Néraudeau, D., Allain, R., Ballèvre, M., Batten, D. J., Buffetaut, E., Colin, 
 Néraudeau, D., Saint Martin, S., Batten, D., Colin, J.-P., Daviero-Gomez, V., Girard, V., Gomez, B., Nohra, Y. A., Polette, F., Platel, J.-P., Saint Martin, J.-P. & Vullo, R. 2016. Palaeontology of the upper Turonian paralic deposits of the Sainte-Mondane Formation, Aquitaine Basin, France. Geologica Acta, 14: 53-69.
 Néraudeau, D., Saint Martin, J.-P., Saint Martin, S., Jeanneau, L., Moreau, J.-D., Philippe, M., Polette, F., Gendry, D., Brunet, J. & Tréguier, J. 2020. Amber- and plant-bearing deposits from the Cenomanian of Neau (Mayenne, France). Earth Sciences Bulletin 2020, 191, 39: 1-19 (on-line edition).
 Neregato, R., de Souza, P. A. & Rohn, R. 2008. Registros Palinológicos Inéditos nas Formações Teresina e Rio do Rasto (Permiano, Grupo Passa Dois, Bacia do Paraná) Implicações Biocronoestratigráficas e Paleoambientais. Pesquisas em Geociências, 35: 9-21,
-Neri, M., Kustatscher, E. & Roghi, G. 2018. Megaspores from the Lower Jurassic (Pliensbachian) Rotzo Formation (Monti Lessini, northern Italy) and their palaeoenvironmental implications. Palaeobiobiodiversity and Palaeoenvironments, 98: 97-110
+Neri, M., Kustatscher, E. & Roghi, G. 2018. Megaspores from the Lower Jurassic (Pliensbachian) Rotzo Formation (Monti Lessini, northern Italy) and their palaeoenvironmental implications. Palaeobiobiodiversity and Palaeoenvironments, 98: 97-110.
 Nesterova, E. V. 1971. Palynological characteristics of Lower Paleogene deposits of the northern part of the Turgay Basin. Kazakhstan Palynology, 2: 107-111 (In Russian).
 Nestor, V. 1976. A microplankton correlation of boring sections of the Raikkula Stage, Estonia. Eesti NSV T.A.K., 25: Keemia Geol., 1976: 319-324.
 Nestor, V. 1980a. New chitinozoan species from the Lower Llandoverian of Estonia. Proceedings of the Academy of Sciences of the Estonian SSR. Geology, 29: 98-107 (In Russian, with English summary).
@@ -167,6 +167,7 @@ Nichols, D. J. & Warner, M. A. 1978. Palynology, age, and correlation of the Wan
 Nickel, B. 1996. Palynofazies und Palynostratigraphie der Pechelbronn Schichten im Nördlichen Oberrheintalgraben. Palaeontographica B, 240: 1-157.
 Niechwedowicz, M. 2019. Odontochitina dilitata sp. nov. from the Campanian (Upper Cretaceous) of Poland: the importance of wall structure in the taxonomy of selected ceratiacean dinoflagellate cysts. Palynology, 43: 423-450.
 Nilsson, T. 1958. èber das Vorkommen eines mesozoischen Sapropelgesteins in Schönen. Lunds Univ. Arsskrift. N.R., Avd. 2, 54/10: 1-112.
+Njoh, O. A., Bassey, E. A., Essien, A. J. & Agbor, V. W. 2013. Palynostratigraphy of Early Cretaceous Sedimentary Deposits from the Rio del Rey Basin, S.W. Cameroon. Journal of the Cameroon Academy of Sciences, 11: 63-73.
 Njoh, O. A., Nforsi, M. B. & Datcheu, J. N. 2015. Aptian-Late Cenomanian Fluvio-Lacustrine Lithofacies and Palynomorphs from Mamfe Basin, Southwest Cameroon, West Africa. International Journal of Geosciences, 6: 795-811.
 Noetinger, S. 2010. Middle-Upper Devonian palynoflora from the Tonono X-1 borehole, Salta Province, northwestern Argentina. Ameghiniana, 47: 165-184.
 Noetinger, S. 2015. Spore diversity trends in the Middle Devonian of the Chaco-Salteño Plain,northwestern Argentina. Palaeogeography, Palaeoclimatology, Palaeoecology, 417: 151-163.
@@ -194,13 +195,14 @@ Nõlvak, J. 1980. Chitinozoans in biostratigraphy of the northern East Baltic As
 Nõlvak, J. 2001. Distribution of chitinozoans. In Valga (10) Drill Core (Põldvere, A., ed.), Estonian Geological Sections, 3, 8-10, App. 8.
 Nõlvak, J. 2002. Distribution of chitinozoans. In Soovälja (K-1) Drill Core (Põldvere, A., ed.), Estonian Geological Sections, 4, 10-12.
 Nõlvak, J. 2003. Distribution of Ordovician chitinozoans. In Ruhnu (500) Drill Core (Põldvere, A., ed.), Estonian Geological Sections, 5, 23-25, Apps 22, 23 on CD-R.
-Nõlvak, J. 2005. Distribution of Ordovician chitinozoans. In Mehikoorma (421) Drill Core (Põldvere, A., ed.), Estonian Geological Sections, 6, 20 - 22, Apps 26, 27 on CD-R.
+Nõlvak, J. 2005. Distribution of Ordovician chitinozoans. In Mehikoorma (421) Drill Core (Põldvere, A., ed.), Estonian Geological Sections, 6, 20-22, Apps 26, 27 on CD-R.
 Nõlvak, J. 2007. A new chitinozoan species from the Upper Ordovician of the East Baltic. Estonian Journal of Earth Sciences, 56: 63-64.
-Nõlvak, J. 2008. Distribution of Ordovician chitinozoans. In Männamaa (F-367) Drill Core (Põldvere, A. , ed.), Estonian Geological Sections, 9, 13 - 18, App. 6.
+Nõlvak, J. 2008. Distribution of Ordovician chitinozoans. In Männamaa (F-367) Drill Core (Põldvere, A. , ed.), Estonian Geological Sections, 9, 13-18, App. 6.
 Nõlvak, J. 2012. A new chitinozoan species from the Middle Ordovician of Estonia. Estonian Journal of Earth Sciences, 61: 131-132.
 Nõlvak, J. & Bauert, G. 2006. Distribution of Ordovician chitinozoans. In Kerguta (565) Drill Core (Põldvere, A., ed.), Estonian Geological Sections, 7, 9 - 11,
-Nõlvak, J. & Bauert, G. 2015. New biostratigraphically important chitinozoans from the Kukruse Regional Stage, Upper Ordovician of Baltoscandia. Estonian Journal of Earth Sciences, 64: 218 - 224.
+Nõlvak, J. & Bauert, G. 2015. New biostratigraphically important chitinozoans from the Kukruse Regional Stage, Upper Ordovician of Baltoscandia. Estonian Journal of Earth Sciences, 64: 218-224.
 Nõlvak, J. & Grahn, Y. 1993. Ordovician chitinozoan zones from Baltoscandia. Review of Palaeobotany and Palynology, 79: 245-269.
+Nõlvak, J., Liang &. Hints, O. 2022. Early and early Middle Ordovician chitinozoans from the Baldone drill core, central Latvia. Estonian Journal of Earth Sciences, 71: 25-43.
 Palynology, 79, 245 - 269.
 Norem, W. L. 1955a. Pollen, spores and other organic microfossils from the Eocene of Venezuela. Micropaleontology, 1: 261-267.
 Norem, W. L. 1955b. Tytthodiscus, a new microfossil genus from the California Tertiary. J. Paleont., 29: 694-695.

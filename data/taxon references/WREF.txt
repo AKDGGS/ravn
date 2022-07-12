@@ -65,6 +65,7 @@ Wang K., Zhang Y., Wang Y., Wang J. & Wang R. 1985.Palynological assemblages of 
 Wang L., Wan C. & Sun Y. 2014. A Spore-Pollen Assemblage from the Damoguaihe Formation in the Tamutsag Basin, Mongolia and Its Geological Implication. Acta Palaeontologica Sinica, 88: 46-61.
 Wang Ming-zhan, Zhang, Zi-qi & Zhao Xiu-li. 2004. Palynological assemblages of Upper and Lower Shihezi Formations of Permian from western Shandong region and the basal boundary of Upper Shihezi Formation. Acta Palaeontologica Sinica, 43: 349-365.
 Wang N. 1989. Micropaleontological study of Lower Palaeozoic siliceous sequences of the Yangtze Platform and eastern Qinling Range. Journal of Southeast Asian Earth Science, 3: 141-161.
+Wang R. & Yu J. 2000. New species of Tertiary sporopollen in Jianghan Basin. Symposium on Palynology of Petroliferous Basins in China. (C.Zhao et al, editors). Petroleum Industry Press, Beijing, China: 224-229.
 Wang S. 1988. Sporo-pollen assemblage of Jurassic-Cretaceous in Tonghua, Jilin. Acta Palaeontologica Sinica, 27: 729-736.
 Wang W. 1989. Spore and pollen grains from Miocene lignite deposit of Yalong Village, Yao Autonomous County, Guangxi, China. Acta Palaeontologica Sinica, 28: 786-802.
 Wang W., & Zhang D. 1990. Tertiary sporo-pollen assemblages from the Shangdou-Huade Basin, Inner Mongolia - with discussion on the formation of steppe vegetation in China. Acta Micropalaeontologica Sinica, 7: 239-252.
@@ -95,9 +96,10 @@ Warrington, G. 1978. Palynology of the Keuper, Westbury and Cotham Beds and the 
 Warrington, G., & Harland, R. 1975. Palynology of the Trias and lower Lias of the Larne Borehole. In Manning, P. I., et al., The stratigraphy of the Larne Borehole, County Antrim. Bulletin of the Geological Survey of Great Britain, 50: 37-50.
 Warrington, G., & Scrivener, R. C. 1990. The Permian of Devon, England. Review of Palaeobotany and Palynology, 66: 263-272.
 Waterhouse, J. B., & Norris, G. 1972. Paleobotanical solution to a granite conundrum: Hawks Crag Breccia of New Zealand and the tectonic evolution of the Southwest Pacific. Geoscience and Man, 4: 1-15.
+Wauthoz, B. 2005. Correlation of the 83W4321 Kortrijk (Sint-Antonius) and 83W44 Kortrijk (Lust) Boreholes with acritarchs (late Aeronian-early Telychian, Silurian, Belgium). Geologica Belgica, 8/4: 176-184.
 Wauthoz, B., Dorning, K. J. & Le Hérissé, A. 2003. Crassiangulina variacornuta sp. nov. from the late Llandovery and its bearing on Silurian and Devonian acritarch taxonomy. Bulletin de la Société Géologique de France, 174: 67-81.
 Weber, J. C. 2013. Impact geology: Central uplift, Kentland Impact Structure, Newton County Stone (Kentland) Quarry, Indiana, USA. In Geological Society of America Field Guide 31: 1-7.
-Weiler, H. 1956. über einen Fund von Dinoflagellaten, Coccolithophoriden und Hystrichosphaerideen in Terti„r des Rheintales. N. Jb. Geol. Paläont., 104: 129-147.
+Weiler, H. 1956. über einen Fund von Dinoflagellaten, Coccolithophoriden und Hystrichosphaerideen in Tertiär des Rheintales. N. Jb. Geol. Paläont., 104: 129-147.
 Weiler, H. 1971. Fossile Grünalgen in jungtertiären Süsswasserablagerungen des Mainzer Beckens und des Oberrheingrabens. Abh. hess. L.-Amt. Bodenforsch. (Wiesbaden), 60: 178-186.
 Weiler, H. 1988. Pterospermella Eisenack (1972) (Prasinophyceae). Morphotypen aus mitteloligozänen Sedimenten Südwestdeutschlands. Mainzer Geowissenschaftliche Mitteilungen, 17: 283-312.
 Weiss, M. 1986. Liasidium variabile; eine Dinoflagellate mit stratigraphischem Wert and der Grenze Unter-/Ober Sinemurium. N. Jahrb. Geol. Paläont., Mh., 5: 317-320.
@@ -353,7 +355,8 @@ Wright, R. P. 1976. Occurrence, stratigraphic distribution, and abundance of chi
 Wright, R. P. 1978. Biogeography of Middle Devonian chitinozoa of the Midwestern United States. Palinología, Núm. Extraord. 1: 501-505.
 Wright, R. P. 1980. Middle Devonian chitinozoa of Indiana. Indiana Dept. Nat. Res. Geol. Surv. Spec. Rep. 18: 1-24.
 Wright, R. P., & Meyers, W. C. 1981. Organic-walled microplankton in the subsurface Ordovician of northeastern Kansas. Geol. Surv. Kansas, 4: 1-49.
-Wrona, R. 1980a. Microarchitecture of the chitinozoan vesicles and its paleobiological significance. Acta Palaeont. Polonica, 25: 123-163.
+Wrona, R. 1980a. Microarchitecture of the chitinozoan vesicles and its paleobiological significance. Acta Palaeontologica Polonica, 25: 123-163.
 Wrona, R. 1980b. Upper Silurian-Lower Devonian chitinozoa from the subsurface of southeastern Poland. Palaeontologia Polonica, 41: 1-165.
+Wrona, R., Bednarczyk, W. S. & Stempień-Sałek, M. 2001. Chitinozoans and acritarchs from the Ordovician of the Skibno 1 borehole, Pomerania, Poland: implications for stratigraphy and palaeogeography. Acta Geologica Polonica, 51: 317-331.
 Wu H., & Zhang X. 1983. Palynological assemblage from the upper coal bearing member of the Beipiao Formation of Liaoning. Acta Palaeontologica Sinica, 22: 563-569. (In Chinese with English summary)
 Wu Z., & Yu J. 1981. Late Paleocene spores and pollen grains from the uppermost part of the Nangshan Group in Nanxiong Basin, Guangdong. Acta Palaeontologica Sinica, 20: 441-448.

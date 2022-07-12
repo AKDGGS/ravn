@@ -236,6 +236,7 @@ Tongiorgi, M., Bruton, D. L. & Di Milia, A. 2003. Taxonomic composition and pala
 Tongiorgi,  M., & Ribecai,  C. 1990. Late Cambrian and Tremadocian phytoplankton (Acritarchs) communities from øland (Sweden). Boll. Soc. Paleont. Italiana, 29: 77-88.
 Tongiorgi, M., Yin L. & Di Milia, A. 1995. Arenigian acritarchs from the Daping Section (Yangtze Gorges area, Hubei Province, Southern China) and their palaeogeographic significance. Review of Paleobotany and Palynology, 86: 13-48.
 Tongiorgi, M., Yin L. & Di Milia,  A. 2003. Lower Yushanian to lower Zhejiangian palynology of the Yangtze Gorges area (Daping and Huanghuanchang sections), Hubei Province, South China. Palaeontographica Abt. B, 266, 1-160.
+Toro, B. A., de la Puente, G. S. & Rubinstein, C. V. 2009. New graptolite, chitinozoan and acritarch records from the Pascha-Incamayo area, Cordillera Oriental, Argentina. C. R. Palevol (on-line edition).
 Torres, T. & Méon, H. 1998. Nothofagidites Erdtman ex Potonié dans le Paléogène e l'Ile Roi Georges, Antarctique. Géobios, 31: 419-435.
 Torricelli, S. 1997. Two new Early Cretaceous dinoflagellate cyst species from the Monte Soro Flysch (Sicily, Italy). Review of Palaeobotany and Palynology, 96: 339-345.
 Torricelli, S. 2000. Lower Cretaceous dinoflagellate cyst and acritarch stratigraphy of the Cismon APTICORE (Southern Alps, Italy). Review of Palaeobotany and Palynology, 108: 213-266.
@@ -273,14 +274,18 @@ Trindade, N. M. 1971. Interligaçao des floras boreal et austral no Brasil, suge
 Tripathi, A. 1999. Talcheridium indicum, a new acritarch with dinoflagellate-like features from the Permian Barakar Formation of India. Boll. Soc. Paleont. Italiana, 38: 313-316.
 Tripathi, A. 2004a. Unique organic remains from an Upper Permian coal bearing sequence in the Talcher Coalfield, Orissa, India. Palynology, 28: 121-128.
 Tripathi, A. 2004b. Palynology evidences of hitherto unrecognised Jurassic sedimentation in Rajmahal Basin, India. Rìvista Italiana di Paleontolosia e Stratigrafia, 110: 35-42.
+Tripathi, A. 2009. Palynology of the Brahmani River section, Talcher Coalfield, Orissa, India. Journal of the Palaeontological Society of India, 54: 179-187.
 Tripathi, A., Jana, B. N., Verma, O., Singh, R. K. & Singh, A. K. 2013. Early Cretaceous palynomorphs, dinoflagellates and plant megafossils from the Rajmahal Basin, Jharkand, India. Journal of the Palaeontological Society of India, 58: 125-134.
-Tripathi, A., Tiwari, R. S., & Kumar, P. 1990. Palynology of the subsurface Mesozoic sediments in Rajmahal Basin, Bihar. Palaeobotanist, 37(1988): 367-368.
+Tripathi, A., Murth, S. & Singh, R. K. 2010. Palynodating of coal-bearing strata near Kunda Pahari, Pachwar Coalfield, Rajmahal Basin, Jharkhand, India. Journal of the Palaeontological Society of India, 55: 29-35.
+Tripathi, A., Tiwari, R. S. & Kumar, P. 1990. Palynology of the subsurface Mesozoic sediments in Rajmahal Basin, Bihar. Palaeobotanist, 37(1988): 367-368.
 Tripathi, A., Vijaya, Murthy, S., Chakaborty, B. & Das, D. K. 2012. Stratigraphic status of coal horizon in Tatapani-Ramkola Coalfield, Chhattisgarh, India. Journal of Earth Syst. Sci., 121: 537-557.
 Tripathi, A., Vijaya & Ram-Awatar. 2006. Atlas of Spores and Pollen from the Triassic Succession of India. Birbal Sahni Institute of Palaeobotany, Diamond Jubilee Special Publication: 1-128.
+Tripathi, A., Vijaya & Raychowdhuri, A. K. 2005. Triassic palynoflora from the Mahuli-Mahersop area, Singrauli Coalfield (southern extension), Sarguja District, Chhattisgarh, India. Journal of the Palaeontological Society of India, 50: 77-99.
 Tripathi, B. 1952. A note on megaspores from Lower Gondwana coal of Umaria Coalfield, District Sahdol (Vindhya Pradesh). Current Science, 21: 308-309.
 Tripathi, R. P. 1997. Srivastavaesporites sahnii sp. nov., a Permian megaspore from South Rewa Basin, India. Journal of Palynology, 33: 219-225.
 Tripathi, R. P. 1999. Saksenasporites gen. nov.; a Permian megaspore from Birsinghpur Pali, Madhya Pradesh. Palaeobotanist, 48: 131-145.
 Tripathi, R. P., & Mishra, S. N. 1997. Singraulispora saksenae n. sp., A Permian megaspore from Umaria Coalfield, Shahdol District, Madhya Pradesh, India. Journal of Palynology, 33: 165-172.
+Tripathi, R. P., & Mishra, S. N. 2001. Lageniculate megaspores from the Lower Gondwana sediments of Madhya Pradesh, India. Journal of the Palaeontological Society of India, 46: 37-42.
 Tripathi, R. P., & Sharma, B. D. 1997. Megaspores from the lignite of Rajasthan. Journal of Palynology, 33: 181-184.
 Tripathi, S. K. M., 1994. New angiosperm pollen from subsurface Palaeogene Sediments of Barmer District, Rajasthan, India. Palaeobotanist, 42: 61-65.
 Tripathi, S. K. M., 1995. Palynology of subsurface Palaeogene sediments near Kapurdi, Barmer District, Rajasthan, India. Palaeobotanist, 43: 45-53.
@@ -397,8 +402,8 @@ Tykoezinski, H. R. G., Smith, S. W., Hogg, N. M., & Bailey, D. A. 2001. Three ne
 Tynni, R. 1975. Ordovician Hystrichospheres and chitinozoans in limestone form the Bothnian. Sea. Geol. Surv. Finland, 279: 5-54.
 Tynni, R. 1978. Lower Cambrian fossils and acritarchs in the sedimentary rocks of S"derfj„rden, western Finland. Finl. Geol. Tutk., Bull., 297: 39-81.
 Tynni, R. 1982a. New results of studies on the fossils in the Lower Cambrian sediment deposit of the Süderfjärden Basin. Bull. Geol. Soc. Finland, 54: 57-68.
-Tynni, R. 1982b. On Paleozoic microfossils in clastic dykes in the Aland Islands and in the core samples of Lumparn. Geol. Surv. Finland Bull. 317: 35-114.
-Tynni, R., & Donner, J. 1980. A microfossil and sedimentation study of the late Precambrian formation of Hailuoto, Finland. Geol. Surv. Finland Bull. 311: 7-27.
-Tynni, R., & Uutela, A. 1984. Microfossils from the Precambrian Muhos For- mation in western Finland. Geologian Tutkimuskesus (Finland), Bull., 330: 1-39.
-Tysdal, R. G., & Nichols, D. J. 1991. Biostratigraphic correlation of Santonian and Campanian formations in the northwestern part of Yellowstone National Park, and the Madison Range and Livingston area of southwestern Montana. In Contributions to Late Cretaceous Stratigraphy and Paleontology, U. S. Geol. Surv. Bull. 1962, B: 8-19.
-Tysdal, R. G., Nichols, D. J., & Winkler, G. R. 1987. The Livingston Formation in the Madison Range of southwestern Montana. U.S. Geol. Surv. Bull., Rep. B1665: 1-15.
+Tynni, R. 1982b. On Paleozoic microfossils in clastic dykes in the Aland Islands and in the core samples of Lumparn. Geological Survey of Finland Bulletin 317: 35-114.
+Tynni, R., & Donner, J. 1980. A microfossil and sedimentation study of the late Precambrian formation of Hailuoto, Finland. Geological Survey of Finland Bulletin 311: 7-27.
+Tynni, R., & Uutela, A. 1984. Microfossils from the Precambrian Muhos For- mation in western Finland. Geologian Tutkimuskesus (Finland), Bulletin, 330: 1-39.
+Tysdal, R. G. & Nichols, D. J. 1991. Biostratigraphic correlation of Santonian and Campanian formations in the northwestern part of Yellowstone National Park, and the Madison Range and Livingston area of southwestern Montana. In Contributions to Late Cretaceous Stratigraphy and Paleontology, U. S. Geological Survey Bulletin 1962, B: 8-19.
+Tysdal, R. G., Nichols, D. J. & Winkler, G. R. 1987. The Livingston Formation in the Madison Range of southwestern Montana. U.S. Geological Survey Bulletin, Report B1665: 1-15.

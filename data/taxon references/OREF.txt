@@ -38,7 +38,8 @@ Olde, K., Jarvis, I., Pearce, M., Walaszczyk, I. & Tocher, B. 2016. Organic-wall
 Oleinik, E. S. 1976a. Some new and little studied species Peridineae and green algae from Paleogene deposits of Tadzhikistan. Paleont. Sbornik, 13: 84-90.
 O'Liatháin, M. 1992. Stratigraphic palynology of the Upper Devonian-Lower Carboniferous succession in North Devon, southwest England. Ann. Soc. géol. Belg., 115(2): 649-659.
 Oliveira, J. T., Cunha, T. A., Streel, M., & Vanguestaine, M. 1986. Dating the Horta da Torre Formation, a new lithostratigraphic unit of the Ferreira-Fidalho Group, south Portuguese zone. Geological consequences. Comun. Serv. Geol. Port. 1986, T72 1/2: 129-135,.
-Oliveira, S. de F., & Burjack, M. I. 1997. Nova espécie de paleomicropláncton de parede orgánica (acritarco) da Formaçao Ponta Grossa (Frasniano), Bacia do Paraná, Mt. Brasil. Rev. Universidade Guarulhos, Geociências, II: 86-91.
+Oliveira, S. de F. & Burjack, M. I. 1997. Nova espécie de paleomicropláncton de parede orgánica (acritarco) da Formaçao Ponta Grossa (Frasniano), Bacia do Paraná, Mt. Brasil. Rev. Universidade Guarulhos, Geociências, II: 86-91.
+Oliveira, S. de F. & de Lima, M. R. 1990. Acritarcas Silurianos da Formação Trombetas, Bacia de Amazonas. Rev. IG, São Paulo, 8-10, 11: 43-50.
 Olivera, D. E., Zavattieri, A. M. & Quattrocchio, M. E. 2015. The palynology of the Cañadon Asfalto Formation (Jurassic), Cerro Condor depocentre, Cañadon Asfalto Basin, Patagonia, Argentina: palaeoecology and palaeoclimate based on ecogroup analysis. Palynology, 39: 362-386.
 Olivero, E. B., & Palamarczuk, S. 1987. Amonites y dinoflagelados cenomanianos de la Isla James Ross, Antartida. Ameghiniana, 24: 35-49.
 Olivo, M. S., Rombola, C., Pérez Loinaze, V. S. & Kietzmann, D. A. 2019. Integrated sedimentological and palynological analysis from Early Cretaceous estuarine deposits in the southern-central Neuquén Basin, Argentina. Journal of South American Earth Sciences, 92: 246-264.
@@ -122,11 +123,12 @@ Owens, B., Loboziak, S., & Coquel, R. 1984. Late Mississippian-Early Pennsylvani
 Owens, B., Loboziak, S., & Teteriuk, V. K. 1978. Palynological subdivision of the Dinantian to Westphalian deposits of northwest Europe and the Donetz Basin of the USSR. Palynology, 2: 69-91.
 Owens, B., & Marshall, J. 1978. Micropalaeontological biostratigraphy of samples from around the coasts of Scotland. Inst. Geol. Sci. (NERC), Rep. 78-20: 1-35.
 Owens, B., McLean, D., Simpson, K. R. M., Shell, P. M. J. & Robinson, R. 2005. Reappraisal of the Mississippian palynostratigraphy of the East Fife Coast, Scotland, United Kingdom. Palynology, 29: 23-47.
-Owens, B., Mishell, D. R. F., & Marshall, J. 1976. Kraeuselisporites from the Namurian of Northern England. Pollen et Spores, 18: 145-156.
-Owens, B., Neves, R., Gueinn, K. J., Mishell, D. R. F., Sabry, H. S. M. Z., & Williams, J. E. 1977. Palynological division of the Namurian of Northern England and Scotland. Proceedings of the Yorkshire Geological Society, 41: 381-398.
-Owens, B., & Richardson, J. B. 1972. Some recent advances in Devonian palynology - a review. Report of C.I.M.P. Working Group No. 13B. 7ème Cong. Int. Strat. Géol. Carb., Krefeld, 1971, C. r., 1: 325-329.
-Owens, B., & Streel, M. 1967. Hymenozonotriletes lepidophytus Kedo, its distribution and significance in relation to the Devonian-Carboniferous boundary. Review of Palaeobotany and Palynology, 1: 141-150.
-Owens, B., & Turner, N. 1995. Late Westphalian palynomorphs from northern Saudi Arabia. Review of Palaeobotany and Palynology, 89: 125-137.
+Owens, B., Mishell, D. R. F. & Marshall, J. 1976. Kraeuselisporites from the Namurian of Northern England. Pollen et Spores, 18: 145-156.
+Owens, B., Neves, R., Gueinn, K. J., Mishell, D. R. F., Sabry, H. S. M. Z. & Williams, J. E. 1977. Palynological division of the Namurian of Northern England and Scotland. Proceedings of the Yorkshire Geological Society, 41: 381-398.
+Owens, B. & Richardson, J. B. 1972. Some recent advances in Devonian palynology - a review. Report of C.I.M.P. Working Group No. 13B. 7ème Cong. Int. Strat. Géol. Carb., Krefeld, 1971, C. r., 1: 325-329.
+Owens, B. & Streel, M. 1967. Hymenozonotriletes lepidophytus Kedo, its distribution and significance in relation to the Devonian-Carboniferous boundary. Review of Palaeobotany and Palynology, 1: 141-150.
+Owens, B. & Turner, N. 1995. Late Westphalian palynomorphs from northern Saudi Arabia. Review of Palaeobotany and Palynology, 89: 125-137.
+Owens, B., Zhu H. & Turner, N. 2002. Comparative palynostratigraphy of the early Arnsbergian (Namurian) sequences between Great Britain and northwest China. Review of Palaeobotany and Palynology, 118: 227-238.
 Ozolina, V. R. 1960. Sporas Vidusdevona Zivetas Stava nogulumos Latvijas PSR. Geol. un Derigo Izraktenu Inst. Raksti, 5: 189-203.
 Ozolina, V. R. 1961. The spore-pollen spectrum of the Frasnian Stage deposits in the Alanda borehole. Akad. Nauk Latviiskoi SSR, Inst. Geol., Riga, Trudy, 7: 127-139. (In Russian).
 Ozolina, V. R. 1963. The spore-pollen spectrum of the Frasnian Stage of Upper Devonian, Latvian SSR. In Franski Otlozheniya Latviisoi SSR, Riga, Akad. Nauk Latviiskoi SSR, Inst. Geol., Riga, Trudy, 10: 300-310. (In Russian).

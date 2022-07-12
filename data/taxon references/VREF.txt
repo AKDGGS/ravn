@@ -37,9 +37,11 @@ Van Boekel, N. M. 1968a. Microfósseis Devonianos do Rio Tapajós, Pará. I. Tas
 Van Boekel, N. M. 1968b. Nomenclatural note: Correction of a name for a Devonian Tasmanitid. An. Acad. Bras. Ciênc., 40: 256-257.
 Van Campo, M. 1967. Pollen et classification. Review of Palaeobotany and Palynology, 3: 65-71.
 Van de Laar, J. G. M., & Fermont, W. J. J. 1989. On-shore Carboniferous palynology of the Netherlands. Med. Rijks Geol. Dienst, 43-1: 35-73.
-Van de Laar, J. G. M., & Fermont, W. J. J. 1990. Westphalian palynology of The Netherlands based on six continuously cored boreholes. Review of Palaeobotany and Palynology, 65: 275-285.
+Van de Laar, J. G. M. & Fermont, W. J. J. 1990. Westphalian palynology of The Netherlands based on six continuously cored boreholes. Review of Palaeobotany and Palynology, 65: 275-285.
+van den Brink, H. 2019. The stratigraphic distribution of Neogene dinoflagellate cysts from a deep water well, offshore Sabah, northern Borneo. Berita Sedimentologi, 43: 15-30.
 Vandenbroucke, T. R. A. 2004. Chitinozoan biostratigraphy of the Upper Ordovician in Fagelsang GSSP. Scania, southern Sweden. Review of Palaeobotany and Palynology, 130: 217-239..
-Vandenbroucke, T. R. A., Rickards, B., & Verniers, J. 2005. Upper Ordovician chitinozoan biostratigraphy from the type Ashgill area (Cautley district) and the Pus Gill section (Dufton district, Cross Fell Inlier), Cumbria, Northern England. Geological Magazine, 142: 783-807.
+Vandenbroucke, T. R. A., Hennissen, J. & Servais, T. 2013. Cyathochitina cycnea (chitinozoa), a new name for Cyathochitina giraffa Hennissen et al., 2010. Journal of Micropalaeontology, 32: 107-108.
+Vandenbroucke, T. R. A., Rickards, B. & Verniers, J. 2005. Upper Ordovician chitinozoan biostratigraphy from the type Ashgill area (Cautley district) and the Pus Gill section (Dufton district, Cross Fell Inlier), Cumbria, Northern England. Geological Magazine, 142: 783-807.
 Van der Eem, J. G. L. A. 1983. Aspects of Middle and Late Triassic palynology, 6. Palynological investigations in the Ladinian and Lower Karnian of the western Dolomites, Italy. Review of Palaeobotany and Palynology, 39: 189-300.
 Vanderflit, Ye. K., & Mikhailova, N. S. 1993. A new microfossil genus from the Upper Cambrian-Lower Ordovician of the Northwest and North Russian Platform. Paleont. J., 26: 83-87.
 Van der Hammen, T. 1954. El desarrolo de la Flora Colombiana en los periodos geológicos. 1: Maestrichtiano hasta Terciario mas inferior. Bol. Geol., 2(1): 49-106.
@@ -77,9 +79,10 @@ Vanguestaine, M. 1974. Espèces zonales d'acritarches du Cambro-Trémadocien de 
 Vanguestaine, M. 1978. Acritarches du Famennien supérieur du Sondage de Tohogne (Belgique) et correlation biostratigraphique transcontinentale. Palinología, núm. extraord. 1: 481-487.
 Vanguestaine, M. 2002. The Late Cambrian acritarch Cristallinium randomense: morphology, taxonomy and stratigraphical extension. Review of Palaeobotany and Palynology, 118: 269-285.
 Vanguestaine, M. 2008. Early and Middle Ordovician acritarchs of the Senne-Sennette River valleys (Brabant Massif, Belgium) and their stratigraphic implications. Geologica Belgica, 11: 3-24.
-Vanguestaine, M., & Servais, T. 2002. Early Ordovician acritarchs of the Lierneux Member (Stavelot Inlier, Belgium): stratigraphy and paleobiogeography. Bull. Soc. geol. France, 173: 561-568.
-Vanguestaine, M., & Van Looy, J. 1983. Acritarches du Cambrien moyen de la vallée de Tacheddirt (Haut Atlas, Maroc) dans le cadre d'une nouvelle zonation du Cambrien. Ann. Soc. Géol. Belg., 106: 69-85.
-Vanguestaine, M., Declairfayt, T., Rouhart, A., & Smeesters, A. 1983. Zonation par Acritarches du Frasnien supérieur-Famennien inférieur dans les bassins de Dinant, Namur, Herve et Campine (Devonien supérieur de Belgique). Ann. Soc. Géol. Belg., 106: 121-171.
+Vanguestaine, M., Declairfayt, T., Rouhart, A. & Smeesters, A. 1983. Zonation par Acritarches du Frasnien supérieur-Famennien inférieur dans les bassins de Dinant, Namur, Herve et Campine (Devonien supérieur de Belgique). Ann. Soc. Géol. Belg., 106: 121-171.
+Vanguestaine, M. & Servais, T. 2002. Early Ordovician acritarchs of the Lierneux Member (Stavelot Inlier, Belgium): stratigraphy and paleobiogeography. Bull. Soc. geol. France, 173: 561-568.
+Vanguestaine, M. & Van Looy, J. 1983. Acritarches du Cambrien moyen de la vallée de Tacheddirt (Haut Atlas, Maroc) dans le cadre d'une nouvelle zonation du Cambrien. Ann. Soc. Géol. Belg., 106: 69-85.
+Vanguestain, M. &Wauthoz, B. 2011. Acritarchs from the Abbaye de Villers and Tribotte Formations in their type section of the Thyle River Valley (Middle Ordovician, Brabant Massif, Belgium) and their stratigraphic implications. Geologica Belgica, 14: 3-22.
 Van Helden, B. G. T. 1977. Correlation of microplankton assemblages with ammonite faunas from the Jurassic Wilkie Point Formation, Prince Patrick Island, District of Franklin. Geological Survey of Canada Paper 77-1B: 163-171.
 Van Helden, B. G. T. 1986. Dinoflagellate cysts at the Jurassic-Cretaceous boundary, offshore Newfoundland, Canada. Palynology, 10: 181-199.
 Van Hoeken-Klinkenberg, P. M. J. 1964. A palynological investigation of some Upper Cretaceous sediments in Nigeria. Pollen et Spores, 6: 209-231.
@@ -181,10 +184,12 @@ Venkatachala, B. S. & Kar, R. K. 1969d. A nomenclatural problem concerning rewor
 Venkatachala, B. S. & Kar, R. K. 1970. Palynology of the Mesozoic sediments of Kutch, W. India, 10. Palynological zonation of Katrol (Upper Jurassic) and Bhuj (Lower Cretaceous) sediments in Kutch, Gujarat. Palaeobotanist, 18: 75-86.
 Venkatachala, B. S. & Kar, R. K. 1972. Palynology of the Mesozoic sediments of Kutch, W. India, 9. Palynological fossils from the Bhuj exposures near Dayapar, Kutch District, Gujarat State. Proc. Sem. Paleopalyn. Indian Strat., 1971: 166-171.
 Venkatachala, B. S. & Kar, R. K. 1990. Reworked Permian Dulhuntyispora in Tertiary sediments of northeastern India. Alcheringa, 14: 177-180.
+Venkatachala, B. S., Kar, R. K., Rajanikanth, A. & Ly, A. 1998. Palynology of the Cretaceous-Tertiary transition in an Atlantic borehole off Senegal, West Africa. Géologie Méditerranéenne, XXV: 33-41.
 Venkatachala, B. S., Kar, R. K. & Raza, S. 1969a. Palynology of the Mesozoic sediments of Kutch, W. India, 2. Bhujiasporites gen. nov., a new trilete spore genus. Palaeobotanist, 17(1968): 121-122.
 Venkatachala, B. S., Kar, R. K. & Raza, S. 1969b. Palynology of the Mesozoic sediments of Kutch, W. India, 3. Morphological study and revision of the spore geus Trilobosporites Pant ex Potonié 1956. Palaeobotanist, 17(1968): 123-126.
 Venkatachala, B. S., Kar, R. K. & Raza, S. 1969c. Palynology of the Mesozoic sediments of Kutch, W. India, 5. Spores and pollen from Katrol exposures near Bhuj, Kutch district, Gujarat State. Palaeobotanist, 17(1968): 184-207.
 Venkatachala, B. S. & Kumar, A. 1980. An assemblage of dinoflagellate cysts and acritarchs from Dalmiapuram Grey Shale, Cauvery Basin, Tamil Nadu, India. Journal of the Palaeontological Society of India, 23 & 24(1978-79): 92-109.
+Venkatachala, B. S., Mandaokar, B. D. & Kar, R. K. 2004. Further observation on Meyeripollis Baksi & Venkatachala 1970. Palaeobotanist, 53: 169-172.
 Venkatachala, B. S. & Rawat, M. S. 1970. A reappraisal of palynoflora from Dhrangadhra Formation, Saurashtra, Gujarat State. Bull. Oil Nat. Gas Comm., 7: 121-123.
 Venkatachala, B. S. & Rawat, M. S. 1971. Palynology of the Mesozoic sediments of Kutch, western India. 8. A check list of palynological fossils from Chawad River area and remarks on Asterisporites gen. nov. Palaeobotanist, 19: 105-109.
 Venkatachala, B. S., & Rawat, M. S. 1972. Palynology of the Tertiary sediments in the Cauvery Basin, I. Paleocene-Eocene palynoflora from the subsurface. In Proc. Sem. Paleopalyn. Indian Strat., 1971: 292-335.
@@ -217,7 +222,9 @@ Vergel, M. d. M. 1990. Leschikisporis chacoparanaense sp. nov. (Espora monolete)
 Vergel, M. d. M. 2008. Palynology of Late Paleozoic sediments (Tupe Formation) at La Herradura Creek, San Juan Province, Argentina. Alcheringa, 32: 339-352.
 Vergel, M. M., Aceñolaza, G. F., & Aráoz, L. 2013. Palynology of the Iscayachi Formation (Cambro-Ordovician) from the Cordillera Oriental of Southern Bolivia: New data from the western margin of Gondwana. Geologica Acta, 11: 167-176.
 Vergel, M. d. M., & Durango de Cabrera, J. 1988. Palinología de la Formación Cullen (Terciario) de las immediaciones de Ca¤adón Beta, Tierra del Fuego, República Argentina. Actas V. Cong. Geol. Chileno, II: 227-245.
-Verhoeven, K. & Louwye, S. 2012: Selenopemphix islandensis sp. nov.: a new organic-walled dinoflagellate cyst from the Lower Pliocene Tjörnes beds, northern Iceland. Palynology, 36: 10 - 25.
+Verhoeven, K. & Louwye, S. 2012: Selenopemphix islandensis sp. nov.: a new organic-walled dinoflagellate cyst from the Lower Pliocene Tjörnes beds, northern Iceland. Palynology, 36: 10-25.
+Verhoeven, K. &  Louwye S. 2013. Palaeoenvironmental reconstruction with marine palynomorphs of the Plio-Pleistocene in Tjörnes, Northern Iceland. Palaeogeography Palaeoclimatolology Palaeoecology,
+Verhoeven, K., Louwye, S. Paez-Reyes, M., Mertens, K. M. & Vercauteren, D. 2014. New acritarchs from the late Cenozoic of the southern North Sea Basin and the North Atlantic realm. Palynology, 38: 38-50.
 Verleye, T., Pospelova, V., Mertens, K. N. & Louwye, S. 2011: The geographical distribution and (palaeo)ecology of Selenopemphix undulata sp. nov., a new late Quaternary dinoflagellate cyst from the Pacific Ocean. Marine Micropaleontology, 78, no.3 - 4, p.65 - 83.
 Verma, P., Mandal, M., Rao, M. R., Thakkar, M. G. & Bajpai, S. 2013. Palynological record from Chhasra Formation (Early Miocene), Eastern Kutch, Gujarat. Palaeobotanist, 62: 149-155.
 Verniers, J. 1981. The Silurian of the Mehaigne Valley (Brabant Massif, Belgium): Biostratigraphy (Chitinozoa). Review of Palaeobotany and Palynology, 34: 165-174.
@@ -238,9 +245,9 @@ Vidal, G. 1981d. Aspects of problematic acid-resistant, organic-walled microfoss
 Vidal, G., & Ford, T. D. 1985. Microbiotas from the Late Proterozoic Chuar Group (northern Arizona) and Uinta Mountain Group (Utah) and their chronostratigraphic implications. Precamb. Res., 28: 349-389.
 Vidal, G., & Knoll, A. H. 1983. Proterozoic plankton. Geological Society of America Memoir, 161: 265-277.
 Vidal, G. & Moczydlowska, M. 1986. Events and acritarch biostratigraphy around the Precambrian/Cambrian transition. Amer. Assoc. Strat. Palyn., 19th Ann. Mtg., New York, Program & Abstracts: 37 (abstr.).
-Vidal, G. & Nystuen, J. P. 1990. Lower Cambrian acritarchs and the Proterozoic-Cambrian boundary in southern Norway. Norsk Geol. Tidsskr., 70: 191-222.
+Vidal, G. & Nystuen, J. P. 1990. Lower Cambrian acritarchs and the Proterozoic-Cambrian boundary in southern Norway. Norsk Geolisk Tidsskrift, 70: 191-222.
 Vidal, G. & Peel, J. S. 1993. Acritarchs from the Lower Cambrian Buen Formation in North Greenland. Grønlands Geologiske Undersøgelse, Bulletin 164: 1-35.
-Vidal, G. & Siedlecka, A. 1983. Planktonic, acid-resistant microfossils from the Upper Proterozoic strata of the Barents Sea region of Varanger Peninsula, East Finnmark, northern Norway. Norg. Geol. Unders. Bull. 382: 45-79.
+Vidal, G. & Siedlecka, A. 1983. Planktonic, acid-resistant microfossils from the Upper Proterozoic strata of the Barents Sea region of Varanger Peninsula, East Finnmark, northern Norway. Norg. Geologiske Undersøgelse, Bulletin 382: 45-79.
 Vieira, M., Casas-Gallego, M., Mahdi, S. & Fenton, J. 2019: Impagidinium obscurum sp. nov., a marker dinoflagellate cyst for the Thanetian (Paleocene) of the North Sea and the Barents Sea. Palynology (on-line edition).
 Vieira, M. & Mahdi, S. 2019. New Paleocene species and biostratigraphic relevance of the genus Spiniferites across the North Sea and Norwegian Sea. Review of Palaeobotany and Palynology, 262: 28 - 43.
 Vieira, M., Mahdi, S. & Alderson, A. 2020. New Selandian species of Glaphyrocysta and Spinidinium from offshore northwest Europe. Review of Palaeobotany and Palynology, on-line edition.
@@ -291,9 +298,10 @@ Visscher, H., Huddleston Slater-Offerhaus, M. G., & Wong, T. E. 1974. Palynologi
 Visscher, H., & Krystyn, L. 1978. Aspects of Late Triassic palynology. 4. A palynological assemblage from ammonoid-controlled Late Karnian (Tuvalian) sediments of Sicily. Review of Palaeobotany and Palynology, 26: 93-112.
 Visscher, H., Schuurman, W. M. L., & Van Erve, A. W. 1980. Aspects of a palynological characterization of Late Triassic and Early Jurassic "Standard" units of chronostratigraphical classification in Europe. Proc. IV Int. Palyn. Conf., Lucknow (1976-77), 2: 281-287.
 Visscher, H., & Van der Zwan, C. J. 1981. Palynology of the Circum- Mediterranean Triassic: Phytogeographical and palaeoclimatological implications. Geol. Rundschau, 70: 625-634.
-Viswanathiah, M. N., Venkatachalapathy, V., & Mahalakshmamma, A. P. 1979. Acritarchs and other associated microfossils of the Lokapur Formation, Kaladgi Group (Precambrian-Cambrian), south India. Proc. IV Int. Palyn. Conf., Lucknow (1976-77), 2: 71-77.
-Viswanathiah, M. N., Venkatachalapathy, V., & Mahalakshmamma, A. P. 1980. Microfossils of the stromatolites of Lokapur region, Karnataka. Geological Survey of India, Miscellaneous Publication 44: 16-32.
-Viswanathiah, N. M., Venkatachalapathy, V., & Shankara, M. 1984. Acritarchs and associated microplankton from the Katageri Formation of the Badami Group, South India. Review of Palaeobotany and Palynology, 41: 13-30.
+Viswanathiah, M. N., Venkatachalapathy, V. & Mahalakshmamma, A. P. 1979. Acritarchs and other associated microfossils of the Lokapur Formation, Kaladgi Group (Precambrian-Cambrian), south India. Proc. IV Int. Palyn. Conf., Lucknow (1976-77), 2: 71-77.
+Viswanathiah, M. N., Venkatachalapathy, V. & Mahalakshmamma, A. P. 1980. Microfossils of the stromatolites of Lokapur region, Karnataka. Geological Survey of India, Miscellaneous Publication 44: 16-32.
+Viswanathiah, N. M., Venkatachalapathy, V. & Shankara, M. 1984. Acritarchs and associated microplankton from the Katageri Formation of the Badami Group, South India. Review of Palaeobotany and Palynology, 41: 13-30.
+Vodicka, J., Muir, L. A., Botting, J. P., Spillar, V. & Fatka, O. 2022. Palaeobiological significance of chitinozoan clusters with parallel vesicles. Marine Micropaleontology, 172:
 Volkheimer, W. 1968. Esporas y granos de polen del Jurásico de Neuquen (República Argentina), I. Descripciones sistematicas. Ameghiniana, 5: 333-370.
 Volkheimer, W. 1969. Esporas y granos de polen del Jurásico de Neuquén (República Argentina), II. Asociaciones microfloristicas, aspectos paleoecologicos y paleoclima. Ameghiniana, 6: 127-145.
 Volkheimer, W. 1971. Algunos adelantos en la microbioestratigrafia del Jurasico en la Argentina y comparacion con otras regiones del Hemisferio Austral. Ameghiniana, 8: 341-355.

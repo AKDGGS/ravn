@@ -23,6 +23,7 @@ Zaklinskaya, Ye. D., & Naydin, D. P. 1985. The palynological characteristics of 
 Zaklinskaya, Ye. D., Perfilieva, A. R. & Ponomarenko, Z. K. 1972. New pollen species of the form genus Betpakdalina from the Upper Senonian of central Pakistan. Paleont. Jour., 6: 537-543.
 Zamaloa, M. C. 1992a. A new species of Nothofagidites, Nothofagidites americanus, from Patagonia and Antarctica. Review of Palaeobotany and Palynology, 72: 49-53.
 Zamaloa, M. C. 1992b. Nothofagidites tehuelchesii, a new species from the Tertiary of Patagonia. Review of Palaeobotany and Palynology, 72: 55-59.
+Zamaloa, M. C. 2004. Miocene algae and spores from Tierra del Fuego, Argentina. Alcheringa 28: 205-227.
 Zamaloa, M. C., & Romero, E. J. 1990. Some spores and pollen from the Cullen Formation (upper Eocene to middle Oligocene), Tierra del Fuego, Argentina. Palynology, 14: 123-133.
 Zamaloa, M. C., Romero, E. J., & Stinco, L. 1987. Polen y esporas de la Formación La Meseta (Eoceno superior-Oligoceno) de la Isla Marambio (Se- mour), Antartida. Actas VII Simp. Argent. Paleobot. Palin., 7: 200-203.
 Zaporcek, N. J. 1989. Upper Eocene and Lower Oligocene palynocomplexes and phytoplankton from Borehole No. 1, Landzar (Armenia, U.S.S.R.). In Phanerozoic Paleoflora and stratigraphy. Edit. Soviet Acad. Sci., Moscow, 1989; 85-103 (In Russian).
@@ -44,7 +45,7 @@ Zavattieri, A. M. 1991a. Granos de polen de la Formación Las Cabras (Triásico)
 Zavattieri, A. M. 1991b. Granos de polen de la Formación Las Cabras (Triásico), en su localidad tipo, provincia de Mendoza, Argentina. Parte 2. Ameghiniana, 28: 205-224.
 Zavattieri, A. M. 1992a. Rese¤a preliminar sobre la palinología del Triásico del área de Santa Clara, norte de la provincia de Mendoza (Argentina). Asoc. Paleont. Argentina, Publ. Esp. (VIII Simposio Argentino de Paleobotánica y Palinológía, Buenos Aires), 2: 101-104.
 Zavattieri, A. M. 1992b. Palinológía de la Formación El Tranquilo (Triásico), provincia de Santa Cruz, Argentina. Ameghiniana, 29: 305-314.
-Zavattieri, A. M., & Batten, D. J. 1996. Miospores from Argentinian Triassic deposits and their potential for intercontinental correlation. In Jansonius, J., & McGregor, D. C., eds., Palynology: Principles and Applications, Amer. Assoc. Strat. Palynologists Found., 2: 767-778.
+Zavattieri, A. M., & Batten, D. J. 1996. Miospores from Argentinian Triassic deposits and their potential for intercontinental correlation. In Jansonius, J., & McGregor, D. C., eds., Palynology: Principles and Applications, American Association of Stratigraphic Palynologists Foundation, 2: 767-778.
 Zavattieri, A. M. & Volkheimer, W. 1992. Granos de polen sacados (Saccites) de la Formación Potrerillos (Triásico) en la localidad de Divisadero Largo, Provincia de Mendoza, Argentina. Ameghiniana, 29: 27-44.
 Zavattieri, A. M. & Volkheimer, W. 2003. Palynostratigraphy and paleoenvironments of Early Jurassic strata (Nestares Formation) in northern Patagonia, Argentina. Part 1. Terrestrial species. Ameghiniana, 40: 545-558.
 Zavattieri, A. M., Volkheimer, W. & Rosenfeld, U. 1994. Palynology and facies of the Late Triassic of Comallo (northern Patagonia, Argentina). Zentralblatt für Geologie und Paläontologie, I (1993) 1/2: 133-154.
@@ -82,7 +83,8 @@ Zhang Y., & Zhan J. 1986. Evolution of angiosperm pollen of the early Late Creta
 Zhang Z. 1980. Lower Tertiary fungal spores from Lunpola Basin of Xizang, China. Acta Palaeont. Sinica, 19: 296-301. (In Chinese with English summary)
 Zhang Z. 1982a. Upper Proterozoic microfossils from Summer Isles, NW Scotland. Palaeontology, 25: 443-460.
 Zhang Z. 1982b. Spore-pollen assemblage of the Donghe Group in the Huixian-Chengxian Bsin and their stratigraphic significance. Bull. Xi'an Inst. Geol. Min. Res., 5: 112.
-Zhang Z. 1984. Lower Cretaceous sporo-pollen assemblage of the Lingxiang Group in SE Hubei. Acta Botanica Sinica, 26: 653-663.
+Zhang Z. 1984a. Lower Cretaceous sporo-pollen assemblage of the Lingxiang Group in SE Hubei. Acta Botanica Sinica, 26: 653-663.
+Zhang Z. 1984b. Zhang Zhong-ying. A New Microphytoplankton Species from the Sinian of Western Hubei Province. Journal of Integrated Plant Biology, 26: 94-98. (In Chinese with English summary)
 Zhang Z. 1988. Sporo-pollen assemblages from the Huanhe-Huachi Formation of the Zhidan Group in southern Ordos Basin and its age. Bull. Xi'an Inst. Geol. Min. Res., 22: 75-88.
 Zhang Z., Diver, W., & Grant, P. 1981. Microfossils from the Aultbrea Formation, Torridon Group, on Tanera Beg, Summer Isles. Scottish Journal of Geology, 17: 149-154.
 Zhao B., & Jiang Q. 1982. Subdivision and correlation of the Lower Cretaceous of Hunan. Journal of Stratigraphy, 6: 72-78.
@@ -119,13 +121,13 @@ Zhu Z., Wu L., Xi P., Song Z.,= & Zhang Y. 1985. A research on Tertiary palynolo
 Zia-ul-Rehman, M. & Masood, K. R. 2008. Late Permian azonate and zonate trilete spores from the Chhidru Formation, Salt Range, Pakistan. Journal of Scientific Research, 38: 65-83.
 Ziaja, J. 2006. Lower Jurassic spores and pollen grains from the Odrowasz, Mesozoic margin of the Holy Cross Mountains, Poland. Acta Palaeobotanica, 46: 3-83.
 Ziembińska-Tworzydło, M. 1974. Palynological characteristics of the Neogene of western Poland. Acta Palaeontologica Polonica, 19: 309-432.
-Ziembińska-Tworzydło, M. 1998. Climatic phases and spore-pollen zones. [In:] H. Ważyńska (Ed.): Palynology and palaeogeography of the Neogene in the Polish Lowlands. Prace Państwowego Instytutu Geologicznego, 160: 12 - 16.
+Ziembińska-Tworzydło, M. 1998. Climatic phases and spore-pollen zones. [In:] H. Ważyńska (Ed.): Palynology and palaeogeography of the Neogene in the Polish Lowlands. Prace Państwowego Instytutu Geologicznego, 160: 12-16.
 Ziembińska-Tworzydło, M. & Wazynska, H. 1981. A palynological subdivision of the Neogene in western Poland. Bull. Acad. Pol. Sci., 29: 29-43.
 Ziembińska-Tworzydło, M., Grabowska, I., Kohlman-Adamska, A., Skawinska, K., Slodkowska, B., Stuchlik, L., Sadowska, A., & Wazynska, H. 1994. Taxonomical revision of selected pollen and spores taxa from Neogene deposits. Acta Palaeobotanica, Suppl. 1: 5-30.
 Zippi, P. A. 1991. SEM and light microscope mounting and specimen location technique for same-specimen study of palynological strew-mounts. Micropaleontology, 37: 407-413.
 Zippi, P. A. 1998. Freshwater algae from the Mattagami Formation (Albian), Ontario: Paleoecology, botanical affinities, and systematic taxonomy. Micropaleontology, 44, supplement 1: 1-78.
 Zippi, P. A., & Bajc, A. F. 1990. Recognition of a Cretaceous outlier in northwestern Ontario. Canadian Journal of Earth Science, 27: 306-311.
-Žítt, J., Nekvasilová, O., Bosák, P., Svobodová, M., Stemproková-Jírová, D. and Šastný, M. 1997: Rocky coast facies of the Cenomanian-Turonian Boundary interval at Velim (Bohemian Cretaceous Basin, Czech Republic). Second part. Věstník Českého Geologického Ústavu, 72: 141 - 155,
+Žítt, J., Nekvasilová, O., Bosák, P., Svobodová, M., Stemproková-Jírová, D. and Šastný, M. 1997: Rocky coast facies of the Cenomanian-Turonian Boundary interval at Velim (Bohemian Cretaceous Basin, Czech Republic). Second part. Věstník Českého Geologického Ústavu, 72: 141-155,
 Ziva, M. V. 1973. Palynological characteristic of Paleogene deposits of the Amur-Seya depression. In The Palynology of Cenophytic: 89-93 (In Russian with English summary).
 Znosko, J. 1955. Retyk i Lias miedzy Krakowem a Wieluniem. Inst. Geol., Prace, 14: 1-146. (with English and Russian summaries).
 Zobaa, M. E., Zavada, M. S., Whitelaw, M. J., Shunk, A. J., & Oboh-Ikuenobe, F. E. 2011. Palynology and palynofacies analyses of the Gray Fossil Site, eastern Tennessee: Their role in understanding the basin-fill history. Palaeogeography, Palaeoclimatology, Palaeoecology, 308: 433-444.
@@ -137,4 +139,5 @@ Zonneveld, K. A. F. 1997. New species of organic-walled dinoflagellate cysts fro
 Zonneveld, K. A. F., & Jurkschat, T. 1999. Bitectatodinium spongium (Zonneveld, 1997) Zonneveld et Jurkschat, comb. nov., from modern sediments and sediment trap samples of the Arabian Sea (northwestern Indian Ocean): taxonomy and ecological affinity. Review of Palaeobotany and Palynology, 106: 153-169.
 Zoricheva, A. I., & Sedova, M. A. 1954. Spore-pollen complexes from the Upper Permian deposits from some localities in North European Russia. Rep. Geol. Res. Inst., Moscow: 1-40.
 Zorzi, C., Head, M. J., Matthiessen, J. & de Vernal, A. 2019: Impagidinium detroitense and I.? diaphanum: two new dinoflagellate cyst species from the Pliocene of the North Pacific Ocean, and their biostratigraphic significance. Review of Palaeobotany and Palynology, 264: 24-37.
-Zotto, M., Drugg, W. S., & Habib, D. 1987. Kimmeridgian dinoflagellate stratigraphy in the southwestern North Atlantic. Micropaleontology, 33: 193-213.
+Zotto, M., Drugg, W. S. & Habib, D. 1987. Kimmeridgian dinoflagellate stratigraphy in the southwestern North Atlantic. Micropaleontology, 33: 193-213.
+Zylinska, A. & Szczepanik, Z. 2009. Trilobite and acritarch assemblages from the Lower-Middle Cambrian boundary interval in the Holy Cross Mountains (Poland). Acta Geologica Polonica, 59: 413-458.

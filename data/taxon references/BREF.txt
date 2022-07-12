@@ -12,15 +12,15 @@ Backhouse, J. 1990. Permian palynostratigraphic correlations in southwestern Aus
 Backhouse, J. 1991. Permian palynostratigraphy of the Collie Basin, Western Australia. Review of Palaeobotany and Palynology, 67: 237-314.
 Backhouse, J. 2006. Albian (Lower Cretaceous) dinoflagellate cyst biostratigraphy of the Gearle Siltstone, northern Carnarvon Basin, Western Australia. Palynology, 30: 43-68.
 Backhouse, J., Balme, B. E., Helby, R., Marshall, N. G. & Morgan, R. 2002. Palynological zonation and correlation of the latest Triassic, Northern Carnarvon Basin. The Sedimentary Basins of Western Australia 3, At Perth, Volume: Keep, M. and Moss, S. J. (eds.), Proceedings of the Petroleum Exploration Society of Australia Symposium: 179-201.
-Badoux, H., & Weidmann, M. 1963. Sur l'âge du flysch . . . Helminthoides des Préalpes romandes et chablaisiennes. Eclogae Geol. Helv., 56: 513-528.
+Badoux, H. & Weidmann, M. 1963. Sur l'âge du flysch . . . Helminthoides des Préalpes romandes et chablaisiennes. Eclogae Geol. Helv., 56: 513-528.
 Baghai-Riding, N. L., Kelley, J. R. & Swann, C. T. 2015. Palynological analysis of a sample from the Coon Creek Member, Union County, Mississippi. Bulletin Alabama Museum of Natural History, 33: 104-117.
-Bagnoli, G., Stouge, S., & Tongiorgi, M. 1988. Acritarchs and conodonts from the Cambro-Ordovician Furuhäll (Köpingsklint) section (øland, Sweden). Riv. Italiana Paleont. Stratig., 94: 163-247. 
-Bai Y., Lu M., Chen L., & Long R. 1983. Mesozoic spore-pollen. Paleontological Atlas of Southwest China, Volume of Microfossils, Chengdu Inst. Geol. Min. Res., Geol. Pub. House, Beijing: 520-654.
+Bagnoli, G., Stouge, S., & Tongiorgi, M. 1988. Acritarchs and conodonts from the Cambro-Ordovician Furuhäll (Köpingsklint) section (öland, Sweden). Riv. Italiana Paleont. Stratig., 94: 163-247. 
+Bai Y., Lu M., Chen L. & Long R. 1983. Mesozoic spore-pollen. Paleontological Atlas of Southwest China, Volume of Microfossils, Chengdu Inst. Geol. Min. Res., Geol. Pub. House, Beijing: 520-654.
 Bailey, D. 1987. Durotrigia daveyi gen. et sp. nov., an early Bajocian dinocyst with a variable precingular archaeopyle. Journal of Micropalaeontology, 6: 89-96. 
 Bailey, D. 1990. Some dinoflagellate cysts from latest Bajocian and Bathonian sediments in southern England. Palynology, 14: 135-144.
 Bailey, D. 1993. Selected Cribroperidinium species (Dinophyceae) from the Kimmeridgian and Volgian of northwest Europe. Journal of Micropalaeontology, 12: p.219 - 225.
-Bailey, D., & Hogg, N. M. 1995. Fentonia bjaerkei gen. et comb. nov.; transfer from Parvocysta Bjaerke 1980. Journal of Micropalaeontology, 14: 58. 
-Bailey, D., & Loy, A. 1997. Oligosphaeridium junctum sp. nov. A Hauterivian dinoflagellate cyst from the North Sea. Journal of Micropalaeontology, 16: 159- 162.
+Bailey, D. & Hogg, N. M. 1995. Fentonia bjaerkei gen. et comb. nov.; transfer from Parvocysta Bjaerke 1980. Journal of Micropalaeontology, 14: 58. 
+Bailey, D. & Loy, A. 1997. Oligosphaeridium junctum sp. nov. A Hauterivian dinoflagellate cyst from the North Sea. Journal of Micropalaeontology, 16: 159- 162.
 Bailey, D. A., Milner, P. and Varney, T. 1997: Some dinoflagellate cysts from the Kimmeridge Clay Formation in North Yorkshire and Dorset, U.K. Proceedings of the Yorkshire Geological Society, 51: 235 - 243.
 Bailey, D. & Partington, M. 1991. Some Middle Jurassic dinocysts from the Brent Group of the northern North Sea. Journal of Micropalaeontology, 9(1990): 245- 252.
 Bain, A. & Doubinger, J. 1965. Étude d'un microplankton (acritarches) du Dévonien supérieur des Ardennes. Bull. Ferv. Carte Géol. Alsace-Lorraine Université, Strasbourg, 18(1): 15-20. 
@@ -84,6 +84,7 @@ Balme, B. E., & Hennelly, J. P. F. 1956a. Monolete, monocolpate, and alete sporo
 Balme, B. E., & Hennelly, J. P. F. 1956b. Trilete sporomorphs from Australian Permian sediments. Australian Journal of Botany, 3: 89-98.
 Balme, B. E., & Playford, G. 1968. Late Permian plant microfossils from the Prince Charles Mountains, Antarctica. Revuer\ de Micropaléontologie, 3(1967): 179-192.
 Balme, B. E., & Segroves, K. L. 1966. Peltacystia gen. nov.: A microfossil of uncertain affinities from the Permian of Western Australia. Royal Society of Western Australia, Journal, 49: 26-31.
+Balota, E. J., Head, M. H., Okada, M., Suganuma, Y. & Haneda, Y. 2021. Paleoceanography and dinoflagellate cyst stratigraphy across the Lower-Middle Pleistocene Subseries (Calabrian-Chibanian Stage) boundary at the Chiba composite section, Japan. Progress in Earth and Planetary Science, 8:48: 1-38 (on-line edition, https://doi.org/10.1186/s40645-021-00438-3).
 Baltakyte-Vienozinsklene, A. 1958, New forms of pollen and spores found in the deposits of the Middle Jurassic in Southern Baltic area [ Naujos Ziedadulkiu Ir sporu Formos,Rastos Pietinio Pabaltijo vidurines Juros Dariniuose ] Ltsr Ma Geologijos Ir Geografijos Institutas Moksl Iniai Pranesimai,Gir Geograf, 8: 241-257.
 Baltes, N. 1963. Dinoflagellate si hystrichosphaeride Cretacice din Platforma Moezica. Petrol si Gaze, 14: 581-589.
 Baltes, N. 1965. Observatii asupra microflorei Cretacice inferiorare din zona R. bicas. Petrol si Gaze, 16: 3-17.
@@ -227,6 +228,7 @@ Batten, D. J. 1987. Palynofacies analyses, depositional environments and source 
 Batten, D. J. 1988. Revision of S. J. Dijkstra's Late Cretaceous megaspores and other plant microfossils from Limburg, The Netherlands. Med. Rijks Geol. Dienst, 41: 1-15.
 Batten, D. J. 1989. Cretaceous freshwater dinoflagellates. Cretaceous Research, 10: 271-273.
 Batten, D. J., & Christopher, R. A. 1981. Key to the recognition of Normapolles and some morphologically similar pollen genera. Review of Palaeobotany and Palynology, 35: 359-383.
+Batten, D. J., Dupagne-Kievits, J. & Lister, J. K. 1988. Palynology of the Upper Cretaceous Aachen Formation of northeast Belgium. In The Chalk District of the Euregio Meuse-Rhine, Streel, M. & Bless, M. J. M., eds.: 95-103.
 Batten, D. J., Dutta, R. J., & Knobloch, E. 1996. Differentiation, affinities and palaeoenvironmental significance of the megaspores Arcellites and Bohemisporites in Wealden and other Cretaceous successions. Cretaceous Research, 17: 39-65.
 Batten, D. J., & Ferguson, D. J. P. 1987. Cabochonicus, a new genus for species of gemmate megaspores previously referred to Verrutriletes. Journal of Micropalaeontology, 6: 65-75.
 Batten, D. J., Koppelhus, E. B., & Nielsen, L. H. 1994. Uppermost Triassic to Middle Jurassic palynofacies and palynomiscellanea in the Danish Basin and Fennoscandian Border Zone. Cahiers de Micropaléontologie, 9: 21-45.
@@ -474,9 +476,10 @@ Bockelie, T. G., & Kjellström, G. 1979. Middle Ordovician acritarchs from the i
 Bodor, E. 19$$. Mecseki Miocén és pannonképzo dmények parhuzanositása palynólógiai vuzsgalatokkal. ósténytani Viták, 29: 71-83.
 Bodor, E. R., & Baranyi, V. 2012. Palynomorphs of the Normapolles group and related plant mesofossils from the Iharkút vertebrate site, Bakony Mountains (Hungary). Central European Geology, 55: 259-292.
 Bogacheva, M. I., & Vinogradova, K. V. 1973. Comparative characteristic of the Early Triassic spore-pollen assemblages of Pre-Caspian, Mangyshlak and German Basin. In Palynology of Mesophyte, Proc. III Int. Palyn. Conf., Publ. House "Nauka", Moscow: 19-23.
-Boitzova, E. P., et al. 1979. Miospores of some fossil plants of Russia (Nevesisporites, Gnetaceaepollenites, Steevesipollenites and Tricolporopollenites). Trudy Vses. Nauchno.-issled. Geol. Inst., Leningrad, 267: 1-101. (In Russian).
-Boitzova, E. P., Bolkhovitina, N. A., et al. 1960. Spore and pollen complexes of Mesozoic deposits of the USSR. In PreQuaternary Micropaleontology, Int. Geol. Cong. XXI Session, Rep. Soviet Geologists, 6: 211-221.
-Boitzova, E. P., Gladkova, A. N., et al. 1956. Atlas of Miocene pollen grains and spores from different parts of the USSR. Trudy Vses. Nauchno.-issled. Geol. Inst., 13: 1-463. (In Russian)
+Boitsova, E. P., et al. 1979. Miospores of some fossil plants of Russia (Nevesisporites, Gnetaceaepollenites, Steevesipollenites and Tricolporopollenites). Trudy Vses. Nauchno.-issled. Geol. Inst., Leningrad, 267: 1-101. (In Russian).
+Boitsova, E. P., Bolkhovitina, N. A., et al. 1960. Spore and pollen complexes of Mesozoic deposits of the USSR. In PreQuaternary Micropaleontology, Int. Geol. Cong. XXI Session, Rep. Soviet Geologists, 6: 211-221.
+Boitsova, E. P., Gladkova, A. N., et al. 1956. Atlas of Miocene pollen grains and spores from different parts of the USSR. Trudy Vsesoyuznogo Neftyanogo Nauchno-Issledovatel'skogo Geologorazvedochnogo Instituta, Leningrad(VNIGRI), 13: 1-463. (In Russian)
+Boitsova, E. P., Verbitskaya & Gromova, N. S. 1979. Miospores of some ancient plants in the USSR. Trudy Vsesoyuznogo Neftyanogo Nauchno-Issledovatel'skogo Geologorazvedochnogo Instituta, Leningrad(VNIGRI). Novaya Seriya, 267: 1-101. (In Russian)
 Bolkhovitina, N. A. 1950. Lower Cretaceous spore-pollen complexes of the Chulymo-Enisey Basin, southern Urals and Kazakhstan. Trans. Conf. Spore-Pollen Analyses 1948 (Geological Survey of Canada Translation): 125-135.
 Bolkhovitina, N. A. 1951. Spore and pollen assemblages of the Aptian and Albian from the central Russian Platform. Byal. Mosk. Obshch. Ispyatelei Prir. Ord. Geol., 26(5): 34-44.
 Bolkhovitina, N. A. 1952. Pollen of Mesozoic conifers and their use in stratigraphy. Izv. Akad. Nauk SSSR, Ser. Geol. 5: 105-120. (R)
@@ -539,6 +542,8 @@ Bonet, M. C., & Dijkstra, S. J. 1956. Megasporas Carboníferas de la Camocha (Gi
 Boneta, J. L. 1975. Sobre algunos palinomorfas del Devonico Superior y Carbonico Inferior de la zona subandina sur de Bolivia. Revista Tecnica Yacimientos Petroliferos Fiscales Bolivianos Anales 4(3): 159-175.
 Bonnefille, R. 1979. Palynological method and paleoclimatic reconstruction of the Cenozoic in the East African Rift. Bull. Soc. Géol. France, 21: 331-342.
 Bonnefille, R., Vincens, A., & Buchet, G. 1987. Palynology, stratigraphy and palaeoenvironment of a Miocene hominid site (2.9-3.3 my) at Itadar, Ethiopia. Palaeogeography, Palaeoclimatology, Palaeoecology, 60: 249-281.
+Borel, C. M. & Gómez, E. A. 2006. Palinología del Holoceno del Canal del Medio, estuario de Bahía Blanca, Buenos Aires, Argentina. Ameghiniana, 43: 399-412.
+Borges, M. E. N., Riding, J. B., Fernandes, P. & Pereira, Z. 2011. The Jurassic (Pliensbachian to Kimmeridgian) palynology of the Algarve Basin and the Carrapateira outlier, southern Portugal. Review of Palaeobotany and Palynology, 163: 190-204.
 Bose, M. N. 1952. Plant remains from Barmer district, Rajasthan. J. Sci. Ind. Res., 11B: 185-190.
 Bose, M. N. 1971. Palynostratigraphy of the Lukuga Series in Congo. Geo- phytology, 1: 16-22.
 Bose, M. N. 1974. A palynological reconnaissance of the Mesozoic sediments of Zaire. Kon. Acad. Overz. Wet., Med., Belgium, 4: 618-628.
@@ -557,6 +562,7 @@ Bouché, P. M. 1965. Chitinozoaïres du Silurien s. l. du Djabo (Sahara nigérie
 Bouckaert, J., Streel, M., & Thorez, J. 1968. Schema biostratigraphique et Coupes de référence du Famennien belge. Ann. Soc. géol. Belg., 91: 317-336.
 Bouckaert, J., Streel, M., & Thorez, J. 1969. Biostratigraphic chart of the Famennian Stage (Upper Devonian) in the type localities of Belgium. A preliminary report. Journal of Paleontology, 43: 727-734.
 Bouckaert, J., Streel, M., & Thorez, J. 1970. Le Famennien et les couches de transition Dévonien-Carbonifère dans la valée de l'Ourthe (Sud de Liège, . . . Cong. Colloq. Univ. Liège, Colloq. Strat. Carb., 55: 25-46.
+Boukhamsin, H., Peyrot, D., Lang, S. & Vecoli, M. 2022. Low-latitude ?upper Barremian - lower Aptian palynoflora and paleovegetation of the Biyadh Formation (Arabian Plate, eastern margin of northern Gondwana): evidence for a possible cold snap. Cretaceous Research, 129:
 Boulter, M. C. 1971. A palynological study of two of the Neogene plant beds in Derbyshire. Bulletin of the British Museum (Natural History), Geology, 19: 361-410.
 Boulter, M. C. 1979. Taxonomy and nomenclature of fossil pollen from the Tertiary. Taxon, 28: 337-344.
 Boulter, M. C., & Craig, D. L. 1979. A middle Oligocene pollen and spore assemblage from the Bristol Channel. Review of Palaeobotany and Palynology, 28: 259-272.

@@ -188,11 +188,12 @@ Head, M. J. 2003a: Echinidinium zonneveldiae sp. nov., a dinoflagellate cyst fro
 Head, M. J. 2003b: Neogene occurrences of the marine acritarch genus Nannobarbophora Habib and Knapp, 1982 emend., and the new species N. gedlii. Journal of Paleontology: 77: 382-385.
 Head, M. J. 2007: Last Interglacial (Eemian) hydrographic conditions in the southwestern Baltic Sea based on dinoflagellate cysts from Ristinge Klint, Denmark. Geological Magazine, 144: 987-1013.
 Head, M. J., & Norris, G. 1989. Palynology and dinocyst stratigraphy of the Eocene and Oligocene in ODP Leg 105, Hole 647A, Labrador Sea. Proceedings of the Ocean Drilling Program, 105: 515-550.
-Head, M. J., & Norris, G. 2003, New species of dinoflagellate cysts and other palynomorphs from the latest Miocene and Pliocene of DSDPmHole 603C, western North Atlantic. Journal of Paleontology, 77: 1 - 15.
-Head, M. J., Norris, G., & Mudie, P. J. 1989a. New species of dinocysts and a new species of acritarch from the upper Miocene and lowermost Pliocene, ODP Leg 105, Site 646, Labrador Sea. Proc. Ocean Drill. Prog., 105: 453-466.
-Head, M. J., Norris, G., & Mudie, P. J. 1989b. Palynology and dinocyst stratigraphy of the Miocene in ODP Leg 105, Hole 645E, Baffin Bay. Proc. Ocean Drill. Prog., 105: 467-514.
-Head, M. J. & Westphal, H. 1999: Palynology and paleoenvironments of a Pliocene carbonate platform: the Clino core, Bahamas. Journal of Paleontology, 73: 1 - 25.
-Head, M. J., & Wrenn, J. H. 1992. A forum on Neogene and Quaternary dinoflagellate cysts: The edited transcript of a round table discussion held at the Second Workshop on Neogene Dinoflagellates. In Neogene and Quaternary Dinoflagellate Cysts and Acritarchs, Head, M. J., & Wrenn, J. H., eds., Amer. Assoc. Strat. Palyn. Found.: 1-31.
+Head, M. J., & Norris, G. 2003, New species of dinoflagellate cysts and other palynomorphs from the latest Miocene and Pliocene of DSDPmHole 603C, western North Atlantic. Journal of Paleontology, 77: 1-15.
+Head, M. J., Norris, G., & Mudie, P. J. 1989a. New species of dinocysts and a new species of acritarch from the upper Miocene and lowermost Pliocene, ODP Leg 105, Site 646, Labrador Sea. Proceedings of the Ocean Drilling Program, 105: 453-466.
+Head, M. J., Norris, G., & Mudie, P. J. 1989b. Palynology and dinocyst stratigraphy of the Miocene in ODP Leg 105, Hole 645E, Baffin Bay. Proceedings of the Ocean Drilling Program, 105: 467-514.
+Head, M. J. & Westphal, H. 1999: Palynology and paleoenvironments of a Pliocene carbonate platform: the Clino core, Bahamas. Journal of Paleontology, 73: 1-25.
+Head, M. J., & Wrenn, J. H. 1992. A forum on Neogene and Quaternary dinoflagellate cysts: The edited transcript of a round table discussion held at the Second Workshop on Neogene Dinoflagellates. In Neogene and Quaternary Dinoflagellate Cysts and Acritarchs, Head, M. J., & Wrenn, J. H., eds., American Association of Stratigraphic Palynologists Foundation: 1-31.
+Hebel, I. & Torres, T. 2009. Polen fósil de la Isla Rey Jorge (Antártica) y Chile continental, afin a Proteaceae chilenas. Anales Instituto Patagonia (Chile), 37: 7-22.
 Hedlund, R. W. 1964. Palynological assemblage from the Permian Wellington Formation, Noble County, Oklahoma. Oklahoma Geology Notes, 25: 236-241.
 Hedlund, R. W. 1966. Palynology of the Red Branch Member of the Woodbine Formation (Cenomanian), Bryan County, Oklahoma. Oklahoma Geological Survey Bulletin 112: 1-69.
 Hedlund, R. W. 1967. Taxonomic reevaluation of spore taxa from the Cenomanian of Oklahoma. Pollen et Spores, 9: 579-582.
@@ -309,13 +310,14 @@ Higgs, K. T. 1999. Early Devonian spore assemblages from the Dingle Group, Count
 Higgs, K., & Beese, A. P. 1986. A Jurassic microflora from the Colbond Clay of Cloyne, County Cork. Ir. J. Earch Sci., 7: 99-109.
 Higgs, K., & Clayton, G. 1979. The Tournaisian marine transgression in Ireland. J. Earth Sci., Royal Dublin Soc., 2: 1-10.
 Higgs, K., & Clayton, G. 1984. Tournaisian miospore assemblages from Maesbury in the eastern Mendips, England. Journal of Micropaleontology, 3: 17-28.
-Higgs, K., Clayton, G., & Keegan, J. B. 1988. New data on stratigraphic and systematic palynology of the Tournaisian rocks of Ireland. Geological Survey Ireland Special Paper, 7: 1-92.
-Higgs, K., Dreesen, R., Dusar, M., & Streel, M. 1992. Palynostratigraphy of the Tournaisian (Hastarian) rocks in the Namur Synclinorium, West Flanders, Belgium. Review of Palaeobotany and Palynology, 72: 149-158.
-Higgs, K. T., Finucane, D., & Tunbridge, I. P. 2002. Late Devonian and Early Carboniferous microfloras from the Hakkari Province of southeastern Turkey. Review of Palaeobotany and Palynology, 118: 141-156.
-Higgs, K., McPhilemy, B., Keegan, J. B., & Clayton, G. 1988. New data on palynological boundaries within the Irish Dinantian. Review of Palaeobotany and Palynology, 56: 61-68.
-Higgs, K., & Russell, K. J. 1981. Upper Devonian microfloras from southeast Iveragh, County Kerry, Ireland. Geological Survey of Ireland Bulletin 3: 17-50.
-Higgs, K., & Scott, A. C. 1982. Megaspores from the uppermost Devonian (Strunian) of Hook Head, County Wexford, Ireland. Palaeontographica B, 181: 75-108.
-Higgs, K., & Streel, M. 1984. Spore stratigraphy at the Devonian-Carboniferous boundary in the northern Rheinisches Schiefergebirgeö, Germany. Cour. Forsch. Inst. Senck., 67: 157-179.
+Higgs, K., Clayton, G. & Keegan, J. B. 1988. New data on stratigraphic and systematic palynology of the Tournaisian rocks of Ireland. Geological Survey Ireland Special Paper, 7: 1-92.
+Higgs, K., Dreesen, R., Dusar, M. & Streel, M. 1992. Palynostratigraphy of the Tournaisian (Hastarian) rocks in the Namur Synclinorium, West Flanders, Belgium. Review of Palaeobotany and Palynology, 72: 149-158.
+Higgs, K. T., Finucane, D. & Tunbridge, I. P. 2002. Late Devonian and Early Carboniferous microfloras from the Hakkari Province of southeastern Turkey. Review of Palaeobotany and Palynology, 118: 141-156.
+Higgs, K.T. & Forsythe, E. 2007. Mississippian microfloras from the South Munster Basin, Ireland. Comunicações Geológicas, 2007, 94: 175-194.
+Higgs, K., McPhilemy, B., Keegan, J. B. & Clayton, G. 1988. New data on palynological boundaries within the Irish Dinantian. Review of Palaeobotany and Palynology, 56: 61-68.
+Higgs, K. & Russell, K. J. 1981. Upper Devonian microfloras from southeast Iveragh, County Kerry, Ireland. Geological Survey of Ireland Bulletin 3: 17-50.
+Higgs, K. & Scott, A. C. 1982. Megaspores from the uppermost Devonian (Strunian) of Hook Head, County Wexford, Ireland. Palaeontographica B, 181: 75-108.
+Higgs, K. & Streel, M. 1984. Spore stratigraphy at the Devonian-Carboniferous boundary in the northern Rheinisches Schiefergebirgeö, Germany. Cour. Forsch. Inst. Senck., 67: 157-179.
 Hillebrandt, A. V., Krystyn, L., Kürschner, W. M., Bonis, N. R., Ruhl, M., Richoz, S., Schobben, M. A. N., Urlichs, M., Bown, P. R., Kment, K., McRoberts, C. A., Simms, M. & Tomãsových, A. 2013. The Global Stratotype Sections and Point (GSSP) for the base of the Jurassic System at Kuhjoch (Karwendel Mountains, Northern Calcareous Alps, Tyrol, Austria). Episodes, 36: 162-198.
 Hill, D., Playford, G., & Woods, J. T. 1965. Triassic fossils of Queensland. Queensland Palaeontogr. Soc.: 1-32.
 Hill, D., Playford, G., & Woods, J. T. 1970. Cainozoic fossils of Queensland. Queensland Paleont. Soc., Brisbane: 1-36.
@@ -412,6 +414,7 @@ Hu Y. 1986. Micropalaeoflora from the Early Ordovician in Gaoqiao Region of Shaa
 Hua R. 1991. Early Cretaceous angiospermous pollen from Eren Basin, Nei Mongol. Geology Publishing House, Beijing (in Chinese with English abstract).
 Huang C. L. & Huang T. C. 1984. Pollen analysis of Taiwan Pliocene (II.). Taiwania, 29: 105-109.
 Huang H., Morley, R., Licht, A., Dupont-Nivel, G., Grimsson, F., Zetter, R., Westerweel, J., Win Z., Aung D. W. & Hoorn, C. 2020. Eocene palms from central Myanmar in a South-East Asian and global perspective: evidence from the palynological record. Botanical Journal of the Linnean Society, 194: 171-206.
+Huang H., Pérez-Pinedo, D., Morley, R., Dupont-Nivet, G., Philip, A., Win Z., Aung D., Licht, A., Jardine, P. & Hoorn, H. 2021. At a crossroads: The late Eocene flora of central Myanmar owes its composition to plate collision and tropical climate. Review of Palaeobotany and Palynology (on-line edition).
 Huang Pin 1991. Early Triassic sporopollen and acritarchs in suburbs of Nanjing. Acta Palaeontologica Sinica, 458-479. (In Chinese with English summary)
 Huang Pin. 1995. Early-Middle Jurassic sporopollen assemblages from Dananhu Coalfield of Tuha Basin, Xinjiang and their stratigraphical significance. Acta Palaeontologica Sinica, 34: 171-193 (In Chinese with English summary).
 Huang Pin & Xu Xian-Shan  2004. Late Jurassic sporopollen assemblage from the well Dangcan-1 of the Santanghu Basin, Xinhang. Acta Palaeontologica Sinica, 43: 262-280.

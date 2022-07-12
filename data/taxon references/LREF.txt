@@ -95,10 +95,10 @@ Legault, J. A. 1973b. Mode of aggregation of Hoegisphaera (Chitinozoa). Canadian
 Legault, J. A. 1982. First report of Ordovician (Caradoc-Ashgill) palynomorphs from Orphan Knoll, Labrador Sea. Canadian Journal of Earth Science, 19: 1851-1856. 
 Legoux, O. 1978. Quelques espéces de pollen caractéristiques du Néogéne du Nigéria. Bull. Cent. Rech. Expl.-Prod. Elf-Aquitaine, 2: 265-317.
 Legoux, O. 1986. Nouvelles observations sur le genre Pseudoromeinipollenites Kedves. Pollen et Spores, 27(1985): 413-418.
-Legoux, O., Belsky, C. Y., & Jardiné, S. 1971. Pollens nouveaux de l'éocéne d'Afrique occidentale. 6éme Coll. Afr. Micropaléont., Abidjan 1970: 226-236.
+Legoux, O., Belsky, C. Y. & Jardiné, S. 1971. Pollens nouveaux de l'éocéne d'Afrique occidentale. 6éme Coll. Afr. Micropaléont., Abidjan 1970: 226-236.
 Legrand, J., Nishida, H. & Hirayama, R. 2019. Paleoenvironmental reconstruction from palynological analysis of the Upper Cretaceous Tamagawa Formation, Kuji Group, at the Osawada River locality（Kuji City, Iwate Prefecture, Japan. Journal of Fossil Research, 51: 59-67.
 Legrand, J., Pons, D., Nishida, H. & Yamada, T. 2011. Barremian palynofloras from the Ashikajima and Kimigahama formations (Choshi Group, Outer Zone of South-west Japan). Geodiversitas, 33: 87-135.
-Legrand, J., Pons, D., Terada, K., Yabe, A., & Nishida, H. 2013. Palynoflora from the Kitadani Formation (Tetori Group, Inner Zone of Central Japan). Paleontological Research 17(3):201-229.
+Legrand, J., Pons, D., Terada, K., Yabe, A. & Nishida, H. 2013. Palynoflora from the Kitadani Formation (Tetori Group, Inner Zone of Central Japan). Paleontological Research 17(3):201-229.
 Le Hérissé, A. 1983. Les spores du Dévonien inférieur du Synclinorium de Laval (Massif Armoricain). Palaeontographica B, 188: 1-81.
 Le Hérissé, A. 1984. Microplancton à paroi organique du Silurien de Gotland (Suède): Observations au microscope éléctronique de structures des enkystement. Review of Palaeobotany and Palynology, 43: 217-236.
 Le Hérissé, A. 1989. Acritaches et kystes d'algues Prasinophycées du Silurien de Gotland, Suède. Palaeontographica Italica, 76: 57-302.
@@ -380,6 +380,7 @@ Lopes, G., Pereira, Z., Fernandes, P., Marques, J., Mendes, M. & Götz, A. E. 20
 López Gómez, J., Arche, A., & Doubinger, J. 19xx. El Triasico del Anticinorio de Cuevo de Hierro (Serrania de Cuenca), España. Revista Española de Micropaleontología, 16: 19-42.
 Lorente, M. 1982. Revisión de las zonas palinológicas U y V de Venezuela (Miocene superior-Pleistocene). Inf. Tecn. Nø EPC-7114, MARAVEN, S.A.: 1-14.
 Lorente, M. 1986. Palynology and palynofacies of the Upper Tertiary in Venezuela. Dissertationes Botanicae (Gebrüder Borntraeger, Berlin), 99: 1-222.
+Loron, C. & Moczydlowska, M. 2018. Tonian (Neoproterozoic) eukaryotic and prokaryotic organic-walled microfossils from the upper Visingsö Group, Sweden. Palynology, 42: 220-254.
 Loron, C. C., Rainbird, R. H., Turner, E. C., Greenman, J. W. & Javaux, E. J. 2019. Organic-walled microfossils from the Late Mesoproterozoic to Early Neoproterozoic lower Shaler Supergroup (Arctic Canada): Diversity and biostratigraphic significance. Precambrian Research, 321: 349-374.
 Lott, G. K. 1988. A review of the latest Triassic succession in the U.K. sector of the Southern North Sea Basin. Proceedings of the Yorkshire Geological Society, 47: 139-147.
 Louwye, S. 1993. Dinoflagellate cyst stratigraphy of the Upper Cretaceous of western Belgium. Bulletin de la Société belge de Géologie, 101: 255-275.

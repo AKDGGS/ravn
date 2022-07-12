@@ -3,6 +3,7 @@ Cachan Santos, L. J. 1978. Palinoflora del Westfaliense A superior y B inferior 
 Cahoon, E. J. 1968. Palynology of the Inyan Kara Group of South Dakota. American Journal of Botany, 55: 724-725 (abstr.).
 Calandra, F. 1964a. Dinophyceae: Genre Arpylorus. C.I.M.P., 1964:
 Calandra, F. 1964b. "Ouverture" et paroi de certains Veryhachium. C.I.M.P., 1964:
+Calver, C. R., Clarke, M. J. & Truswell, E. M. 1984. The stratigraphy of a Late Palaeozoic borehole section at Douglas River, eastern Tasmania: a synthesis of marine macro-invertebrate and palynological data. Papers and Proceedings of the Royal Society of Tasmania, 118: 137-161.
 Cambel, B., & Planderova, E. 1985. Biostratigraphic evaluation of metasediments in the Malé Karpaty Mts. region. Geol. Zbornik, Geol. Carpathica, 36: 683-700.
 Cameron, D. K. 1974. New Triassic palynomorphs from the Arabian Peninsula. Grana, 14: 4-10. 
 Campos, C. C., Garcia, M. J., Dino, R., Veroslavsky, G., Saad, A. R., & Fulfaro, V. J. 1998. Palinomorfos da Formaçao Castellanos, na porçao norte da Bacia de Santa Lucia, Albiano do Uruguai. Rev. Univ. Guarulhos, 3(6): 5-21.
@@ -36,8 +37,9 @@ Cauduro, A. D., & Zingano, A. G. 1965. M‚gaspores en Argilite silicifide de Sa
 Cavagnetto, C. 1964. Analyse palynologique de quelques échantillons de marne à lignite (Oligocène supérieur) du bassin de Bascagno. Bull. Soc. Géol. France, 7ème ser., 6: 567-575.
 Cavagnetto, C. 2000. La palynoflore d'un gisement d'ambre de l'Eocène basal du bassin Parisien (Le Quesnoy, France). Palaeontographica B, 255: 147- 171.
 Cavagnetto, C. & Gaudant, J. 2000. A palynoflora of Palaeocene age from the fossiliferous sapropels of the Bultyshka depression, central Ukraine. Newsl. Stratigraphy, 38: 39-56.
-Cazzulo-Klepzig, M., Guerra-Sommer, M., Menegat, R., Wagner-Simas, M. & Mendonça Filho, J. G. 2007. Peat-forming environment of Permian coal seams from the Faxina Coalfield (Paraná Basin) in southern Brazil, based on palynology and palaeobotany. Revista bras. paleontol., 10: 117-127.
-Čech, S., Hradecká, L., Svobodová, M. & Svábenická, L. 2005. Cenomanian and Cenomanian-Turonian boundary in the southern part of the Bohemian Cretaceous Basin, Czech Republic. Czech Geological Survey, Bulletin of Geosciences, 80: 321 - 354.
+Cazzulo-Klepzig, M., Guerra-Sommer, M., Menegat, R., Wagner-Simas, M. & Mendonça Filho, J. G. 2007. Peat-forming environment of Permian coal seams from the Faxina Coalfield (Paraná Basin) in southern Brazil, based on palynology and palaeobotany. Revista Brasileira de Paleontologia, 10: 117-127.
+Cazzulo-Klepzig, M., Menegat, R. & Guerra-Sommer, M. 2005. Palynology and palaeobotany in the reconstruction of landscape units from the Candiota Coalfield, Permian of Paraná Basin, Brazil. Revista Brasileira de Paleontologia, 8: 83-98.
+Čech, S., Hradecká, L., Svobodová, M. & Svábenická, L. 2005. Cenomanian and Cenomanian-Turonian boundary in the southern part of the Bohemian Cretaceous Basin, Czech Republic. Czech Geological Survey, Bulletin of Geosciences, 80: 321-354.
 Cernjavska, S. 1966. Upper Eocene spore from brown coals in eastern Bulgaria. Trav. Géol. Bulgarie, ser. Paléont., 8: 143-180.
 Cernjavska, S. 1967. Characteristics of the spore and pollen assemblages from the upper Eocene coals in east Bulgaria. Bull. Inst. Géol., Ser. Paléont., Acad. Bulg. Sci., Sec. Sci. Géol. Géogr., 16: 95-130
 Cernjavska, S. 1970. New spore and pollen species from coal-bearing Paleogene sediments in Bulgaria. Review of the Bulgarian Geological Society, 31: 33-40
@@ -48,11 +50,13 @@ Césari, S. 1984b. Granos de polen de la Formación Tupe, Sierra de Maz (Provinc
 Césari, S. 1986a. Palinologia de la Formación Tupe (Paleózoico superior), Sierra de Maz, Provincia de La Rioja, II. Ameghiniana, 22: 197-202.
 Césari, S. 1986b. Zonación palinológica del Carbonífero tardio de Argentina. Actas IV Congr. Arg. Paleont., 1: 227-230.
 Césari, S., Archangelsky, S. & de Seoane, L. V. 1995. Palinologia del Paleozóico superior de la Perforación Las Mochas, Provincia de Santa Fé, Argentina. Ameghiniana, 32: 73-106.
-Césari, S. N. & Chiesa, J. 2017. Palynology of the Bajo de Veliz Formation, central-western Argentina: Implications for Carboniferous - Permian transition biostratigraphy. Journal of South American Earth Sciences, 78 (on-line).
+Césari, S. N. & Bercowski, F. 1997. Palinologia de la Formación Jejenes (Carbonífero) en la quebrada de Las Lajas, provincia de San Juan, Argentina. Nuevas inferencia paleoambientales. Ameghiniana, 34: 497-509.
+Césari, S. N. & Chiesa, J. 2017. Palynology of the Bajo de Veliz Formation, central-western Argentina: Implications for Carboniferous-Permian transition biostratigraphy. Journal of South American Earth Sciences, 78 (on-line).
 Césari, S. N. & Colombi, C. E. 2013. A new Late Triassic phytogeographical scenario in westernmost Gondwana. Nature Communications, 2013 (on-line): 1-6.
 Césari, S. N. & Colombi, C. E. 2016. Palynology of the Late Triassic Ischigualasto Formation, Argentina: paleoecological and palaeogeographic implications. Palaeogeography, Palaeoclimatology, Palaeoecology, 449: 365-384.
 Césari S. N., Drovandi J. M., Colombi, C. E., Correa, G. A. & Spalletti, A. 2021. A new Late Triassic palynological assemblage from western Gondwana (Carrizal Formation, Marayes Basin, Argentina). Comptes Rendus Palevol 20: 677-700.
 Césari, S. & Gutiérrez, P. R. 1985. Microflora de la localidad de los Mogotes Coloroados (Paleozóico superior), Provincia de La Rioja, Rep. Argentina. Bol. Inst. Geoc. Univ. San Pablo, 15: 20-31.
+Césari, S. N. & Limarino, C. O. 2002. Palynology of glacial sediments from the Guandacol Formation (Middle Carboniferous) in the Cerro Bola area, Paganzo Basin, Argentina. Alcheringa, 26: 159-176.
 Césari, S. N., Pérez Loinaze, V. S. & Limarino, C. O. 2013. La Biozona Pakhapites fusus-Vittatina subsaccata en la Formación Patquía (Pérmico), Precordillera de La Rioja, Argentina. Rev. Mus. Argentina Cienc. Nat., n. s., 11-28.
 Césari, S., & Vázquez Nistico, B. 1988. Palinologia de la Formación Guandacol (Carbonífero), Provincia de San Juan, República Argentina. Revista Española de Micropaleontología, 20: 39-58.
 Chadwick, A. V. 1983. Cappasporites: A common Middle Pennsylvanian palynomorph. Palynology, 7: 205-210.

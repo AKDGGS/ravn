@@ -109,14 +109,16 @@ Samuelsson, J. 1997. Biostratigraphy and palaeobiology of Early Neoproterozoic s
 Sancay, R. H., Bati, Z., Edwards, L. E. and Ertug, K. I. 2007. A new species of Pentadinium from eastern Anatolia, Turkey, Pentadinium galileoi. Micropaleontology, 52: 537-543.
 Sanchez, M. B. 1992. Nuevos datos palinológicos de la Formación Lajas, Jurásico Medio de la Cuenca Neuquina, Argentina. Asoc. Paleontol. Argent., Publicación Especial 2, VIII Simp. Argentino, Paleob. Palin.: 97-100.
 Sanchez Bolero, C., Oboh-Ikuenobe, F. E. & Macphail, M. 2013. First fossil pollen record of the northern hemisphere species Aglaoreidia cyclops Erdtman 1960, in Australia. Alcheringa, 37: 1-5.
-Sandberg, C. A., Streel, M., & Scott, R. A. 1972. Comparison between conodont zonation and spore assemblages at the Devonian-Carboniferous boundary in the western and central United States and in Europe. 7ème Cong. Int. Strat. Géol. Carb., Krefeld, 1971, C. r., 1: 127-137.
+Sánchez-Pellicer, R., Masure, E. & Villier, L. 2017. A new biostratigraphic correlation for Late Cretaceous-Paleocene strata of the Gulf of Guinea: Evidence from dinoflagellate cysts. Comptes Rendus Geoscience, 149: 32-41.
+Sandberg, C. A., Streel, M. & Scott, R. A. 1972. Comparison between conodont zonation and spore assemblages at the Devonian-Carboniferous boundary in the western and central United States and in Europe. 7ème Cong. Int. Strat. Géol. Carb., Krefeld, 1971, C. r., 1: 127-137.
 Sanders, R. B. 1968. Devonian spores of the Cedar Valley coal of Iowa, U.S.A. Journal of Palynology, 2 & 3: 17-32.
 Sandersen, A., Scott, L., McLachlan, L. R., & Hancox, P. J. 2011. Cretaceous biozonation based on terrestrial palynomorphs from two wells in the offshore Orange Basin of South Africa. Palaeontologia Africana, 46: 21-41.
-Sandulescu, M., Neagu, T., & Antonescu, E. 1982. Contributions à la connaissance des klippes de type Pienin de Polana Botizei (Maramures). Dare de Seama ale Sedintelor, 67(1979-1980): 79-96.
-Sanford, B. V., & Norris, A. W. 1975. Devonian stratigraphy of the Hudson Platform, part 1: Stratigraphy and economic geology; part 2: Outcrop and subsurface sections. Geological Survey of Canada Memoir 379: 1-372.
-Sangiorgi, F., Brinkhuis, H. & Damassa, S.P. 2009: Arcticacysta: a new organic-walled dinoflagellate cyst genus from the early Miocene? of the central Arctic Ocean. Micropaleontology, 55: 249 - 258.
+Sandulescu, M., Neagu, T. & Antonescu, E. 1982. Contributions à la connaissance des klippes de type Pienin de Polana Botizei (Maramures). Dare de Seama ale Sedintelor, 67(1979-1980): 79-96.
+Sanford, B. V. & Norris, A. W. 1975. Devonian stratigraphy of the Hudson Platform, part 1: Stratigraphy and economic geology; part 2: Outcrop and subsurface sections. Geological Survey of Canada Memoir 379: 1-372.
+Sangiorgi, F., Brinkhuis, H. & Damassa, S.P. 2009: Arcticacysta: a new organic-walled dinoflagellate cyst genus from the early Miocene? of the central Arctic Ocean. Micropaleontology, 55: 249-258.
 Sannemann, D. 1955. Hystrichosphaerideen aus dem Gotlandicum und Unter Devon des Frankenwaldes und ihr Feinbau. Senckenbergiana lethaia, 36: 321-346.
-Santamarina, P. E., Vajda, V. D., Iglesias, A. & Varela, A. N. 2018. Salvinialean megaspores in the Late Cretaceous of southern Patagonia, Argentina. Acta Palaeontologica Polonica, 63: 607-616.
+Santamarina, P. E., Barreda, V. D., Iglesias, A. & Varela, A. N. 2018. Salvinialean megaspores in the Late Cretaceous of southern Patagonia, Argentina. Acta Palaeontologica Polonica, 63: 607-616.
+Santamarina, P. E., Barreda, V. D., Iglesias, A. & Varela, A. N. 2020. Palynology from the Cenomanian Mata Amarilla Formation, southern Patagonia, Argentina. Cretaceous Research, 109:
 Santos, A., Helenes, J. & de Araujo Carvalho, M. 2019. Late Cretaceous (early Turonian) dinoflagellate cysts from the Sergipe Basin, northeastern Brazil. Palynology, 43: 151-173.
 Santos, A. A., Villanueva-Amadoz, U., Royo-Torres, R., Sender, L. M., Cobos, A., Alcala, M. & Diez, J. B. 2018. Cretaceous Research, 90: 318-334.
 Sarate, O. S. 1985. A Karharbari mioflora from Kamptee Coalfield, Maharashtra State, India. Geophytology, 15: 227-230.
@@ -189,6 +191,8 @@ Sarjeant, W. A. S., & Strachan, I. 1968. Freshwater acritarchs in Pleistocene pe
 Sarjeant, W. A. S., & Vavrdová, M. 1995. Taxonomic reconsideration of Multiplicisphaeridium Staplin, 1961 and other acritarch genera with branching processes. Geolines, Praha: 1-52.
 Sarkar, S. 1991. Eocene palynofossils from the Kakara Series of the Lesser Himalaya, Himachal Pradesh, India. Review of Palaeobotany and Palynology, 67: 1-11.
 Sarkar, S. & Corvinus, G. 2010. Palynofossils from the Middle Siwalik sediments of Nepal, with remarks on age and palaeoenvironment. Journal of the Palaeontological Society of India, 55: 157-166.
+Sarkar, S. & Prasad, V. 2000. Palynostratigraphy and depositional environment of the Subathu Formation (late Ypresian-middle Lutetian), Morni Hills, Haryana, India. Journal of the Palaeontological Society of India, 45: 137-149.
+Sarkar, S., Saxena, R. K. & Sarkar, S. 2014. Palynology of the Eocene sediments of the West Garo Hills, Meghalaya, NE India: biostratigraphic and palaeoenvironmental implications: Journal of the Palaeontological Society of India, 59: 199-212.
 Sarkar, S. & Singh, H. P. 1984. Amtaspora, a new pteridophytic spore genus recovered from the Subathu Formation of Himachal Pradesh. Current Science, 53: 202-204.
 Sarkar, S., & Singh, H. P. 1988. Palynological investigation of the Subathu Formation (Eocene) in the Banethi-Bagthan area of Himachal Pradesh, India. Palaeontographica B, 209: 29-109.
 Sarmiento, G. 1992. Palinología de la Formación Guaduas  -  estratigrafía y sistemática. Boletín Geológico, 32: 56-126 (Bogotá).
@@ -381,7 +385,8 @@ Seward, A. C. 1914. Antarctic fossil plants. Natural History Report of the Briti
 Sha Jingeng, Vajda, V., Pan Yanhong, Larsson, L., Yao Xiaogang, Zhang Xiaolin, Wang Yaqiong, Cheng Xiansheng, Jiang Baoyu, Deng Shenghui, Chen Siwe & Peng Bo. 2011. Stratigraphy of the Triassic-Jurassic Boundary Successions of the Southern Margin of the Junggar Basin, Northwestern China. Acta Geologica Sinica (English edition), 85: 421-436.
 Shaffer, B. 1964. Stratigraphic and palaeoecologic significance of plant microfossils in Permian evaporites of Kansas. In Palynology in Oil Exploration, Society of Economic Palaeontogists and Mineralalogists, Special Publication 11: 97-115.
 Shakhmundes, V. A. 1965. New forms of Ephedra L. from the Paleogene of northwest Siberia. Trudy VNIGRI (Moscow), 239: 214-228. (In Russian)
-Shang Yu-ke. 1981. Early Jurassic sporo-pollen assemblages in southwestern Hunan, northeastern Guangxi. Acta Palaeontologica Sinica, 20: 428-440..
+Shang Yu-ke. 1980. Late Triassic pollen and spores from Xizang (Tibet) China. In: Papers for the 5th International Palynological Conference, Nanjing Institute of Geology and Palaeontology, Academia Sinica, Nanjing, China: 1-7.
+Shang Yu-ke. 1981. Early Jurassic sporo-pollen assemblages in southwestern Hunan, northeastern Guangxi. Acta Palaeontologica Sinica, 20: 428-440.
 Shang Yu-ke 1986. Palynological assemblage from the Yangbaichong Formation of Hengyang, southwestern Hunan. Acta Palaeobot. Palyn. Sinica, 1: 125-140. (In Chinese with English summary)
 Shang Yu-ke & Li Yuan-mei. 1991. Upper Triassic sporo-pollen assemblages from Mosuohe River valley of Baoding, Sichuan. Acta Palaeontologica Sinica, 30: 334-359. (In Chinese with English summary)
 Shang Yu-ke & Cheng Jin-hui. 2018. Discovery of palynomorphs and their significance in the Tuntianying Formation of Baoyuan, Longjing City, Jilin Province. Acta Palaeontologica Sinica, 57: 105-118. (In Chinese with English summary)
@@ -413,6 +418,7 @@ Shaw, C.-L., & Huang, T.-C. 1983. Miocene palynomorphs of Taiwan (VIII) - Pterid
 Shaw, C.-L., & Huang, T. C. 1994. Cretaceous palynomorphs of Taiwan (2) - Taxonomic treatment. Taiwania, 39: 81-198.
 Shchekina, N. 1962. Spore and pollen complexes in the Tertiary deposits of the Ukrainian S.S.R. Pollen et Spores, 4: 376.
 Sheffy, M. V., & Dilcher, D. L. 1971. Morphology and taxonomy of fungal spores. Palaeontographica B, 133: 34-51.
+Shen Z., Steemans, P., Gong Y., Zong R. & Servais, T. 2021. Palynological analysis of the lower member of the Hongguleleng Formation and discussion of the Frasnian/Famennian boundary in Western Junggar, NW China. Review of Palaeobotany and Palynology, 295 (on-line edition).
 Sheshegova, L. I. 1971. The Upper Devonian acritarchs of the Anzherskiy region of the Kuzbass. In Vozzhennikova, T. F., ed., Algae of the Palaeozoic and Mesozoic of Siberia, Nauka, Moscow: 50-60.
 Shevchuk, O., Slater, S. M., & Vajda, V. 2018. Palynology of Jurassic (Bathonian) sediments from Donbas, northeast Ukraine. Palaeodiversity and Palaeoenvironments, 98: 153-164.
 Shimada, M. 1967. The pollen flora from the Tertiary and Cretaceous of Japan in correlation with the palaeobotanical records. Review of Palaeobotany and Palynology, 5: 235-242.
@@ -489,6 +495,7 @@ Singh, R. Y. & Singh, H. P. 1978. Morphological observations on some spores and 
 Singh, R. Y. & Tewari, B. S. 1980. A note on the palynostratigraphy of the Tertiary sediments of Upper Assam. Bulletin of the Indian Geological Association, 12: 151-159.
 Singh, R. Y. & Tiwari, B. S. 1978. Palynology of the Upper Cretaceous sediments in Meghalaya, India. Hind. Pub. Corp., Delhi: 484-502.
 Singh, S. K. & Chauhan, M. S. 2008. Fungal remains from the Neogene sediments of Mahuadanr Vally, Latehar District, Jharkhand, India and their palaeoclimatic significance. Journal of the Palaeontological Society of India 53: 73-81.
+Singh, V. K. & Sharma, M. 2016. Mesoproterozoic organic-walled microfossils from the Chaporadih Formation, Chandarpur Group, Chhattisgarh Supergroup, Odisha India. Journal of the Palaeontological Society of India, 61: 75-84.
 Sinha, A. K., Ashgirei, G. D., & Umnova, N. I. 1983. Carboniferous palynomorphs from Chail Formation of southern Himachal Himalaya, and their tectonic implications. Himalayan Geology, 11: 415-421.
 Sinha, H. N., Prasad, B., & Srivastava, S. S. 1998. Ordovician-Silurian acritarch biostratigraphy of the Tethyan Garhwal Himalaya, India. Review of Palaeobotany and Palynology, 103: 167-199.
 Sinha, H. N., Vandenbroucke, T. R. A. & Verniers, J. C. L. 2011. First Ordovician chitinozoans from Indian Godwana -- new evidence from the Shiala Formation. Review of Palaeobotany and Palynology, 167: 117-122.
@@ -516,9 +523,10 @@ Skupien, P., Matysek, D., Jirásek, J. & Stelmach, P. 2017. Palynostratigrafie a
 Skupien, P. & Mohamed, O, 2008. Campanian to Maastrichtian palynofacies and dinoflagellate cysts of the Silesian Unit, outer Western Carpathians, Czech Republic. Bulletin of Geosciences, 83: 207-224.
 Skupien, P., Pavlus, J., Falahatgar, M. & Javidan, M. 2015. Middle Jurassic organic-walled dinoflagellate cysts and palynofacies from Telma-Dareh, south of Sari, northern Iran. Review of Palaeobotany and Palynology, 223: 128-137.
 Skuratenko, A. V. 1968. Spori nekotorykh novykh vodov semeistv Davalliaceae i Aspidiaceae iz verkhnego mela-paleogena zapadnoi sibiri. Paleont. Zh., 1: 115-121.
+Slater, B. J., McLoughlin, S. & Hilton, J. 2011. Guadalupian (Middle Permian) megaspores from a permineralised peat in the Bainmedart Coal Measures, Prince Charles Mountains, Antarctica. Review of Palaeobotany and Palynology, 167: 140-155.
 Slaviková, K. 1968. New finds of acritarchs in the Middle Cambrian of the Barrandian (Czechoslovakia). Vest. Ustred Ust. Geol., 43: 199-206.
 Sleeman, A. G., Reilly, T. A., & Higgs, K. 1978. Preliminary stratigraphy and palynology of five sections through the Old Head Sandstone and Kinsale Formations (Upper Devonian to . . . Geological Survey of Ireland Bulletin 2: 167-186.
-Slimani, H. 1994: Les dinokystes des craies du Campanien au Danien à Halembaye, Turnhout (Belgique) et à Beutenaken (Pays-Bas). Mémoires pour servir à l'explication des cartes géologiques et minières de la Belgique, 37:1 - 173.
+Slimani, H. 1994: Les dinokystes des craies du Campanien au Danien à Halembaye, Turnhout (Belgique) et à Beutenaken (Pays-Bas). Mémoires pour servir à l'explication des cartes géologiques et minières de la Belgique, 37:1-173.
 Slimani, H. 1996. Les dinokystes des craies du Campanien-Danien à Hallembaye et Turnhout (Belgique) et à Beutenaken (Pays-Bas). Supplement de Systematique. Ann. Soc. géol. Belg., 117, fasc. 2: 371-391.
 Slimani, H. 2001a: Les kystes de dinoflagellés du Campanien au Danien dans la région de Maastricht (Belgique, Pays-Bas) et de Turnhout (Belgique): biozonation et corrélation avec d'autres régions en Europe occidentale. Geologica  et Palaeontologica, 35L 161-201.
 Slimani, H. 2001b: New species of dinoflagellate cysts from the Campanian-Danian chalks at Hallembaye and Turnhout (Belgium) and at Beutenaken (The Netherlands). Journal of Micropalaeontology, 20, pt.1: 1-11.
@@ -543,7 +551,8 @@ Smelror, M. 1987a. Bathonian and Callovian (Middle Jurassic) dinoflagellate cyst
 Smelror, M. 1987b. Early Silurian acritarchs and prasinophycean algae from the Ringerike District, Oslo Region (Norway). Review of Palaeobotany and Palynology, 52: 137-159.
 Smelror, M. 1988a. Bathonian to Early Oxfordian dinoflagellate cysts and acritarchs from Kong Karls Land, Svalbard. Review of Palaeobotany and Palynology, 56: 275-304.
 Smelror, M. 1988b. Late Bathonian to Early Oxfordian dinoflagellate cyst stratigraphy of Jameson Land and Milne Land, East Greenland. Rapp. Grønl. Geol. Unders., 137: 135-159.
-Smelror, M. 1991. Two new dinoflagellate cysts from the Middle Jurassic of the Barents Sea region. Journal of Micropalaeontologie, 10: 175-180.
+Smelror, M. 1991a. Two new dinoflagellate cysts from the Middle Jurassic of the Barents Sea region. Journal of Micropalaeontologie, 10: 175-180.
+Smelror, M. 1991b. Palynomorphs from the Cyrtograptys centrifugus graptoline zone (early Wenlock, Silurian), Bornholm. Bulletin of the Geological Society of Denmark, 39: 83-89.
 Smelror, M. 1999. Pliocene-Pleistocene and redeposited dinoflagellate cysts from the Western Svalbard Margin (Site 986): Biostratigraphy, paleoenvironments, and sediment provenance. In Raymo, M. E., et al. (eds.), Proceedings of the Ocean Drilling Program, 162: 83-97.
 Smelror, M. 2020. New species of Cyclopsiella (Acritarcha) from the Jurassic of northern Nordland, Norway. Review of Palaeobotany and Palynology, 273: 104149.
 Smelror, M. 2021. Palynostratigraphy, palynofacies, T-R cycles and paleoenvironments in the Middle Jurassic - Early Cretaceous Ramså Basin, Andøya, northern Norway, Geosciences, 11, 354: 1-32 (on-line edition).
@@ -659,6 +668,7 @@ Song Z., Zheng Y., & Liu J. 1995. Palynological assemblages across the Cretaceou
 Song Z., Zheng Y., Liu J., Ye P., Wang C., & Zhou S. 1981. Cretaceous-Tertiary palynological assemblages from Jiangsu. Geological Publishing House, Beijing: 1-268. (In Chinese with English summary)
 Songtham, W., Ratanasthien, B. & Mildenhall, D. C. 2004. New species of algae Actinastrum Lagerheim and Closterium Nitzsch ex Ralfs from Middle Miocene Sediments of Chiang Muan basin, Phayao, Thailand, with tropical pollen composition. ScienceAsia, 30: 171-181.
 Songtham, W., Ratanasthien, B., Mildenhall, D. C., Singharajwarapan, S. & Kandharosa, W. 2003. Oligocene-Miocene Climatic Changes in Northern Thailand Resulting from Extrusion Tectonics of Southeast Asian Landmass. ScienceAsia, 29: 221-233.
+Sonkusare, H., Samant, B. & Mohabey, D. M. 2021. Palynoassemblage from intertrappean sediments of Satpura Group, Betul district, Madhya Pradesh: implications in understanding age and palaeoclimate. Journal of the Palaeontological Society of India, 66: 35-54.
 Sopeña, A., Sánchez-Moya, Y. & Barrón, E. 2009. New palynological and isotopic data for the Triassic of the western Cantabrian Mountains (Spain). Journal of Iberian Geology 35: 35-45.
 Sorokina, H. L. 1968. Miospore assemblages of Devonian and Lower Tournaisian deposits of the south-eastern part of the Dniepr-Donets depression. Geol. Zhur., 28: 57-65. (In Russian).
 Soufiane, A., & Achab, A. 1993. Quelques assemblages de chitinozoaires de l'Ordovicien du Maroc, Bassin de Tadla. Géobios, 26: 535-553.
@@ -759,8 +769,9 @@ Srivastava, S. K. 1992. Dinocyst biostratigraphy of Cenomanian-Coniacian formati
 Srivastava, S. K. 1994a. Evolution of Cretaceous phytogeoprovinces, continents and climates. Review of Palaeobotany and Palynology, 82: 197-224.
 Srivastava, S. K. 1994b. Palynology of the Cretaceous-Tertiary boundary in the Scollard Formation of Alberta, Canada, and global KTB events. Review of Palaeobotany and Palynology, 83: 137-158.
 Srivastava, S. K. 1995: Dinocyst biostratigraphy of Santonian-Maastrichtian formations of the western Gulf Coastal Plain, southern United States. Palaeobotanist, 42: 249 - 362.
-Srivastava, S. K., & Binda, P. L. 1969. Megaspores of the genus Balmeisporites from the Upper Cretaceous of Alberta and Saskatchewan, Canada. Revue de Micropaléontologie, 11: 205-209.
-Srivastava, S. K., & Binda, P. L. 1991. Depositional history of the early Eocene Shumaysi Formation, Saudi Arabia. Palynology, 15: 47-61.
+Srivastava, S. K. & Binda, P. L. 1969. Megaspores of the genus Balmeisporites from the Upper Cretaceous of Alberta and Saskatchewan, Canada. Revue de Micropaléontologie, 11: 205-209.
+Srivastava, S. K. & Binda, P. L. 1991. Depositional history of the early Eocene Shumaysi Formation, Saudi Arabia. Palynology, 15: 47-61.
+Srivastava, S. K. & Braman, D. R. 2013. The Palynostratigraphy of the Edmonton Group (Upper Cretaceous) of Alberta, Canada. Palynology, 37: 1-27.
 Srivastava, S. K., & Rouse, G. E. 1970. Systematic revision of Aquilapollenites Rouse 1957. Canadian Journal of Botany, 48: 1591-1601.
 Srivastava, Suresh C., & Jha, N. 1986. A new monosaccate pollen genus from Kamthi Formation of Godavari Basin, Andhra Pradesh, India. Geophytology, 16: 158-260.
 Srivastava, Suresh C., & Jha, N. 1987. Palynology of Kamthi Formation from Chelpur area, Godavari Graben, Andhra Pradesh, India. Palaeobotanist, 35(1986): 342-346.
@@ -791,6 +802,7 @@ Staplin, F. L. 1978. Triassic microplankton, Sverdrup Basin, Arctic Canada. Jour
 Staplin, F. L., & Jansonius, J. 1964. Elucidation of some Paleozoic densospores. Palaeontographica B, 114: 95-117.
 Staplin, F. L., Jansonius, J., & Pocock, S. A. J. 1965. Evaluation of some acritarchous hystrichosphere genera. N. Jb. Geol. Paläont., Abh., 123: 167-201.
 Starke, K. H. 1971. Die Mikroflora aus dem Keuper-Schichten von Uttrichshausen in der Rhôn (Blatt 5524, Weyhers). Not. Hess. L., amt Bodenf., 99: 62-77.
+Stárková, M.,  Simunek, Z. & Drabková, J. 2016. Geologie karbonského reliktu mezi Lٌískem a Hyskovem v kontextu paleobotaniky a palynologie (westphal, duckmant). Geoscience Research Reports, Czech Geological Survey, 49: 215-224.
 Stead, D. & Eyers, J. 2017. The palynology and geology of the Lower Cretaceous (Aptian - Albian) of Munday's Hill Quarry, Bedfordshire, UK. Proceedings of the Geologists' Association, 128: 599-612.
 Steeman, T, Vandenbroucke, T. R. A., Williams, M., Verniers, J., Perrier, V., Siveter, D. J., Wilkinson, J., Zalasiewicz, J. & Emsbo, P. 2015. Chitinozoan biostratigraphy of the Silurian Wenlock-Ludlow boundary succession of the Long Mountain, Powys, Wales. Geological Magazine (on-line edition): 1-15.
 Steemans, P. 1981. étude stratigraphique des spores dans les couches de transition "Gédinnien-Siegenien" á Nonceveux et á Spa (Belgique). Ann. Soc. Géol. Belg., 104: 41-59.
@@ -808,11 +820,13 @@ Stephenson, M. H. 1998. Preliminary correlation of palynological assemblages fro
 Stephenson, M. H. 2006. Stratigraphic note: Update of the standard Arabian Permian palynological biozonation; definition and description of OSPZ5 and 6. GeoArabia, 11: 173-178.
 Stephenson, M. H. 2008. Spores and pollen from the Middle and Upper Gharif Members (Permian) of Oman. Palynology, 32: 157-182.
 Stephenson, M. H. 2011. Two new non-haptotypic palynomorph taxa from the middle Permian Upper Gharif Member, Oman. Rivista Italiana di Paleontologia e Stratigrafia, 117: 211-219.
+Stephenson, M. H. & Al-Mashaikie, S. Z. A. K. 2010. New age for the lower part of the Kuhlan Formation, northwest Yemen. GeoArabia, 15: 161-170.
 Stephenson, M. H. & Al-Mashaikie, S. Z. A. K. 2011. Stratigraphic Note: Update on the palynology of the Akbarah and Kuhlan formations, northwest Yemen. GeoArabia, 16: 17-24.
 Stephenson, M. H., Al Rawahi, A. & Casey, B. 2008. Correlation of the Al Khlata Formation in the Mukhaizna field, Oman, based on a new downhole, cuttings-based palynostratigraphic biozonation. GeoArabia, 13: 15-34.
 Stephenson, M. H. & Filatoff, J. 2000a. Correlation of Carboniferous-Permian palynological assemblages from Oman and Saudi Arabia. In Al-Hajri, S., & Owens, B., eds., Stratigraphic Palynology of the Palaeozoic of Saudi Arabia, Gulf PetroLink, Arabian Printing and Publishing House, Manama, Bahrain: 168-191.
 Stephenson, M. H. & Filatoff, J. 2000b. Description and correlation of Late Permian palynological assemblages from the Khuff Formation, Saudi Arabia and evidence for the duration of the pre-Khuff hiatus. In Al- Hajri, S., & Owens, B., eds., Stratigraphic Palynology of the Palaeozoic of Saudi Arabia, Gulf PetroLink, Arabian Printing and Publishing House, Manama, Bahrain: 192-215.
 Stephenson, M. H. & McLean, D. 1999. International correlation of Early Permian palynofloras from the Karoo sediments of Morupule, Botswana. South African Journal of Geolology, 102: 3-14.
+Stephenson, M. H. & Osterloff, P. L. 2002. Palynology of the deglaciation sequence represented by the Lower Permian Rahab and lower Gharif members, Oman. American Association of Stratigraphic Palynologists Contribution Series, 40: 1-41.
 Stephenson, M. H., Osterloff, P. L. & Filatoff, J. 2003. Palynological biozonation of the Permian of Oman and Saudi Arabia: progress and challenges. GeoArabia, 8: 467-496.
 Stephenson, M. H. & Powell, J. H. 2013. Palynology and alluvial architecture in the Permian Umm Irna Formation, Dead Sea, Jordan. GeoArabia, 18: 17-60.
 Stevens, J. 1981. Palynology of the Callide Basin, east-central Queensland. Pap. Department of Geology, University of Queensland, 9: 1-35.
@@ -942,6 +956,7 @@ Svobodová, A., Švábenická, L., Reháková, D., Svobodová, M., Skupien, P., 
 Svobodová, M. 1982. Palynological study of Cretaceous sediments from Dlouhá mez (eastern Bohemia). Casopis pro mineralogii a geologii, 27: 85-94. (In Czech with English summary)
 Svobodová, M. 1988. New information on the Cenomanian palynomorphs from the NW. Bohemia. Cas. Mineral. Geol., 33: 371-380.
 Svobodová, M.& Brenner, G. J. 1999. Correlation of mid-Cretaceous plant microfossils from the Raritan Formation of the Atlantic Coastal Plain with the Peruc-Korycany Formation of the Blansko Graben. Acta Palaeobotanica, Supplement 2: 199-209.
+Svobodová, M.& Pacltová, B. 2004. Palynologically evidenced Cenomanian age in Koufim area. Zprávy o geologikych vizkumech v roce: 88-90 (In Czech with English abstract).
 Swain, F. M. 1977. Notes on Paleozoic acritarchs from the Atlantic Margins. In Swain, F. M., ed., Stratigraphic Micropaleontology of Atlantic Basin and Borderlands: 137-149.
 Sweet, A. R. 1972. Palynologic study of coals and associated clastics of the Kootenay Formation, Crowsnest area. Geological Survey of Canada Paper 72-1B: 23.
 Sweet, A. R. 1978. Palynology of the Ravenscrag and Frenchman Formations. In Coal Resources of Southern Saskatchewan: A Model for Evaluation Methodology, Geological Survey of Canada Report, 30: 29-39.

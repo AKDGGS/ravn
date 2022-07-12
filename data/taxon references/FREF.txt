@@ -8,7 +8,7 @@ Falcon, R. M. S. 1976. Numerical methods in the definition of palynological asse
 Falcon, R. M. S. 1978. New Permian miospores from Rhodesia. Arnoldiana, 8(24): 1-32.
 Falcon, R. M. S. 1980. Palynofloristic trends in the Permo-Triassic of southern Africa. Proc. 4th Int. Palyn. Conf. (Lucknow, 1976-77), 2: 208-218.
 Falcon-Lang, H. J., Fensome, R. A. & Venugopal, D. V. 2003. The Cretaceous age of the Vinegar Hill silica sand deposit, southern New Brunswick: Evidence from palynology and paleobotany. Atlantic Geology, 39: 39-46.
-Fält, L. M., Helland, R., Jacobsen, V. W., & Renshaw, D. 1989. Correlation of transgressive-regressive depositional sequences in the Middle Jurassic Brent/Vestland Group megacycle, Viking Graben, Norwegian North Sea. In Correlation in Hydrocarbon Exploration, Norwegian Petrol. Soc., Graham & Trotman: 191-200.
+Fält, L. M., Helland, R., Jacobsen, V. W., & Renshaw, D. 1989. Correlation of transgressive-regressive depositional sequences in the Middle Jurassic Brent/Vestland Group megacycle, Viking Graben, Norwegian North Sea. In Correlation in Hydrocarbon Exploration, Norwegian Petroleum Society, Graham & Trotman: 191-200.
 Fang X. 1989. Silurian microflora from Guanyinqiao, Qijang, Sichuan. Acta Micropalaeont. Sinica, 6: 301-310.
 Farabee, M. J. 1990. Triprojectate fossil pollen genera. Review of Palaeobotany and Palynology, 65: 341-347.
 Farabee, M. J., & Canright, J. E. 1986. Stratigraphic palynology of the lower part of the Lance Formation (Maestrichtian) of Wyoming. Palaeontographica B, 199: 1-89.
@@ -25,9 +25,10 @@ Fasola, A., Giffuni, G., Crespo de Cabrera, S., Paredes de Ramos, I., & Euribe, 
 Fasolo, D., Vergel, M. d. M., Oller, J. & Azcuy, C. 2006. Nuevos datos palynológicos de la Formación Kaka (Eoserpukhoviano) en la Encañada de Beu, Subandino Norte de Bolivia. Revista Brasileira de Paleontologia 9: 53-62.
 Fatka, O. 1993. Chitinozoans and acritarchs in latest Tremadoc-early Arenig sediments of the Prague Basin, Czech Republic. Spec. Pap. Palaeontology, 48: 29-36.
 Fatka, O. 1999. Organic-walled microfossils of the Barrandian area  -  a review. Journal of the Czech Geological Society, 44: 31-42.
-Fatka, O. 2003. Organic-walled microfossils (Chitinozoa and Acritarcha) from Praha  -  Červený vrch Hill (Šárka Formation, Middle Ordovician, Prague Basin). Bulletin of Geosciences, Czech Geological Survey, 78: 119 - 127.
-Fatka, O., & Brocke, R. 1999. Morphologic variability in two populations of Arbusculidium filamentosum (Vavrdová 1965) Vavrdová 1972. Palynology, 23: 153-180.
-Fatka, O., & Vavrdová, M. 1998. Early Cambrian Acritarcha from sediments underlaying the Devonian in Moravia (Menín-1 borehole, Czech Republic). Bulletin of the Czech. Geological Survey, 73: 55-60.
+Fatka, O. 2003. Organic-walled microfossils (Chitinozoa and Acritarcha) from Praha  -  Červený vrch Hill (Šárka Formation, Middle Ordovician, Prague Basin). Bulletin of Geosciences, Czech Geological Survey, 78: 119-127.
+Fatka, O. & Brocke, R. 1999. Morphologic variability in two populations of Arbusculidium filamentosum (Vavrdová 1965) Vavrdová 1972. Palynology, 23: 153-180.
+Fatka, O. & Konzalová, M. 1995. Microfossils of the Paseky Shale (Lower Cambrian, Czech Republic). Journal of the Czech Geological Society, 40: 55-66.
+Fatka, O. & Vavrdová, M. 1998. Early Cambrian Acritarcha from sediments underlaying the Devonian in Moravia (Menín-1 borehole, Czech Republic). Bulletin of the Czech. Geological Survey, 73: 55-60.
 Fauconnier, D. 1975. Répartition des Péridiniens de l'Albien du Bassin de Paris et liaison avec le cadre sédimentologique. Bull. BRGMm (2), Sec. 1, 4: 235-273.
 Fauconnier, D. 1979. Les dinoflagellés de l'Albien et du Cénomanien inf‚rieur du bassin de Paris. Thèse de Docteur d'Univ., l'Univ. d'Orleans, Doc. BGRM, 5: 1-150.
 Fauconnier, D &Masure, E. (co-ordinators). 2004. Les dinoflagellés fossile. Guide pratique de détermination. Les genres à processus et à archéopyle apical  BRGM Editions:1-602.
@@ -145,13 +146,13 @@ Foster, C. B. 1983a. Jugasporites Leschik 1956, a late Palaeozoic operculate pol
 Foster, C. B. 1983b. Review of the time frame for the Permian of Queensland. In Permian Geology of Queensland, Geol. Soc. Austr. Queensland Div., Brisbane: 105-120.
 Foster, C. B., Balme, B. E., & Helby, R. 1994. First record of Tethyan palynomorphs from the Late Triassic of East Antarctica. Journal of Australian Geology and Geophysics, 15: 239-246.
 Foster, C. B., Cernovskis, A., & O'Brien, G. W. 1985. Organic-walled microfossils from the Early Cambrian of South Australia. Alcheringa, 9: 259-268.
-Foster, C. B., & Gomankov, A. V. 1994. A new structure in pollen assigned to Striatopodocarpites Sedova 1956 and Protohaploxypinus Samoilovich emend. Morbey 1975, from the Later Permian (Tatarian) of the Russian Platform. Journal of Australian Geology and Geophysics, 15: 235-238.
-Foster, C. B., & Harris, W. K. 1981. Azolla capricornica sp. nov., first Tertiary record of Azolla Lamarck (Salviniaceae) in Australia. Transactions of the Royal Society of South Australia, 105: 195-204.
-Foster, C. B., & Helby, R. 1988. Two Late Palaeozoic spore species from northwestern Australia. In Jell., P. A., & Playford, G., eds., Assoc. Australas. Palaeont., Mem. 5: 41-52.
-Foster, C. B., Palmieri, V., & Fleming, P. J. G. 1985. Plant microfossils, Foraminiferida and Ostracoda from the Fossil Cliff Formation (Early Permian, Sakmarian), Perth Basin, Western Australia. Spec. Publ., S. Austr. Dept. Mines Energy, 5: 61-105.
-Foster, C. B., & Price, P. L. 1982. Exine intrastructure of Praecolpatites sinuosus (Balme & Hennelly) Bharadwaj and Srivastava 1969, and Marsupipollenites triradiatus Balme & Hennelly 1956. Palaeobotanist, 28-29 (1981): 177-187.
-Foster, C. B., Reed, J. D., & Wicander, R. 1989. Gloeocapsomorpha prisca Zalessky, 1917: A new study. Part 1: Taxonomy, geochemistry, and paleoecology. Géobios, 22: 735-759.
-Foster, C. B., & Waterhouse, J. B. 1988. The Granulatisporites confluens Oppel-zone and the Early Permian marine faunas from the Grant Formation on the Barbwire Terrace, Canning Basin, Western Australia. Australian Journal of Earth Sciences, 35: 135-157.
+Foster, C. B. & Gomankov, A. V. 1994. A new structure in pollen assigned to Striatopodocarpites Sedova 1956 and Protohaploxypinus Samoilovich emend. Morbey 1975, from the Later Permian (Tatarian) of the Russian Platform. Journal of Australian Geology and Geophysics, 15: 235-238.
+Foster, C. B. & Harris, W. K. 1981. Azolla capricornica sp. nov., first Tertiary record of Azolla Lamarck (Salviniaceae) in Australia. Transactions of the Royal Society of South Australia, 105: 195-204.
+Foster, C. B. & Helby, R. 1988. Two Late Palaeozoic spore species from northwestern Australia. In Jell., P. A., & Playford, G., eds., Assoc. Australas. Palaeont., Mem. 5: 41-52.
+Foster, C. B., Palmieri, V. & Fleming, P. J. G. 1985. Plant microfossils, Foraminiferida and Ostracoda from the Fossil Cliff Formation (Early Permian, Sakmarian), Perth Basin, Western Australia. Spec. Publ., S. Austr. Dept. Mines Energy, 5: 61-105.
+Foster, C. B. & Price, P. L. 1982. Exine intrastructure of Praecolpatites sinuosus (Balme & Hennelly) Bharadwaj and Srivastava 1969, and Marsupipollenites triradiatus Balme & Hennelly 1956. Palaeobotanist, 28-29 (1981): 177-187.
+Foster, C. B., Reed, J. D. & Wicander, R. 1989. Gloeocapsomorpha prisca Zalessky, 1917: A new study. Part 1: Taxonomy, geochemistry, and paleoecology. Géobios, 22: 735-759.
+Foster, C. B. & Waterhouse, J. B. 1988. The Granulatisporites confluens Oppel-zone and the Early Permian marine faunas from the Grant Formation on the Barbwire Terrace, Canning Basin, Western Australia. Australian Journal of Earth Sciences, 35: 135-157.
 Foster, C. & Wicander, R. 2016, An Ordovician organic-walled microphytoplankton assemblage from the Nambeet Formation, Canning Basin, Australia: biostratigraphic and paleogeographic significance. Palynology, 40: 
 Foster, C. B., Wicander, R. & Reed, J. D. 1990. Gloeocapsomorpha prisca Zalessky, 1917: A new study. Part II: Origin of Kukersite, a new interpretation. Géobios, 23: 133-140.
 Foster, C. B., & Williams, G. E. 1991. Late Ordovician-Early Silurian age for the Mallowa Salt of the Carribuddy Group, Canning Basin, Western Australia, based on occurrences of Tetrahedraletes medinensis Strother & Traverse 1979. Austr. J. Earth Sci., 38: 223-228.
