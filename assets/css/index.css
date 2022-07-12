@@ -6,6 +6,7 @@
 .occ, .spc { color: #000; }
 .cmt { color: #91e; }
 .ndt { margin-left: 0; }
+.img img { max-width: 100%; }
 
 #modal {
 	display: none;
