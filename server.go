@@ -51,6 +51,10 @@ func (srv *WebServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		assets.ServeStatic("html/index.html", w, r)
 		return
 
+	case "help.html":
+		assets.ServeStatic("html/help.html", w, r)
+		return
+
 	case "search.js":
 		assets.ServeStatic("js/search.js", w, r)
 		return
