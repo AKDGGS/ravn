@@ -146,6 +146,7 @@ function doSearch(dir,noupdate) {
 	}).catch(err => {
 		if(window.console) console.log(err);
 		sactive = false;
+		alert('An error occurred while talking to server, please try again.');
 	});
 }
 
@@ -264,6 +265,7 @@ function doDetail(stype, id){
 	}).catch(err => {
 		if(window.console) console.log(err);
 		dactive = false;
+		alert('An error occurred while talking to server, please try again.');
 	});
 }
 
