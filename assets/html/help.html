@@ -5,6 +5,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 		<link rel="stylesheet" href="css/template.css">
+		<style>
+			h2 { margin: 0; }
+			.container { margin: 1rem; }
+		</style>
 	</head>
 	<body>
 		<div class="soa-apptmpl-header">
@@ -42,6 +46,84 @@
 				</a>
 			</div>
 		</div>
-		<div class="apptmpl-content"></div>
+		<div class="apptmpl-content container">
+			<h2>Searching</h2>
+			<p>
+				Fields are searched for with "<i>fieldname:query</i>". By default,
+				all fields are searched, including data that isn't indexed by name,
+				for example, publication page numbers from the references database.
+			</p>
+			<p>
+				The asterisk (*) can be used to do wildcard matches. To match any
+				genus that begins with "poly" you can search for "<i>genus:poly*</i>"
+				Since the wildcard matches any data, it can be used to find just
+				species with images, via "<i>images:*</i>"
+			</p>
+			<p>
+				The plus symbol means required, so if you want to search for species
+				done by Robert Ravn with images, you'd search for
+				"<i>+author:ravn +images:*</i>"
+			</p>
+			<p>
+				By contrast, "<i>author:ravn images:*</i>" will search for species
+				that have images or were authored by Robert Ravn
+			</p>
+			<p>
+				Range queries allow for numeric range searches. If you want
+				a reference published between 1997 and 1999, search for 
+				"<i>+year:&gt;=1997 +year:&lt;=1999</i>"
+			</p>
+			<dl>
+				<dt>Genera Fields</dt>
+				<dd>genus (includes genus and alternative name for genus)</dd>
+				<dd>author</dd>
+				<dd>year</dd>
+				<dd>comment</dd>
+				<dd>species</dd>
+				<dd>speciesyear</dd>
+				<dd>speciesauthor</dd>
+			</dl>
+			<dl>
+				<dt>Species Fields</dt>
+				<dd>images (useful for "images:*" to find entries with images)</dd>
+				<dd>occurance</dd>
+				<dd>comment</dd>
+				<dd>species (includes species names and alternative names for species)</dd>
+				<dd>author (include species author and alternative authors)</dd>
+				<dd>year (numeric field, can can do range queries)</dd>
+			</dl>
+			<dl>
+				<dt>Species Fields</dt>
+				<dd>year</dd>
+				<dd>author</dd>
+			</dl>
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2" style="text-align: left">Example Queries</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="index.html#2,&quot;images:*&quot;,25,0">images:*</a>
+						</td>
+						<td>only species with images</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html#3,&quot;author:brown&quot;,25,0">author:brown</a>
+						</td>
+						<td>any author with the name of brown</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html#1,&quot;+year:&gt;=1997 +year:&lt;=2000&quot;,25,0">+year:&gt;=1997 +year:&lt;=2000</a>
+						</td>
+						<td>any genus published between 1997 and 2000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</body>
 </html>
