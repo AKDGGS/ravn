@@ -54,7 +54,7 @@
 				for example, publication page numbers from the references database.
 			</p>
 			<p>
-				The asterisk (*) can be used to do wildcard matches. To match any
+				The asterisk (*) can be used to perform wildcard matches. To match any
 				genus that begins with "poly" you can search for "<i>genus:poly*</i>"
 				Since the wildcard matches any data, it can be used to find just
 				species with images, via "<i>images:*</i>"
@@ -76,7 +76,7 @@
 			<dl>
 				<dt>Genera Fields</dt>
 				<dd>genus (includes genus and alternative name for genus)</dd>
-				<dd>author</dd>
+				<dd>author (includes genus author and alternative authors)</dd>
 				<dd>year</dd>
 				<dd>comment</dd>
 				<dd>species</dd>
@@ -90,10 +90,10 @@
 				<dd>comment</dd>
 				<dd>species (includes species names and alternative names for species)</dd>
 				<dd>author (include species author and alternative authors)</dd>
-				<dd>year (numeric field, can can do range queries)</dd>
+				<dd>year</dd>
 			</dl>
 			<dl>
-				<dt>Species Fields</dt>
+				<dt>References Fields</dt>
 				<dd>year</dd>
 				<dd>author</dd>
 			</dl>
@@ -104,6 +104,12 @@
 					</tr>
 				</thead>
 				<tbody>
+					<tr>
+						<td>
+							<a href="index.html#1,&quot;genus:poly*&quot;,25,0">poly:*</a>
+						</td>
+						<td>any genus that begins with "poly"</td>
+					</tr>
 					<tr>
 						<td>
 							<a href="index.html#2,&quot;images:*&quot;,25,0">images:*</a>
