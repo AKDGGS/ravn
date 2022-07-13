@@ -6,7 +6,13 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 		<link rel="stylesheet" href="css/template.css">
 		<style>
-			h2 { margin: 0; }
+			h2 { margin: 0 0 0.75rem 0; }
+			h4 { margin: 3rem 0 0.5rem 0; }
+			dl { margin: 0 0 1rem 0; }
+			p { margin: 0 0 1rem 0; }
+			table.exq { border-collapse: collapse; }
+			table.exq td { padding-right: 1rem; }
+			table.exq tr:nth-child(even) { background-color: #ddd; }
 			.container { margin: 1rem; }
 		</style>
 	</head>
@@ -73,6 +79,8 @@
 				a reference published between 1997 and 1999, search for 
 				"<i>+year:&gt;=1997 +year:&lt;=1999</i>"
 			</p>
+
+			<h4>Searchable Fields</h4>
 			<dl>
 				<dt>Genera Fields</dt>
 				<dd>genus (includes genus and alternative name for genus)</dd>
@@ -97,36 +105,63 @@
 				<dd>year</dd>
 				<dd>author</dd>
 			</dl>
-			<table>
-				<thead>
-					<tr>
-						<th colspan="2" style="text-align: left">Example Queries</th>
-					</tr>
-				</thead>
+
+			<h4>Example Queries</h4>
+			<table class="exq">
 				<tbody>
 					<tr>
 						<td>
-							<a href="index.html#1,&quot;genus:poly*&quot;,25,0">poly:*</a>
+							<a href="index.html#3,&quot;cambrian&quot;,25,0">cambrian</a>
 						</td>
-						<td>any genus that begins with "poly"</td>
+						<td>matches any reference that contains the word "cambrian"</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html#3,%22\%22lower%20cambrian\%22%22,25,0">"lower cambrian"</a>
+						</td>
+						<td>matches any reference that contains the phrase "lower cambrian"</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html#3,%22\%22lower%20cambrian\%22%20-acritarchs%22,25,0">"lower cambrian" -acritarchs</a>
+						</td>
+						<td>matches any reference that contains the phrase "lower cambrian" but does not contain "acritarchs"</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html#1,&quot;genus:poly*&quot;,25,0">genus:poly*</a>
+						</td>
+						<td>matches any genus that begins with "poly"</td>
 					</tr>
 					<tr>
 						<td>
 							<a href="index.html#2,&quot;images:*&quot;,25,0">images:*</a>
 						</td>
-						<td>only species with images</td>
+						<td>matches only species with images</td>
 					</tr>
 					<tr>
 						<td>
 							<a href="index.html#3,&quot;author:brown&quot;,25,0">author:brown</a>
 						</td>
-						<td>any author with the name of brown</td>
+						<td>matches any author with the name of "brown"</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html#2,&quot;author:ravn images:*&quot;,25,0">author:ravn images:*</a>
+						</td>
+						<td>matches species authors named "ravn" <b>OR</b> any species with images</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="index.html#2,&quot;+author:ravn +images:*&quot;,25,0">+author:ravn +images:*</a>
+						</td>
+						<td>matches species authors named "ravn" <b>AND</b> any species with images</td>
 					</tr>
 					<tr>
 						<td>
 							<a href="index.html#1,&quot;+year:&gt;=1997 +year:&lt;=2000&quot;,25,0">+year:&gt;=1997 +year:&lt;=2000</a>
 						</td>
-						<td>any genus published between 1997 and 2000</td>
+						<td>matches any genus published between 1997 and 2000</td>
 					</tr>
 				</tbody>
 			</table>
