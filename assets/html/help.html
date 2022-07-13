@@ -6,14 +6,16 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 		<link rel="stylesheet" href="css/template.css">
 		<style>
-			h2 { margin: 0 0 0.75rem 0; }
-			h4 { margin: 3rem 0 0.5rem 0; }
+			h2 { margin: 0 0 .75rem 0; }
+			h4 { margin: 3rem 0 .5rem 0; }
 			dl { margin: 0 0 1rem 0; }
 			p { margin: 0 0 1rem 0; }
-			table.exq { border-collapse: collapse; }
-			table.exq td { padding-right: 1rem; }
-			table.exq tr:nth-child(even) { background-color: #ddd; }
-			.container { margin: 1rem; }
+			code { font-weight: bolder; }
+			.exq { border-collapse: collapse; }
+			.exq td { padding-right: 1rem; }
+			.exq tr:nth-child(even) { background-color: #ddd; }
+			.apptmpl-content { padding: 1rem; }
+			.apptmpl-content h2:not(:first-child) { margin: 3rem 0 .75rem 0; }
 		</style>
 	</head>
 	<body>
@@ -52,32 +54,48 @@
 				</a>
 			</div>
 		</div>
-		<div class="apptmpl-content container">
+		<div class="apptmpl-content">
+			<h2>Contact</h2>
+			<p>
+				For any feedback or questions, please contact the
+				<a href="https://dggs.alaska.gov">Alaska Division of Geological &amp; Geophysical Surveys</a>
+				at <a href="mailto:dnr.dggs.webapps@alaska.gov">dnr.dggs.webapps@alaska.gov</a>
+			</p>
+
 			<h2>Searching</h2>
 			<p>
-				Fields are searched for with "<i>fieldname:query</i>". By default,
+				To search, first select which of the three datasets you are searching using
+				the drop-down, then enter your search terms into the text field.
+			</p>
+			<p>
+				Fields are searched for with <code>fieldname:query</code>. By default,
 				all fields are searched, including data that isn't indexed by name,
-				for example, publication page numbers from the references database.
+				for example, publication page numbers from the references dataset.
+			</p>
+			<p>
+				Complete phrases can be matched by using double quotes (") around the
+				phrase. For example, you could search for <code>"lower cambrian"</code>
+				to find species occurances in the lower cambrian.
 			</p>
 			<p>
 				The asterisk (*) can be used to perform wildcard matches. To match any
-				genus that begins with "poly" you can search for "<i>genus:poly*</i>"
+				genus that begins with "poly" you can search for <code>genus:poly*</code>
 				Since the wildcard matches any data, it can be used to find just
-				species with images, via "<i>images:*</i>"
+				species with images, via <code>images:*</code>
 			</p>
 			<p>
-				The plus symbol means required, so if you want to search for species
-				done by Robert Ravn with images, you'd search for
-				"<i>+author:ravn +images:*</i>"
+				The plus symbol (+) means required, so if you want to search for species
+				published by Robert Ravn AND those with images, you'd search for
+				<code>+author:ravn +images:*</code>
 			</p>
 			<p>
-				By contrast, "<i>author:ravn images:*</i>" will search for species
-				that have images or were authored by Robert Ravn
+				The minus symbol (-) means do not match. To find all species published by
+				Robert Ravn but without images, enter <code>author:ravn -images:*</code>
 			</p>
 			<p>
 				Range queries allow for numeric range searches. If you want
 				a reference published between 1997 and 1999, search for 
-				"<i>+year:&gt;=1997 +year:&lt;=1999</i>"
+				<code>+year:&gt;=1997 +year:&lt;=1999</code>
 			</p>
 
 			<h4>Searchable Fields</h4>
@@ -93,7 +111,7 @@
 			</dl>
 			<dl>
 				<dt>Species Fields</dt>
-				<dd>images (useful for "images:*" to find entries with images)</dd>
+				<dd>images (useful for "<code>images:*</code>" to find entries with images)</dd>
 				<dd>occurance</dd>
 				<dd>comment</dd>
 				<dd>species (includes species names and alternative names for species)</dd>
@@ -117,13 +135,13 @@
 					</tr>
 					<tr>
 						<td>
-							<a href="index.html#3,%22\%22lower%20cambrian\%22%22,25,0">"lower cambrian"</a>
+							<a href="index.html#3,&quot;\&quot;lower cambrian\&quot;&quot;,25,0">"lower cambrian"</a>
 						</td>
 						<td>matches any reference that contains the phrase "lower cambrian"</td>
 					</tr>
 					<tr>
 						<td>
-							<a href="index.html#3,%22\%22lower%20cambrian\%22%20-acritarchs%22,25,0">"lower cambrian" -acritarchs</a>
+							<a href="index.html#3,&quot;\&quot;lower cambrian\&quot;-acritarchs&quot;,25,0">"lower cambrian" -acritarchs</a>
 						</td>
 						<td>matches any reference that contains the phrase "lower cambrian" but does not contain "acritarchs"</td>
 					</tr>

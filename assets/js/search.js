@@ -298,7 +298,7 @@ function loadHash(){
 			doSearch(0, true);
 			if (arr.length > 4){ doDetail(arr[0], arr[4], true); }
 			else { closeModal(); }
-		} catch(e) {
+		} catch(err) {
 			if(window.console) console.log(err);
 		}
 	}
