@@ -10,9 +10,9 @@ Source data is included in the data directory for convenience. Required
 bleve indexes are built from the source data via the following commands
 executed from the project directory:
 
-    ./ravn genera "data/taxon genera/*.xlsx"
-    ./ravn references "data/taxon references/*.txt"
-    ./ravn species -images "data/taxon pictures" "data/taxon species files/*.xlsx"
+    ./ravn genera data/taxon\ genera\ files/*.xlsx
+    ./ravn references data/taxon\ references/*.txt
+    ./ravn species -images data/taxon\ pictures data/taxon\ species\ files/*.xlsx
 
 Once the required indexes are built, you can start the application:
 
