@@ -1,4 +1,4 @@
-## Ravn Palynological Database
+## Ravn Palynology Database
 
 ### Building
 Building has been tested with Go 1.17, but will likely work with 1.16.
