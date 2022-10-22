@@ -31,7 +31,7 @@ func main() {
 		}
 		laddr := cmd.String("listen", "127.0.0.1:8080", "start listening on address")
 		assetpath := cmd.String("assets", "", "override embedded assets with assets from path")
-		imagespath := cmd.String("images", "", "load images from directory")
+		imagespath := cmd.String("images", "images", "load images from directory")
 		certfile := cmd.String("certfile", "", "certificate to use for HTTPS requests")
 		keyfile := cmd.String("keyfile", "", "key to use for HTTP requests")
 		cmd.Parse(os.Args[2:])
