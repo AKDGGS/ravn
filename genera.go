@@ -6,6 +6,7 @@ import (
 	"path"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/xuri/excelize/v2"
 )
@@ -247,7 +248,7 @@ func ParseGenera(fn string, genera *[]map[string]interface{}) error {
 				if len(yidx) > 0 {
 					for _, v := range yidx {
 						year, _ := strconv.Atoi(colv[v[2]:v[3]])
-						if year > 2022 || year < 1800 {
+						if year > time.Now().Year() || year < 1800 {
 							fmt.Fprintf(os.Stderr,
 								"%s %s row %d invalid year (%d)\n",
 								fn, sheet, y+1, year,

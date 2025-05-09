@@ -7,6 +7,7 @@ import (
 	"path"
 	"strconv"
 	"strings"
+	"time"
 )
 
 func ParseReferences(fn string, refs *[]map[string]interface{}) error {
@@ -30,7 +31,7 @@ func ParseReferences(fn string, refs *[]map[string]interface{}) error {
 		}
 
 		yr, _ := strconv.Atoi(line[yidx[2]:yidx[3]])
-		if yr > 2022 || yr < 1800 {
+		if yr > time.Now().Year() || yr < 1800 {
 			fmt.Fprintf(os.Stderr,
 				"%s line %d invalid year (%d)\n",
 				fn, ln, yr,

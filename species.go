@@ -6,6 +6,7 @@ import (
 	"path"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/xuri/excelize/v2"
 )
@@ -200,7 +201,7 @@ func parse_species(f *excelize.File, fn, sheet string, col, row int, ps *map[str
 			appendMap(sp, "author", strings.TrimSpace(re[0:yidx[0]]))
 
 			yr, _ := strconv.Atoi(re[yidx[2]:yidx[3]])
-			if yr > 2022 || yr < 1800 {
+			if yr > time.Now().Year() || yr < 1800 {
 				fmt.Fprintf(os.Stderr,
 					"%s line %d invalid year (%d)\n",
 					fn, row, yr,
