@@ -1,4 +1,4 @@
-Zaghloul, Z. M., & El-Beialy, S. Y. 1987. Late Tertiary and Quaternary palynomorphs from the northern coast of the Nile Delta, Egypt. N. Jb. Geol. Paläont., Monatsh., 5: 314-320.
+﻿Zaghloul, Z. M., & El-Beialy, S. Y. 1987. Late Tertiary and Quaternary palynomorphs from the northern coast of the Nile Delta, Egypt. N. Jb. Geol. Paläont., Monatsh., 5: 314-320.
 Zahiri, A. 1981. Phytoplankton of Barremian type section from Angles, south east France. Bull. Iran. Petrol. Inst., 3rd Quarter 1981, 83: 1-34
 Zaitzeff, J. B., & Cross, A. T. 1971. The use of dinoflagellates and acritarchs for zonation and correlation of the Navarro Group (Maestrichtian) of Texas. Geological Society of America Special Paper 127: 341-377.
 Zajíc, J., Šimùnek, Z & Drabkova, J.1997. The fossil fauna, mega- and microflora of the Krkonose Piedmont Basin. Proceedings of the XIII Intemational Congress on the Carboniferous and Perrnian: 197-204.
@@ -30,7 +30,7 @@ Zaporcek, N. J. 1989. Upper Eocene and Lower Oligocene palynocomplexes and phyto
 Zaslavskaya, A. M. 1980. Silurian chitinozoa of the Siberian Platform. (In: Silur Sibirskoi Platformy Graptolity i Khitinokhoi. Y.Tesakov, editor) [ Khitinozoi Silura Sibirskoi Platformy. (In-Silur Sibirskoi Platformy Graptolity i Khitinokhoi. Y.Tesakov,editor) Sibirskoe Otdelenie, Trudy Institut Geologii i Geofiziki, Akademiya Nauk SSSR. (Novosibirsk). Silur Sibirskoi Platformy graptolity i khitinokhoi, 435: 52-80.
 Zaslavskaya, N. M. 1983. Silurian of Siberian Platform, Chitinozoa. Acad. Sci. USSR, Siberian Branch, Inst. Geol. Geophys. Trans., 518: 1-91. (In Russian).
 Zaslavskaya,N. M., Obut, A. M. & Sennikov, N. V. 1978. Chitinozoans in Ordovician and Silurian deposits of the Altai Mountains. (In: The Fauna and Biostratigraphy of Upper Ordovician and Silurian of the Altai-Sajan Region) [ Khitinozoa v Ordovikskikh i Siluriiskikh Otlo Zheniyakh Gornogo Altaya. (In-Fauna i Biostratigrafiya verkhego Ordovika i Silura Altae-Sayanskoi Oblasti) ] Sibirskoe Otdelenie, Trudy Institut Geologii i Geofiziki, Izdatelstvo, Akademiya Nauk SSSR. "Nauka", 405: 43- 56.
-Zatonskaya, S.G. 1975: Opisanie novykh vidov peridinei iz otlozhenii verkhnei yury i nizhnego mela Shaimskogo neftenosnogo raiona. Zapadno-Sibirskii Nauchno-Issledovatelskii Geologorazvedochnyi Institut, Trudy, v.101, p.31 - 35.
+Zatonskaya, S.G. 1975: Opisanie novykh vidov peridinei iz otlozhenii verkhnei yury i nizhnego mela Shaimskogo neftenosnogo raiona. Zapadno-Sibirskii Nauchno-Issledovatelskii Geologorazvedochnyi Institut, Trudy, v.101, p.31–35.
 Zatula, K. F. 1973a. Assemblages of hystrichospheres from (Tertiary) amber-bearing deposits of the Baltic region. DAN 73(212-4): 981-983.
 Zatula, K. F. 1973b. Hystrichospherid complexes from amber-bearing deposits of the Baltic Coast region. Dokl. Akad. Nauk SSSR, Earth Sci., 212: 238-241. (AGI translation) 
 Zauer, V. V. 1960. On Late Permian floras from Solikamsk. Paleont. Zh., 4: 114-124. (In Russian)
@@ -45,7 +45,10 @@ Zavattieri, A. M. 1991a. Granos de polen de la Formación Las Cabras (Triásico)
 Zavattieri, A. M. 1991b. Granos de polen de la Formación Las Cabras (Triásico), en su localidad tipo, provincia de Mendoza, Argentina. Parte 2. Ameghiniana, 28: 205-224.
 Zavattieri, A. M. 1992a. Rese¤a preliminar sobre la palinología del Triásico del área de Santa Clara, norte de la provincia de Mendoza (Argentina). Asoc. Paleont. Argentina, Publ. Esp. (VIII Simposio Argentino de Paleobotánica y Palinológía, Buenos Aires), 2: 101-104.
 Zavattieri, A. M. 1992b. Palinológía de la Formación El Tranquilo (Triásico), provincia de Santa Cruz, Argentina. Ameghiniana, 29: 305-314.
-Zavattieri, A. M., & Batten, D. J. 1996. Miospores from Argentinian Triassic deposits and their potential for intercontinental correlation. In Jansonius, J., & McGregor, D. C., eds., Palynology: Principles and Applications, American Association of Stratigraphic Palynologists Foundation, 2: 767-778.
+Zavattieri, A. M. & Batten, D. J. 1996. Miospores from Argentinian Triassic deposits and their potential for intercontinental correlation. In Jansonius, J. & McGregor, D. C., eds., Palynology: Principles and Applications, American Association of Stratigraphic Palynologists Foundation, 2: 767-778.
+Zavattieri, A. M., Gutiérrez, P. R. & Ezpeleta, M. 2017. Syndesmorion stellatus (Fijalkowska) Foster et Afonin, chlorophycean algae and associated microphytoplankton from lacustrine succession of the La Veteada Formation (Late Permian) Paganzo Basin, Argentina. Palaeoenvironmental interpretations and stratigraphic implications. Review of Palaeobotany and Palynology, 242: 1-20.
+Zavattieri, A. M., Gutiérrez, P. R. & Ezpeleta, M. 2018. Gymnosperm pollen grains from the La Veteada Formation (Lopingian), Paganzo Basin, Argentina: biostratigraphic and palaeoecological implications: Alcheringa, 42: 276-299.
+Zavattieri, A. M., Gutiérrez, P. R. & Monti, M. 2020. Middle Triassic freshwater green algae and fungi of the Puesto Viejo Basin, central-western Argentina: palaeoenvironmental implications. Alcheringa, 44: 430-459.
 Zavattieri, A. M. & Volkheimer, W. 1992. Granos de polen sacados (Saccites) de la Formación Potrerillos (Triásico) en la localidad de Divisadero Largo, Provincia de Mendoza, Argentina. Ameghiniana, 29: 27-44.
 Zavattieri, A. M. & Volkheimer, W. 2003. Palynostratigraphy and paleoenvironments of Early Jurassic strata (Nestares Formation) in northern Patagonia, Argentina. Part 1. Terrestrial species. Ameghiniana, 40: 545-558.
 Zavattieri, A. M., Volkheimer, W. & Rosenfeld, U. 1994. Palynology and facies of the Late Triassic of Comallo (northern Patagonia, Argentina). Zentralblatt für Geologie und Paläontologie, I (1993) 1/2: 133-154.
@@ -63,7 +66,8 @@ Zerndt, J. 1940. Megasporen des Saarkarbon. Palaeontographica B, 84: 133-150.
 Zetter, R., Hesse, M. & Huber, K. H. 2002. Combined  LM, SEM and TEM studies of Late Cretaceous pollen and spores from Gmünd, Lower Austria. Stapfia, 80: 201-230.
 Zhang C. 1962. Early Cretaceous spore and pollen complexes from Kiangsu. Acta Geologica Sinica, 10: 246-286.
 Zhang C. 1965. Spore composition of Mooling Formation, Ghi-Hsi, Heilungchiang and its stratigraphic meaning. Mem. Inst. Geol. Palaeont., Acad. Sinica, 4: 163-196.
-Zhang G. 1987. Sporo-pollen assemblages from Coal Seam No. 1 in Wangjiazhai coal mine, Guizhou province. J. Chin. Inst. Min. Tech., 1: 73-88.
+Zhang G. 1987. Sporo-pollen assemblages from Coal Seam No. 1 in Wangjiazhai coal mine, Guizhou province. Journal of the Chinese Institute of Mining Technology, 1: 73-88.
+Zhang J., Lenz, O. K., Wang P. & Hornung, J. 2021. The Eco-Plant model and its implication on Mesozoic dispersed sporomorphs for Bryophytes, Pteridophytes, and Gymnosperms. Review of Palaeobotany and Palynology, 293 (on-line edition).
 Zhang K., Tong J., Shi G. R., Lai X., Yu J., He W., Peng Y. & Jin Y. 2007. Early Triassic conodont-palynological biostratigraphy of the Meishan D Section in Changxing, Zhejiang Province, South China. Palaeogeography, Palaeoclimatology, Palaeoecology, 252: 4-23.
 Zhang L. 1978. Mesozoic spores and pollen grains from the volcanic clastic sedimentary rocks in Chekiano with their stratigraphic importance. Acta Palaeontologica Sinica, 17: 180-192.
 Zhang L. 1980. Late Triassic spores and pollen, Qinling Range. Nanjing Inst. Geol. Palaeont., Paper for 5th Int. Palynol. Conf.:
@@ -75,7 +79,7 @@ Zhang M., Dai S., Pan B., Wang L., Peng D., Wang H. & Zhang X. 2014. The palyno�
 Zhang M., Ji L., Du R., Dai S. & Hou X. 2015. Palynology of the Early Cretaceous Hanxia Section in the Jiuquan Basin,Northwest China: The discovery of diverse early angiosperm pollen and paleoclimatic significance. Review of Palaeobotany and Palynology, 440: 297-306.
 Zhang Q. 1987. Palynomorph assemblages from the Chengzihe Formation, Jixi Basin, eastern Heilungkiang. Prof. Pap. Stratigr. Palaeont., 19: 81-106. (In Chinese with English summary).
 Zhang 	Q., Smith, T., Yang J. & Li C. 2016. Evidence of a cooler continental climate during the warm Early Cenozoic. PloS One, 11: (on-line edition).
-Zhang W. & Grant-Mackie, J. A. 2001. Late Triassic - Early Jurassic palynofloral assemblages from Murihiku strata of New Zealand, and comparisons with China. Journal of the Royal Society of New Zealand, 31: 575 - 683.
+Zhang W. & Grant-Mackie, J. A. 2001. Late Triassic–Early Jurassic palynofloral assemblages from Murihiku strata of New Zealand, and comparisons with China. Journal of the Royal Society of New Zealand, 31: 575–683.
 Zhang Y. 1981. Tertiary spores and pollen grains from the Leizhou Peninsula. Acta Paleontologica Sinica, 20: 449-458.
 Zhang Y. 1990. Discovery of some forerunner species of Momipites from Lower Tertiary of China. Acta Palaeontologica Sinica, 29: 300-308 (In Chinese with English summary).
 Zhang Y., Wang K., & Jiang H. 1982. Spore-pollen assemblage from the Fengshan Formation in Sihong, Jiangsu, and its geological age. Journal of Stratigraphy (Peking), 6: 107-111.
@@ -94,7 +98,8 @@ Zhao Y., & Morzadec-Kerfourn, M.-T. 1994. Nouveaux kystes de Dinoflagellés: Spi
 Zhao Y., Sun K. & Wang D. 1982. Tertiary sporo-pollen assemblages from Shache and Kuche Basin, Xinjiang. Bull. Inst. Geol., Chinese Acad. Geol. Sci. (Beijing), 4: 95-126.
 Zhao Y., Sun K., Wang D. & He Z. 1981. The distribution of Normapolles in northwestern China. Review of Palaeobotany and Palynology, 35: 325-336
 Zheng F. & Li W. 1986. Cretaceous miospore assemblages of Fujian. Acta Paleontologica Sinica, 25: 201-210.
-Zheng F. & Yuan P. 1985. Sporo-pollen assemblages from the Yuhuatai Formation of Nanjing and its geological age. Journal of Stratigraphy, 9: 161-169
+Zheng F. & Yuan P. 1985. Sporo-pollen assemblages from the Yuhuatai Formation of Nanjing and its geological age. Journal of Stratigraphy, 9: 161-169.
+Zheng S. & Zhang, W. 1986. The cuticles of two fossil cycads and epiphytic fungi. Acta Botanica Sinica, 28: 427-436 (In Chinese with English summary).
 Zheng Y. 1984. Marginipollis (Lecythidaceae) from the Upper Tertiary Fotan Group in southern Fujian. Acta Palaeontologica Sinica, 23: 764-767. (In Chinese with English summary).
 Zheng Y. 1987. Fossil pollen grains of Podocarpaceae from Upper Tertiary in Fujian. Acta Palaeontologica Sinica, 26: 604-615.
 Zheng Y. & He C. 1984. Palynology of the Upper Cretaceous Taizhou Formation in Well Qin-30, northern Jiangsu. Bull. Nanjing Inst. Geol. Palaeont., Acad. Sinica, 8: 55-117.
@@ -103,7 +108,7 @@ Zheng Y., Zhou S., Liu X. & Wang L., et al. 1981. Neogene sporo-pollen grains fr
 Zhezehl, O. N. 1973. The boundary between Eocene and Oligocene deposits at North Ustyurt according to palynological data. Trudy VSEGEI, New Ser. (Leningrad), 195: 180-184. (In Russian with English summary)
 Zhong G. 1981. Lower Ordovician microfloras of Dawan Formation, Huanghuachang, near Yichang. Bull. Yichang Inst. Geol. Min. Res., Chinese Acad.
 Zhou C., Brasier, M. D. & Xue Y. 2001. Three-dimensional phosphatic preservation of giant acritarchs from the terminal Proterozoic Doushantuo Formation in Guizhou and Hubei Provinces, south China. Palaeontology, 44: 1157-1178.
-Zhou He-yi. 1985: Middle Oligocene dinoflagellates and acritarchs from the first member of the Shahejie Formation in the Dongying depression of northern Shandong and their paleogeographical significance. Proceedings of the First National Conference on Fossil Algae, p.1 - 11; pl.1; Geological Publishing House, Beijing, China. (In Chinese with English summary).
+Zhou He-yi. 1985: Middle Oligocene dinoflagellates and acritarchs from the first member of the Shahejie Formation in the Dongying depression of northern Shandong and their paleogeographical significance. Proceedings of the First National Conference on Fossil Algae, p.1–11; pl.1; Geological Publishing House, Beijing, China. (In Chinese with English summary).
 Zhou S. 1985. Importance of Wodehouseia found in China. Acta Botanica Sinica, 27: 427-434.
 Zhou S. 1992. Structural function and evolution of Morinoipollenites and Jianghanpollis. Acta Palaeontologica Sinica, 31: 585-594 (In Chinese with English summary).
 Zhou S., Han S., & Zhang Y. 1983. Late Cretaceous strata in Xaxia Basin, Henan. J. Stratigr. (Nanking), 7: 64-70. (In Chinese)
@@ -131,11 +136,13 @@ Zippi, P. A., & Bajc, A. F. 1990. Recognition of a Cretaceous outlier in northwe
 Ziva, M. V. 1973. Palynological characteristic of Paleogene deposits of the Amur-Seya depression. In The Palynology of Cenophytic: 89-93 (In Russian with English summary).
 Znosko, J. 1955. Retyk i Lias miedzy Krakowem a Wieluniem. Inst. Geol., Prace, 14: 1-146. (with English and Russian summaries).
 Zobaa, M. E., Zavada, M. S., Whitelaw, M. J., Shunk, A. J., & Oboh-Ikuenobe, F. E. 2011. Palynology and palynofacies analyses of the Gray Fossil Site, eastern Tennessee: Their role in understanding the basin-fill history. Palaeogeography, Palaeoclimatology, Palaeoecology, 308: 433-444.
+Zobaa, M. K., El Beialy, S. M., El-Sheikh, S. A. & El Beshtawy, M. K. 2013. Jurassic–Cretaceous palynomorphs, palynofacies, and petroleum potential of the Sharib-1X and Ghoroud-1X wells, north Western Desert, Egypt. Journal of African Earth Sciences 78: 51-65.
 Zoldani, Z. 1960. Megaspore polnocno-wschodniej czeeci Gornoslaskiego Zagtebiu Weglowego. Inst. Geol. (Warszawa), 155(6): 121-152.
 Zoldani, Z. 1966. A taxonomic and stratigraphical study of the genus Valvisisporites from the Carboniferous of the Lublin district. Inst. Geol., Prace, 46: 81-103. (In Polish with English summary)
+Zoldani, Z. 1973. Preliminary megaspore analysis of samples from the Sosnowiec IG-1 borehole. (Wstepna analiza megasporowa Probek z Otworu Wiertniczego Sosnowiec Ig-1. Kwartalnik Geologiczny (Instytut Geologiczy), 17: 634- 634.
 Zonneveld, J.-P., MacNaughton, R. B., Utting, J., Beatty, T. W., Pemberton, S. G. & Henderson, C. M. 2010. Sedimentology and ichnology of the Lower Triassic Montney Formation in the Pedigree-Ring/Border-Kahntah River area, northwestern Alberta and northeastern British Columbia. Bulletin of Canadian Petroleum Geology, 58: 115-140.
 Zonneveld, K. A. F. 1989. Miocene and Pliocene dinoflagellate cysts of the Beugen and Boxmeer wells, south-eastern part of the Netherlands. Stuifmail, 7: 14-21.
-Zonneveld, K. A. F. 1997. New species of organic-walled dinoflagellate cysts from modern sediments of the Arabian Sea (Indian Ocean). Review of Palaeobotany and Palynology, 97: 319 - 337.
+Zonneveld, K. A. F. 1997. New species of organic-walled dinoflagellate cysts from modern sediments of the Arabian Sea (Indian Ocean). Review of Palaeobotany and Palynology, 97: 319–337.
 Zonneveld, K. A. F., & Jurkschat, T. 1999. Bitectatodinium spongium (Zonneveld, 1997) Zonneveld et Jurkschat, comb. nov., from modern sediments and sediment trap samples of the Arabian Sea (northwestern Indian Ocean): taxonomy and ecological affinity. Review of Palaeobotany and Palynology, 106: 153-169.
 Zoricheva, A. I., & Sedova, M. A. 1954. Spore-pollen complexes from the Upper Permian deposits from some localities in North European Russia. Rep. Geol. Res. Inst., Moscow: 1-40.
 Zorzi, C., Head, M. J., Matthiessen, J. & de Vernal, A. 2019: Impagidinium detroitense and I.? diaphanum: two new dinoflagellate cyst species from the Pliocene of the North Pacific Ocean, and their biostratigraphic significance. Review of Palaeobotany and Palynology, 264: 24-37.
