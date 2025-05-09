@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"regexp"
 	"strings"
 
 	"ravn/assets"
@@ -178,6 +179,43 @@ func main() {
 			}
 		}
 
+		ents, err := os.ReadDir(*imagespath)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "error reading images directory: %s\n", err)
+			os.Exit(1)
+		}
+
+		pattern := regexp.MustCompile(`^(\d+)\s.*$`)
+		for _, ent := range ents {
+			if ent.IsDir() {
+				fmt.Fprintf(os.Stderr,
+					"%s/%s is a directory\n",
+					*imagespath, ent.Name(),
+				)
+				continue
+			}
+			var match []string
+			if match = pattern.FindStringSubmatch(ent.Name()); match == nil {
+				fmt.Fprintf(os.Stderr,
+					"%s/%s invalid filename format\n",
+					*imagespath, ent.Name(),
+				)
+				continue
+			}
+			found := false
+			for _, sp := range species {
+				if idStr, ok := sp["ID"].(string); ok && idStr == match[1] {
+					found = true
+					break
+				}
+			}
+			if !found {
+				fmt.Fprintf(os.Stderr,
+					"%s/%s matching species id not found\n",
+					*imagespath, ent.Name(),
+				)
+			}
+		}
 		if *output_yaml {
 			b, err := yaml.Marshal(species)
 			if err != nil {
