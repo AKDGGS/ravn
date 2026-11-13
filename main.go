@@ -37,7 +37,7 @@ func main() {
 		keyfile := cmd.String("keyfile", "", "key to use for HTTP requests")
 		cmd.Parse(os.Args[2:])
 
-		if assetpath != nil {
+		if *assetpath != "" {
 			assets.SetExternal(*assetpath)
 		}
 
